@@ -1,6 +1,6 @@
 ### Feedback for Lab 01
 
-Run on September 06, 11:22:23 AM.
+Run on September 06, 11:27:19 AM.
 
 
 #### Necessary Files and Structure
@@ -21,9 +21,7 @@ Run on September 06, 11:22:23 AM.
 
 ### .gitignore set up properly
 
-+ Fail: Check that file/directory "private.pvt" does not exist.
-
-     "private.pvt" found.
++ Pass: Check that file/directory "private.pvt" does not exist.
 
 + Pass: Check that no files with extension ".o" exist in directory "."
 

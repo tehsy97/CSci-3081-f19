@@ -22,15 +22,18 @@ ArrayPointerTest::ArrayPointerTest(int count) {
 
   cout << "Initializing ducks1." << endl;
   // Write code here to create count_ ducks for array ducks1 (if required)
-
+  Duck ducks1_[count_];
+  // cout << sizeof(ducks1_) << endl;
+  cout << ducks1_[count_].get_name()<< endl;
   cout << "Initializing ducks2\n" ;
   // Write code here to create count_ ducks for array ducks2 (if required)
-
+  // Duck * ducks2_;
   cout << "Initializing ducks3\n";
   // Write code here to create count_ ducks for array ducks3 (if required)
-
+  // Duck * ducks3_[kMaxDuckCount];
   cout << "Initializing ducks4\n";
   // Write code here to create count_ ducks for array ducks4 (if required)
+  // Duck ** ducks4_;
 }
 
 void ArrayPointerTest::NameTheDucks(int array_number) {
@@ -51,6 +54,10 @@ void ArrayPointerTest::NameTheDucks(int array_number) {
     case 2:
       cout << "Naming ducks2\n";
       // Write code here to name count_ ducks in ducks2 and set array_number_.
+      for(int i=0; i<count_; i++){
+        ducks2_[i].set_name(names[i]);
+        ducks2_[i].set_number(1);
+      }
       break;
 
     case 3:

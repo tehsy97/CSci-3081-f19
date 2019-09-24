@@ -144,6 +144,11 @@ void ReadyForTransport(Object ** dynamic, Object ** local ) {
   std::cout << "About to copy local object into passed object." << std::endl;
   *local = &local_object;
   std::cout << "When uncommented, about to delete." << std::endl;
+
+
+  if( * dynamic != NULL){
+    delete * dynamic;
+  }
   // delete *dynamic;
   // delete dynamic;
   // delete *local;
@@ -167,8 +172,9 @@ void RunMemoryDemo() {
     std::cout << "dyn_object address " << (int64_t) dyn_object << std::endl;
     std::cout << std::endl;
   }
-  // delete dyn_object;
+  delete dyn_object;
   // delete &dyn_object;
   // delete local_object;
+
   // delete &local_object;
 }

@@ -1,6 +1,6 @@
 ### Basic Feedback for Lab 06
 
-Run on September 24, 19:41:34 PM.
+Run on September 25, 09:17:04 AM.
 
 
 #### System Files and Lab Directory Structure
@@ -71,7 +71,7 @@ Run on September 24, 19:41:34 PM.
 ***Note: This is just the basic feedback.  The full feedback is run daily as a batch process (click link below)***
 
 
-Link to full feedback: [Lab_06_Full_Feedback.md](Lab_06_Full_Feedback.md)
+Link to full feedback: [Lab_06_Feedback.md](Lab_06_Feedback.md)
 
 
 

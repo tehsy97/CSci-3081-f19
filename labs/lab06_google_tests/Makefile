@@ -49,6 +49,12 @@ all : $(TESTS)
 clean :
 	rm -f $(TESTS) gtest.a gtest_main.a *.o
 
+correct : main.o date.correct.o
+	$(CXX) main.cc date.correct.cc -o $@
+
+wrong : main.o date.wrong.o
+	$(CXX) main.cc date.wrong.cc -o $@
+
 # Builds gtest.a and gtest_main.a.
 
 # Usually you shouldn't tweak such internal variables, indicated by a

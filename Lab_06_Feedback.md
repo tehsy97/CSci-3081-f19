@@ -1,6 +1,6 @@
 ### Fuller Feedback for Lab 06
 
-Run on September 27, 16:20:34 PM.
+Run on September 28, 14:05:56 PM.
 
 
 #### System Files and Lab Directory Structure
@@ -40,7 +40,7 @@ Run on September 27, 16:20:34 PM.
 + Pass: Check that file "date_unittest" exists.
 
 + Pass: Get all google tests.
-    3 tests found.
+    7 tests found.
 
 
 
@@ -62,6 +62,26 @@ Run on September 27, 16:20:34 PM.
 
 
 
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.GetDateTests.
+
+
+
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.LeadingZeroTests.
+
+
+
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.TodayDateTests.
+
+
+
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.GetUsDateTests.
+
+
+
 + Pass: 100% of the tests passed.
 
 
@@ -70,8 +90,7 @@ Run on September 27, 16:20:34 PM.
 
 #### Testing Mutant 1 for failure
 
-+ Fail: There is no test case for this mutant (since all tests pass).
-   - Reason - Dates constructed with epoch are about 70 years in the future
++ Pass: At least one test failed for Mutant 1
 
 
 #### Testing Mutant 2 for failure
@@ -81,14 +100,12 @@ Run on September 27, 16:20:34 PM.
 
 #### Testing Mutant 3 for failure
 
-+ Fail: There is no test case for this mutant (since all tests pass).
-   - Reason - Dates from GetDate are missing a character
++ Pass: At least one test failed for Mutant 3
 
 
 #### Testing Mutant 4 for failure
 
-+ Fail: There is no test case for this mutant (since all tests pass).
-   - Reason - Today's date month off by one
++ Pass: At least one test failed for Mutant 4
 
 
 #### Testing Mutant 5 for failure
@@ -104,8 +121,7 @@ Run on September 27, 16:20:34 PM.
 
 #### Testing Mutant 7 for failure
 
-+ Fail: There is no test case for this mutant (since all tests pass).
-   - Reason - operator-: Probably a copy paste error
++ Pass: At least one test failed for Mutant 7
 
 
 #### Testing Mutant 8 for failure

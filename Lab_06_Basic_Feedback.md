@@ -1,6 +1,6 @@
 ### Basic Feedback for Lab 06
 
-Run on September 25, 09:17:04 AM.
+Run on September 27, 16:40:41 PM.
 
 
 #### System Files and Lab Directory Structure
@@ -40,7 +40,7 @@ Run on September 25, 09:17:04 AM.
 + Pass: Check that file "date_unittest" exists.
 
 + Pass: Get all google tests.
-    3 tests found.
+    7 tests found.
 
 
 
@@ -62,20 +62,40 @@ Run on September 25, 09:17:04 AM.
 
 
 
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.GetDateTests.
+
+
+
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.LeadingZeroTests.
+
+
+
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.TodayDateTests.
+
+
+
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.GetUsDateTests.
+
+
+
 + Pass: 100% of the tests passed.
 
 
 ### Testing Mutants
 
 
-***Note: This is just the basic feedback.  The full feedback is run daily as a batch process (click link below)***
+***Note: This is just the basic feedback.  The feedback that includes the following mutants is run daily as a batch process (click link below)***
 
 
 Link to full feedback: [Lab_06_Feedback.md](Lab_06_Feedback.md)
 
 
 
- __Below are the mutants that your tests will need to find for the Full Feedback__:
+ __Below are the mutants that your tests will need to find for the Feedback__:
 
 
  * __Mutant:__ Dates constructed with epoch are about 70 years in the future

@@ -1,6 +1,6 @@
 ### Fuller Feedback for Lab 06
 
-Run on September 28, 14:05:56 PM.
+Run on September 28, 16:38:56 PM.
 
 
 #### System Files and Lab Directory Structure
@@ -40,7 +40,7 @@ Run on September 28, 14:05:56 PM.
 + Pass: Check that file "date_unittest" exists.
 
 + Pass: Get all google tests.
-    7 tests found.
+    9 tests found.
 
 
 
@@ -73,12 +73,22 @@ Run on September 28, 14:05:56 PM.
 
 
 + Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.PrintUsDateWithoutNewLineTestsfalse.
+
+
+
++ Pass: Check that a GoogleTest test passes.
     passes the test: DateTest.TodayDateTests.
 
 
 
 + Pass: Check that a GoogleTest test passes.
     passes the test: DateTest.GetUsDateTests.
+
+
+
++ Pass: Check that a GoogleTest test passes.
+    passes the test: DateTest.SomeOperationTests.
 
 
 
@@ -110,8 +120,7 @@ Run on September 28, 14:05:56 PM.
 
 #### Testing Mutant 5 for failure
 
-+ Fail: There is no test case for this mutant (since all tests pass).
-   - Reason - 1/1/2016 to 3/1/2016 is 60 days, but this version returns 59
++ Pass: At least one test failed for Mutant 5
 
 
 #### Testing Mutant 6 for failure

@@ -376,8 +376,78 @@ TEST_F(DateTest, SomeOperationTests) {
   answer_num_days = march_F.DaysBetween(jan_F);
   sprintf(s, "%d", answer_num_days); 
   EXPECT_EQ(std::string(s), "60") << "DaysBetween not set up properly";
-  
 }
 
+TEST_F (DateTest, ConstructorTest) {
+  Date wrong_date;
 
+  time_t t = std::time(NULL);
+  tm * now = std::localtime(&t);
+  char s[100];
 
+  testing::internal::CaptureStdout();
+  date_today.PrintDate(false);
+  std::string output1 = testing::internal::GetCapturedStdout();
+
+  sprintf(s, "%d-%02d-%02d", now->tm_year+1900, now->tm_mon+1, now->tm_mday);
+  EXPECT_EQ(output1, std::string(s));
+
+  wrong_date = Date(1, 02, 03);
+  std::string expected_out_2 = "1-02-03";
+  testing::internal::CaptureStdout();
+  wrong_date.PrintDate(false);
+  std::string output2 = testing::internal::GetCapturedStdout();
+  EXPECT_EQ(output2, expected_out_2);
+}
+
+TEST_F(DateTest, operatorMinusTests) {
+  Date date_1 (2016, 3, 1);
+  Date date_2 (2016,1,1);
+  Date date_3 (2020, 4, 1);
+
+  std::string expected_out_1 = "2016-02-28";
+  std::string expected_out_2 = "2015-12-31";
+  std::string expected_out_3 = "2020-03-31";
+
+  testing::internal::CaptureStdout();
+  date_1.operator-(2).PrintDate(false);
+  std::string output1 = testing::internal::GetCapturedStdout();
+
+  testing::internal::CaptureStdout();
+  date_2.operator-(1).PrintDate(false);
+  std::string output2 = testing::internal::GetCapturedStdout();
+
+  testing::internal::CaptureStdout();
+  date_3.operator-(1).PrintDate(false);
+  std::string output3 = testing::internal::GetCapturedStdout();
+
+  EXPECT_EQ(output1, expected_out_1);
+  EXPECT_EQ(output2, expected_out_2);
+  EXPECT_EQ(output3, expected_out_3);
+}
+
+TEST_F(DateTest, operatorPlusTests) {
+  Date date_1 (2016, 2, 27);
+  Date date_2 (2015, 12, 31);
+  Date date_3 (2020, 3, 31);
+
+  std::string expected_out_1 = "2016-02-29";
+  std::string expected_out_2 = "2016-01-01";
+  std::string expected_out_3 = "2020-04-01";
+
+  testing::internal::CaptureStdout();
+  date_1.operator+(2).PrintDate(false);
+  std::string output1 = testing::internal::GetCapturedStdout();
+
+  testing::internal::CaptureStdout();
+  date_2.operator+(1).PrintDate(false);
+  std::string output2 = testing::internal::GetCapturedStdout();
+
+  testing::internal::CaptureStdout();
+  date_3.operator+(1).PrintDate(false);
+  std::string output3 = testing::internal::GetCapturedStdout();
+
+  EXPECT_EQ(output1, expected_out_1);
+  EXPECT_EQ(output2, expected_out_2);
+  EXPECT_EQ(output3, expected_out_3);
+}

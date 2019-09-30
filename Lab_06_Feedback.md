@@ -1,6 +1,6 @@
 ### Fuller Feedback for Lab 06
 
-Run on September 29, 22:00:21 PM.
+Run on September 30, 00:34:51 AM.
 
 
 #### System Files and Lab Directory Structure
@@ -62,18 +62,39 @@ Run on September 29, 22:00:21 PM.
 
 
 
-+ Pass: Check that a GoogleTest test passes.
-    passes the test: DateTest.GetDateTests.
++ Fail: Check that a GoogleTest test passes.
+    fails the test: DateTest.GetDateTests.
+<pre>
+[ RUN      ] DateTest.GetDateTests
+./date_unittest.cc:146: Failure
+      Expected: output6
+      Which is: "2019-10-01"
+To be equal to: std::string(s)
+      Which is: "2019-09-31"</pre>
 
 
 
-+ Pass: Check that a GoogleTest test passes.
-    passes the test: DateTest.LeadingZeroTests.
++ Fail: Check that a GoogleTest test passes.
+    fails the test: DateTest.LeadingZeroTests.
+<pre>
+[ RUN      ] DateTest.LeadingZeroTests
+./date_unittest.cc:205: Failure
+      Expected: output8
+      Which is: "10-01-2019\n"
+To be equal to: std::string(s)
+      Which is: "09-31-2019\n"</pre>
 
 
 
-+ Pass: Check that a GoogleTest test passes.
-    passes the test: DateTest.PrintUsDateWithoutNewLineTestsfalse.
++ Fail: Check that a GoogleTest test passes.
+    fails the test: DateTest.PrintUsDateWithoutNewLineTestsfalse.
+<pre>
+[ RUN      ] DateTest.PrintUsDateWithoutNewLineTestsfalse
+./date_unittest.cc:263: Failure
+      Expected: output8
+      Which is: "10-01-2019"
+To be equal to: std::string(s)
+      Which is: "09-31-2019"</pre>
 
 
 
@@ -82,8 +103,15 @@ Run on September 29, 22:00:21 PM.
 
 
 
-+ Pass: Check that a GoogleTest test passes.
-    passes the test: DateTest.GetUsDateTests.
++ Fail: Check that a GoogleTest test passes.
+    fails the test: DateTest.GetUsDateTests.
+<pre>
+[ RUN      ] DateTest.GetUsDateTests
+./date_unittest.cc:333: Failure
+      Expected: output8
+      Which is: "10-01-2019"
+To be equal to: std::string(s)
+      Which is: "09-31-2019"</pre>
 
 
 
@@ -107,7 +135,7 @@ Run on September 29, 22:00:21 PM.
 
 
 
-+ Pass: 100% of the tests passed.
++ Fail: 66.67% of the tests passed, but the target is 100%.
 
 
 ### Testing Mutants
@@ -115,7 +143,8 @@ Run on September 29, 22:00:21 PM.
 
 #### Testing Mutant 1 for failure
 
-+ Pass: At least one test failed for Mutant 1
++ Fail: There is no test case for this mutant (since all tests pass).
+   - Reason - Dates constructed with epoch are about 70 years in the future
 
 
 #### Testing Mutant 2 for failure

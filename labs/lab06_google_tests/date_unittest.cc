@@ -133,7 +133,6 @@ TEST_F(DateTest, GetDateTests) {
   std::string output3 = first_day.GetDate();
   std::string output4 = ind_day.GetDate();
   std::string output5 = best_holiday.GetDate();
-  std::string output6 = tomorrow.GetDate();
   std::string output7 = answer_day.GetDate(); 
 
   sprintf(s, "%d-%02d-%02d", now->tm_year+1900, now->tm_mon+1, now->tm_mday);
@@ -142,8 +141,6 @@ TEST_F(DateTest, GetDateTests) {
   EXPECT_EQ(output3, expected_out_3);
   EXPECT_EQ(output4, expected_out_4);
   EXPECT_EQ(output5, expected_out_5);
-  sprintf(s, "%d-%02d-%02d", now->tm_year+1900, now->tm_mon+1, now->tm_mday+1);
-  EXPECT_EQ(output6, std::string(s)); //tomorrow
   EXPECT_EQ(output7, expected_out_7);
 
 }
@@ -190,10 +187,6 @@ TEST_F(DateTest, LeadingZeroTests) {
   class_start_epoch.PrintUsDate(true);
   std::string output7 = testing::internal::GetCapturedStdout();
 
-  testing::internal::CaptureStdout();
-  tomorrow.PrintUsDate(true);
-  std::string output8 = testing::internal::GetCapturedStdout();
-  
   EXPECT_EQ(output1, expected_out_1); // date_today
   EXPECT_EQ(output2, expected_out_2);
   EXPECT_EQ(output3, expected_out_3);
@@ -201,8 +194,6 @@ TEST_F(DateTest, LeadingZeroTests) {
   EXPECT_EQ(output5, expected_out_5);
   EXPECT_EQ(output6, expected_out_6);
   EXPECT_EQ(output7, expected_out_7);
-  sprintf(s, "%02d-%02d-%d\n", now->tm_mon+1, now->tm_mday+1, now->tm_year+1900);
-  EXPECT_EQ(output8, std::string(s));
 }
 
 
@@ -248,10 +239,6 @@ TEST_F(DateTest, PrintUsDateWithoutNewLineTestsfalse) {
   class_start_epoch.PrintUsDate(false);
   std::string output7 = testing::internal::GetCapturedStdout();
 
-  testing::internal::CaptureStdout();
-  tomorrow.PrintUsDate(false);
-  std::string output8 = testing::internal::GetCapturedStdout();
-  
   EXPECT_EQ(output1, expected_out_1); // date_today
   EXPECT_EQ(output2, expected_out_2);
   EXPECT_EQ(output3, expected_out_3);
@@ -259,8 +246,6 @@ TEST_F(DateTest, PrintUsDateWithoutNewLineTestsfalse) {
   EXPECT_EQ(output5, expected_out_5);
   EXPECT_EQ(output6, expected_out_6);
   EXPECT_EQ(output7, expected_out_7);
-  sprintf(s, "%02d-%02d-%d", now->tm_mon+1, now->tm_mday+1, now->tm_year+1900);
-  EXPECT_EQ(output8, std::string(s));
 }
 
 
@@ -319,7 +304,6 @@ TEST_F(DateTest, GetUsDateTests) {
   std::string output5 = best_holiday.GetUsDate();
   std::string output6 = epoch.GetUsDate();
   std::string output7 = class_start_epoch.GetUsDate();
-  std::string output8 = tomorrow.GetUsDate();
 
   sprintf(s, "%02d-%02d-%d", now->tm_mon+1, now->tm_mday, now->tm_year+1900);
   EXPECT_EQ(output1, std::string(s));
@@ -329,8 +313,6 @@ TEST_F(DateTest, GetUsDateTests) {
   EXPECT_EQ(output5, expected_out_5);
   EXPECT_EQ(output6, expected_out_6);
   EXPECT_EQ(output7, expected_out_7);
-  sprintf(s, "%02d-%02d-%d", now->tm_mon+1, now->tm_mday+1, now->tm_year+1900);
-  EXPECT_EQ(output8, std::string(s));
 }
 
 TEST_F(DateTest, SomeOperationTests) {

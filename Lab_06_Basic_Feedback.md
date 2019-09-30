@@ -1,6 +1,6 @@
 ### Basic Feedback for Lab 06
 
-Run on September 29, 10:01:21 AM.
+Run on September 30, 12:15:44 PM.
 
 
 #### System Files and Lab Directory Structure

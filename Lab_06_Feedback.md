@@ -1,6 +1,6 @@
 ### Fuller Feedback for Lab 06
 
-Run on September 30, 16:43:43 PM.
+Run on September 30, 19:43:20 PM.
 
 
 #### System Files and Lab Directory Structure

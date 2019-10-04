@@ -1,6 +1,8 @@
-### Fuller Feedback for Lab 06
+### Assessment for Lab 06
 
-Run on October 01, 02:10:26 AM.
+#### Total score: _100_ / _100_
+
+Run on October 01, 10:35:21 AM.
 
 
 #### System Files and Lab Directory Structure
@@ -107,7 +109,7 @@ Run on October 01, 02:10:26 AM.
 
 
 
-+ Pass: 100% of the tests passed.
++  _50_ / _50_ : Pass: 100% of the tests passed.
 
 
 ### Testing Mutants
@@ -156,4 +158,51 @@ Run on October 01, 02:10:26 AM.
 #### Testing Mutant 9 for failure
 
 + Pass: At least one test failed for Mutant 9
+
+
+#### Testing Mutant 10 for failure
+
++ Pass: At least one test failed for Mutant 10
+
+
+#### Testing Mutant 11 for failure
+
++ Pass: At least one test failed for Mutant 11
+
+
+#### Testing Mutant 12 for failure
+
++ Pass: At least one test failed for Mutant 12
+
+
+#### Testing Mutant 13 for failure
+
++ Pass: At least one test failed for Mutant 13
+
+
+#### Testing Mutant 14 for failure
+
++ Pass: At least one test failed for Mutant 14
+
+
+#### Testing Mutant 15 for failure
+
++ Pass: At least one test failed for Mutant 15
+
+
+#### Testing Mutant 16 for failure
+
++ Pass: At least one test failed for Mutant 16
+
+
+#### Testing Mutant 17 for failure
+
++ Pass: At least one test failed for Mutant 17
+
+
+#### Results
+
++  _50_ / _50_ : Pass: 90.0% of the tests passed.
+
+#### Total score: _100_ / _100_
 

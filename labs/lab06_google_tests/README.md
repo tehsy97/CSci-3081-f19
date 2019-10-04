@@ -108,14 +108,15 @@ We will generate many such mutants. Some of them will be included in the feedbac
 
 __Below are the mutants that your tests will need to find for the Full Feedback__:
 
- * __Mutant:__ Dates from GetDate are missing a character
- * __Mutant:__ Some dates don't have leading zeroes
- * __Mutant:__ Today's date month off by one
- * __Mutant:__ Dates from GetUsDate are not in the right format (same as GetDate?)
- * __Mutant:__ operator-: Probably a copy paste error
+ * __Mutant:__ Dates constructed with epoch are about 70 years in the future.
  * __Mutant:__ Days between calculation seems to be much larger than it should be.
- * __Mutant:__ A test failed on the correct version of the program.Developer thought months should be zero-indexedDates constructed with epoch are about 70 years in the future
- * __Mutant:__ 1/1/2016 to 3/1/2016 is 60 days, but this version returns 59
+ * __Mutant:__ Dates from GetDate are missing a character.
+ * __Mutant:__ Today''s date month off by one.
+ * __Mutant:__ 1/1/2016 to 3/1/2016 is 60 days, but this version returns 59.
+ * __Mutant:__ Dates from GetUsDate are not in the right format (same as GetDate?)
+ * __Mutant:__ operator-: Probably a copy paste error.
+ * __Mutant:__ Developer thought months should be zero-indexed.
+ * __Mutant:__ Some dates don''t have leading zeroes.
  
 ***Note:*** The assessment will include more mutants, so it is important to test above and beyond those tests above.  You will only need to pass 90% of the mutant tests in the assessment to get full credit.  Partial credit will be awarded for the mutants that are found.
 
@@ -146,5 +147,5 @@ make
 For this lab, feedback will be given in two parts due to processing limitations on the grading server.
 
  * **Lab_06_Basic_Feedback.md** - This feedback file is generated immediately after checking in your code.  It compiles and tests your tests using the correct version of the date.cc.  This represents 50% of your grade.
- * **Lab_06_Full_Feedback.md** - This feedback file is generated multiple times daily through a batch process.  This includes the basic feedback and the mutant testing.  These results will give you a good idea on how you will do on the assessment.  Please review the mutants described above for what things you should be testing for.
+ * **Lab_06_Feedback.md** - This feedback file is generated multiple times daily through a batch process.  This includes the basic feedback and the mutant testing.  These results will give you a good idea on how you will do on the assessment.  Please review the mutants described above for what things you should be testing for.
  * **Lab_06_Assessment.md** - This file is your assessment for the lab.  It includes the Full Feedback with correct and mutant tests.  It also, however includes additional mutants you need to find, so your tests should be robust to handle other scenerios besides the full feedback mutants.  To get full credit you will need to find 90% of the assessment mutants.  Partial credit will be awarded for the mutants you find.

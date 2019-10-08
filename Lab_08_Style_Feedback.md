@@ -1,6 +1,6 @@
 ### Style Feedback for Lab 08
 
-Run on October 07, 21:54:18 PM.
+Run on October 08, 10:03:22 AM.
 
 
 #### Necessary Files and Structure
@@ -25,7 +25,7 @@ Run on October 07, 21:54:18 PM.
 + Pass: Check that file/directory "latex" does not exist.
 
 
-#### Google Style Compliance I
+#### Google Style Compliance
 
 + Pass: Cpplint checking for for Google C++ compliance
 

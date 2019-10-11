@@ -28,7 +28,7 @@ The directory structure for this lab is identical to that of the project.
 
 - `src/Makefile`:
   - Builds the project source.
-  - Creates the `build/bin/StopTest` and `build/bin/PassengerTest` executables.
+  - Creates the `build/bin/StopTest.exe` and `build/bin/PassengerTest.exe` executables.
 
 - `build`: Created by the Makefiles. Should be added to your `.gitignore`.
   - `build/bin`: All executables generated for the project will appear in here.
@@ -42,21 +42,21 @@ The directory structure for this lab is identical to that of the project.
 
 2. _merge_ the new lab code into your master branch.
 
-3. Change directories to Lab 09: `cd Labs/lab09_project_intro`
+3. Change directories to Lab 09: `cd labs/lab09_project_intro`
 
-4. Copy your Passenger class files from Lab 07: `cp ../lab07_style_doxy/src/passenger.* ./src`
+4. Copy your Passenger class files from Lab 08: `cp ../lab08_style_doxy/src/passenger.* ./src`
 
 5. At the top level from the OS command prompt: `make`. 
 
-6. At the command prompt: `./build/bin/PassengerTest`
+6. At the command prompt: `./build/bin/PassengerTest.exe`
 
-7. At the command prompt: `./build/bin/StopTest`.
+7. At the command prompt: `./build/bin/StopTest.exe`.
 
 <hr>
 
 ## Code Explanation
 
-What is given here is a rudimentary set of files for this POC. In fact, two were already missing: _passenger.h_ and _passenger.cc_, which were already given to you in Lab 07. This is the beginning of work towards a working Transit Simulation. Provided in this POC are testing facilities for both Passenger and Stop. They are *not* Google Test files, but rather simple driver applications which run the classes through a couple simple tasks, basically a working check for progress.
+What is given here is a rudimentary set of files for this POC. In fact, two were already missing: _passenger.h_ and _passenger.cc_, which were already given to you in Lab 08. This is the beginning of work towards a working Transit Simulation. Provided in this POC are testing facilities for both Passenger and Stop. They are *not* Google Test files, but rather simple driver applications which run the classes through a couple simple tasks, basically a working check for progress.
 
 <hr>
 
@@ -64,7 +64,7 @@ What is given here is a rudimentary set of files for this POC. In fact, two were
 
 ### Fix the Passenger class
 
-As mentioned in Lab 07, the Passenger class you are given is not working. Hopefully, you've added and fixed to make it style-compliant and documented. Now, if you haven't already, you must get it working properly. In particular, you must have fixed the constructor, Update(), GetTotalWait(), and IsOnBus() methods.
+As mentioned in Lab 08, the Passenger class you are given is not working. Hopefully, you've added and fixed to make it style-compliant and documented. Now that it is style compliant, you must get it working properly. In particular, you need to fix the constructor, Update(), GetTotalWait(), and IsOnBus() methods.
 
 ### Build the Stop class
 

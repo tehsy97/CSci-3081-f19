@@ -25,7 +25,7 @@ std::uniform_int_distribution<std::mt19937::result_type> dist(1, 1000);
 // example from the forum I used this code to generate male and female names,
 // but here I combined them).
 
-static const std::string NamePrefixArray[] = {
+static const char* NamePrefixArray[7] = {
 "",  // who said we need to add a prefix?
 "bel",  // lets say that means "the good"
 "nar",  // "The not so good as Bel"
@@ -35,14 +35,14 @@ static const std::string NamePrefixArray[] = {
 "ev",  // Man am I original
 };
 
-static const std::string NameSuffixArray[] = {
+static const char* NameSuffixArray[16] = {
 "", "us", "ix", "ox", "ith",
 "ath", "um", "ator", "or", "axia",
 "imus", "ais", "itur", "orex", "o",
 "y"
 };
 
-static const std::string NameStemsArray[] = {
+static const char* NameStemsArray[20] = {
 "adur", "aes", "anim", "apoll", "imac",
 "educ", "equis", "extr", "guius", "hann",
 "equi", "amora", "hum", "iace", "ille",

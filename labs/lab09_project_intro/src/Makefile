@@ -7,7 +7,7 @@ BINDIR = $(BUILDDIR)/bin
 # Compiler flags
 CC = g++
 DEBUG = -g
-CFLAGS = -Wall -c $(DEBUG)
+CFLAGS = -Wall -c -I.. $(DEBUG)
 LFLAGS = -Wall $(DEBUG)
 
 .PHONY : clean all passenger_test stop_test
@@ -46,3 +46,4 @@ cleanobj :
 	
 cleantest :
 	\rm $(BINDIR)/*Test.exe
+	

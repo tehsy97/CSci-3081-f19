@@ -1,9 +1,15 @@
+/**
+ * @file stop_driver.cc
+ *
+ * @copyright 2019 3081 Staff, All rights reserved.
+ */
+
 #include <iostream>
 #include <vector>
 
-#include "bus.h"
-#include "passenger.h"
-#include "stop.h"
+#include "./bus.h"
+#include "./passenger.h"
+#include "./stop.h"
 
 
 int main() {
@@ -15,8 +21,8 @@ int main() {
   passengers.push_back(new Passenger(10, "Mal"));
   passengers.push_back(new Passenger(23, "Jayne"));
   
-  Stop stop1(1); //student union station
-  Stop stop2(2, 44.973820, -93.227117); //Oak St & Washington Ave
+  Stop stop1(1);  // student union station
+  Stop stop2(2, 44.973820, -93.227117);  // Oak St & Washington Ave
   Bus * bus1 = new Bus();
   
   stop1.AddPassengers(passengers[0]);
@@ -46,7 +52,8 @@ int main() {
   stop1.Report();
   stop2.Report();
   
-  std::cout << "/*\n *\n * Adding additional passengers to stop\n *\n*/" << std::endl;
+  std::cout << "/*\n *\n * Adding additional passengers to stop\n *\n*/";
+  std::cout << std::endl;
   
   stop2.AddPassengers(passengers[3]);
   stop1.AddPassengers(passengers[4]);
@@ -63,7 +70,8 @@ int main() {
   stop1.Report();
   stop2.Report();
   
-  std::cout << "/*\n *\n * Loading passengers from both stops to Bus1\n *\n*/" << std::endl;
+  std::cout << "/*\n *\n * Loading passengers from both stops to Bus1\n *\n*/";
+  std::cout << std::endl;
   
   stop1.LoadPassengers(bus1);
   stop2.LoadPassengers(bus1);
@@ -84,7 +92,12 @@ int main() {
   stop1.Report();
   stop2.Report();
   
-  std::cout << "/*----------------\n *\n * Post-mortem Passenger Reports\n *\n---------------*/" << std::endl;
+  std::cout << "/*----------------\n";
+
+  std::cout << " *\n";
+  std::cout << " * Post-mortem Passenger Reports\n";
+  std::cout << " *\n";
+  std::cout << " *---------------*/" << std::endl;
   
   passengers[0]->Report();
   passengers[1]->Report();

@@ -1,7 +1,13 @@
+/**
+ * @file passenger_driver.cc
+ *
+ * @copyright 2019 3081 Staff, All rights reserved.
+ */
+
 #include <iostream>
 #include <vector>
 
-#include "passenger.h"
+#include "./passenger.h"
 
 int main() {
 
@@ -19,40 +25,38 @@ int main() {
   while (time < 60) {
     
     std::cout << "/***********/" << std::endl;
-    //std::cout << "/*         */" << std::endl;
+    // std::cout << "/*         */" << std::endl;
     std::cout << "/* TIME ";
     if (time < 10) { std::cout << "0"; }
     std::cout << time;
     std::cout << " */" << std::endl;
-    //std::cout << "/*         */" << std::endl;
+    // std::cout << "/*         */" << std::endl;
     std::cout << "/***********/" << std::endl;
     
     if (time == 2) {
       passengers[0]->GetOnBus();
-    }
-    else if (time == 5) {
+    } else if (time == 5) {
       passengers[1]->GetOnBus();
-    }
-    else if (time == 8) {
+    } else if (time == 8) {
       passengers[2]->GetOnBus();
-    }
-    else if (time == 9) {
+    } else if (time == 9) {
       passengers[3]->GetOnBus();
-    }
-    else if (time == 11) {
+    } else if (time == 11) {
       passengers[4]->GetOnBus();
     }
     
-    for(std::vector<Passenger *>::iterator it = passengers.begin(); it != passengers.end(); it++) {
-      if ((*it)->GetDestination() != time) {
+    for(std::vector<Passenger *>::iterator it = passengers.begin(); 
+      it != passengers.end(); it++) {
+      if((*it)->GetDestination() != time) {
         (*it)->Update();
-      }
-      else {
+      } else {
         Passenger * departing_passenger = *it;
         departing_passenger->Report();
         
-        //When removing the passenger, the iterator gets incremented to the next element.
-        //We need to push it back so that the for loop increment places the iterator at
+        // When removing the passenger, the iterator gets incremented to the
+        // next element.
+        // We need to push it back so that the for loop increment places the
+        // iterator at
         // the correct next element.
         it = passengers.erase(it);
         it--;

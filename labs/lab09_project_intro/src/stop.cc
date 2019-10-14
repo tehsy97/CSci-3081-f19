@@ -1,25 +1,31 @@
+/**
+ * @file stop.cc
+ *
+ * @copyright 2019 3081 Staff, All rights reserved.
+ */
+
 #include <iostream>
 #include <vector>
 	
-#include "stop.h"
+#include "./stop.h"
 	
-Stop::Stop(int id, double longitude, double latitude) { //Defaults to Westbound Coffman Union stop
-	  // no initialization of list of passengers necessary
+Stop::Stop(int id, double longitude, double latitude) {  // Defaults to Westbound Coffman Union stop
+	// no initialization of list of passengers necessary
 }
 	
 
 void Stop::LoadPassengers(Bus * bus) {
-	  //loading some passengers onto a bus
+	// loading some passengers onto a bus
 }
 	
 
 void Stop::AddPassengers(Passenger * pass) {
-	  //add the passenger to the stop
+	// add the passenger to the stop
 }
 	
 
 int Stop::GetId() const{
-	  return id_;
+	return id_;
 }
 	
 

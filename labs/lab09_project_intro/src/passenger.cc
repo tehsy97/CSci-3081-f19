@@ -5,7 +5,7 @@
  */
 
 
-#include "./passenger.h"
+#include "src/passenger.h"
 
 #include <iostream>
 #include <string>
@@ -20,10 +20,10 @@ Passenger::Passenger(int destination_stop_id, std::string name): name_(name),
   count_++;
 }
 
-void Passenger::Update() {  // need to fix
-  if(IsOnBus()){
+void Passenger::Update() {
+  if (IsOnBus()) {
     time_on_bus_ += 1;
-  }else{
+  } else {
     wait_at_stop_ += 1;
   }
 }
@@ -32,11 +32,11 @@ void Passenger::GetOnBus() {
   time_on_bus_ = 1;
 }
 
-int Passenger::GetTotalWait() const {  // need to fix
+int Passenger::GetTotalWait() const {
   return wait_at_stop_ + time_on_bus_;
 }
 
-bool Passenger::IsOnBus() const {  // need to fix
+bool Passenger::IsOnBus() const {
   return time_on_bus_;
 }
 

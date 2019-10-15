@@ -9,15 +9,15 @@
 
 #include <list>
 
-#include "./passenger.h"
+#include "src/passenger.h"
 
 class Bus {
-   public:
+ public:
     /* Replacing for testing */
     // Bus(int capacity, double speed, Route * out, Route * in);
     explicit Bus(int capacity = 60, double speed = 1);
     bool LoadPassenger(Passenger *); 	// returning revenue delta
-   private:
+ private:
     int passenger_max_capacity_;
     double speed_;  // could also be called "distance travelled
     // in one time step"

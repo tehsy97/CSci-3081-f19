@@ -7,23 +7,21 @@
 #include <iostream>
 #include <vector>
 
-#include "./passenger.h"
+#include "src/passenger.h"
 
 int main() {
-
   std::vector<Passenger *> passengers;
-  
+
   passengers.push_back(new Passenger(33, "Zoe"));
   passengers.push_back(new Passenger(42, "Kaylee"));
   passengers.push_back(new Passenger(50, "Wash"));
   passengers.push_back(new Passenger(10, "Mal"));
   passengers.push_back(new Passenger(23, "Jayne"));
 
-  
+
   int time = 0;
-  
+
   while (time < 60) {
-    
     std::cout << "/***********/" << std::endl;
     // std::cout << "/*         */" << std::endl;
     std::cout << "/* TIME ";
@@ -32,7 +30,7 @@ int main() {
     std::cout << " */" << std::endl;
     // std::cout << "/*         */" << std::endl;
     std::cout << "/***********/" << std::endl;
-    
+
     if (time == 2) {
       passengers[0]->GetOnBus();
     } else if (time == 5) {
@@ -44,15 +42,15 @@ int main() {
     } else if (time == 11) {
       passengers[4]->GetOnBus();
     }
-    
-    for(std::vector<Passenger *>::iterator it = passengers.begin(); 
+
+    for (std::vector<Passenger *>::iterator it = passengers.begin();
       it != passengers.end(); it++) {
-      if((*it)->GetDestination() != time) {
+      if ((*it)->GetDestination() != time) {
         (*it)->Update();
       } else {
         Passenger * departing_passenger = *it;
         departing_passenger->Report();
-        
+
         // When removing the passenger, the iterator gets incremented to the
         // next element.
         // We need to push it back so that the for loop increment places the
@@ -63,9 +61,9 @@ int main() {
         delete departing_passenger;
       }
     }
-    
+
     time++;
   }
-  
+
   return 0;
 }

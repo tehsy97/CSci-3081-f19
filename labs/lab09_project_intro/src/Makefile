@@ -46,4 +46,3 @@ cleanobj :
 	
 cleantest :
 	\rm $(BINDIR)/*Test.exe
-	

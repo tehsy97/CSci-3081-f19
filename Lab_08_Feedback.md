@@ -1,6 +1,6 @@
 ### Feedback for Lab 08
 
-Run on October 05, 14:23:15 PM.
+Run on October 14, 15:15:05 PM.
 
 
 #### Necessary Files and Structure
@@ -25,9 +25,13 @@ Run on October 05, 14:23:15 PM.
 + Pass: Check that file/directory "latex" does not exist.
 
 
-#### Google Style Compliance I
+#### Google Style Compliance
 
-+ Pass: Cpplint checking for for Google C++ compliance
+
+***Note: The Gitbot is currently skipping these tests. The feedback that includes the Linter tests are run separately as a batch process (click link below)***
+
+
+Link to style feedback: [Lab_08_Style_Feedback.md](Lab_08_Style_Feedback.md)
 
 
 #### Doxygen
@@ -35,8 +39,6 @@ Run on October 05, 14:23:15 PM.
 + Pass: Change into directory "docs".
 
 + Pass: Generating documentation by running doxygen
-
-+ Pass: Check that file "../src/mainpage.h" exists.
 
 + Pass: Check that file "html/classPassenger.html" exists.
 

@@ -81,11 +81,11 @@ To confirm which branch you are currently working and to see a list of all branc
 
 ### Creating an Issue
 
-There are 2 known issues in the project code that need fixing! The first is preventing compilation and the other is related to the Passenger class you were given in a prior lab. Go to your repo on Github and create two issues, naming and labeling them appropriately. When you create an issue for the compilation error, label it with "bug" (from the pull down menu) and let's pretend that you added this issue when you first encountered it, therefore you provided additional information. Put the following into the comment of the issue related to compilation:
+There are 2 known issues in the project code that need fixing! The first is preventing compilation and the other is related to the Passenger class you were given in a prior lab. Go to your repo on Github and create two issues, naming and labeling them appropriately. When you create an issue for the compilation error, label it with "bug" (by selecting/clickling on the labels "button", and then selecting/cliking on bug "button"). After selecting the type of issue, github will return you to the previous screen. You should then select/click-on the green button labeled "New Issue". Next, let's pretend that you added this issue when you first encountered it, therefore you provided additional information. Put the following into the comment of the issue related to compilation:
 
   "Simulator is not compiling. Compilation errors indicate the issue and where to locate the problem."
 
-In general when you create an issue for a bug for this iteration, you need to provide this type of documentation in which you describe the bug, how to repeat it, where is the likely cause, and what you think is the cause. This is a somewhat unusual issue because we generally address simple compilation errors right away, but this is good practice for creating issues and branches.
+In general when you create an issue for a bug for this iteration, you need to provide this type of documentation in which you describe the bug, how to repeat it, where is the likely cause, and what you think is the cause. This is a somewhat unusual issue because we generally address simple compilation errors right away, but this is good practice for creating issues and branches. Next, assign yourself to the issue (do this on the left part of the screen), and then finally, select the green "Submit Issue" button at the bottom of the issue screen to create the issue.
 
 Next, create an issue for the Passenger and label it with "enhancement". Put the following into the comment of the issue related to Passenger:
 
@@ -151,8 +151,6 @@ git push --set-upstream origin fix/01-compilation-errors
 
 > **Assessment/Feedback of the lab and of the project is conducted on the devel branch, so any feedback that you get is based on the code in devel. HOWEVER, the feedback files are posted to the master branch.**
 
-> **COMPILATION failure when pushing to server: Some students might have the experience that compilation works on their personal machine but fails on the server. If you see a message in the lab10 feedback file that refers to pointer data members in the Controller class, that is an error related to the copy constructor (look in arena.h for how to explicitely delete the copy constructor Controller(const Controller&)).**
-
 The template provided in the git usage document can be added to git so that when the editor opens, you will see that content. To add the template, save the text preceded by '#' in the pdf as a file (_~/.gitmessage_ is the convention) and add to your git configuration:
 ```
 git config --global commit.template ~/.gitmessage
@@ -161,9 +159,9 @@ git config --global commit.template ~/.gitmessage
 
 ### Merge with devel
 
-If you are satisfied with the results (for this lab, this means that the project builds successfully after the renaming is complete), you want to merge this branch with _devel_ (not with _master_). You can do this in 2 ways. If you want to take a trial run or if someone else is in control of merging branches, you can submit a _pull request_. This is a request to pull in your position branch into the devel branch. You can do this from the Github interface under Pull Requests. Then you can _accept_ the pull request to merge the branches. **Make sure your pull request is into the _devel_ branch - select from the pulldown menus.**
+If you are satisfied with the results (for this lab, this means that the project builds successfully after the compilation errors are fixed. You can check by navigating to the project/build/bin directory. If an executable named: **transit_sim** is present, and executes without errors - you have fixed your compile errors). Next, you want to merge this branch with _devel_ (not with _master_). You can do this in 2 ways. If you want to take a trial run or if someone else is in control of merging branches, you can submit a _pull request_. This is a request to pull in your position branch into the devel branch. You can do this from the Github interface under Pull Requests. Then you can _accept_ the pull request to merge the branches. **Make sure your pull request is into the _devel_ branch - select from the pulldown menus.**
 
-Command line is easier and faster, although the pull request will give you more information about the impact of the merge.
+The Command line way below is easier and faster, although the pull request will give you more information about the impact of the merge.
 
 ```
 git checkout devel
@@ -179,9 +177,9 @@ Go to Github and click on the issue. Notice that the commit has been added to it
 
 We would normally suggest that you delete the branch, but then we won't be able to see your history of using branches. Until the completion of iteration2, please keep your branches.
 
-### Repeat
+### Repeat - for your remaining issue!!!
 
-For the other issue related to the Passenger class, repeat the above process of creating a branch, fixing the bug, merging the branch back into _devel_, and resolving the issue in Github. To fix the bug for this issue, replace the existing project files for Passenger with the files you fixed in lab 9 (or, if you have yet to complete lab 9, the files from lab 7 (style/doxy)).
+For the other (enhancement) issue related to the Passenger class, repeat the above process of creating a branch, fixing the bug, merging the branch back into _devel_, and resolving the issue in Github. To fix the bug for this issue, replace the existing project files for Passenger with the files you fixed in lab 9 (or, if you have yet to complete lab 9, the files from lab 7 (style/doxy)).
 
 <hr>
 

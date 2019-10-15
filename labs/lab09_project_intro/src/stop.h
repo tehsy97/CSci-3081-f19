@@ -1,23 +1,30 @@
-#ifndef SRC_STOP_H
-#define SRC_STOP_H
+/**
+ * @file stop.h
+ *
+ * @copyright 2019 3081 Staff, All rights reserved.
+ */
+#ifndef SRC_STOP_H_
+#define SRC_STOP_H_
 
 #include <list>
 
-#include "bus.h"
-#include "passenger.h"
+#include "src/bus.h"
+#include "src/passenger.h"
 
 class Stop {
  public:
-  Stop(int, double = 44.973723, double = -93.235365);
-  void LoadPassengers(Bus *);		        //Removing passengers from stop and onto a bus
-  void AddPassengers(Passenger *);	      //Adding passengers to the stop (from the generator)
+  explicit Stop(int, double = 44.973723, double = -93.235365);
+  // Removing passengers from stop and onto a bus
+  void LoadPassengers(Bus *);
+  // Adding passengers to the stop (from the generator)
+  void AddPassengers(Passenger *);
   int GetId() const;
-  void Report() const;                  //TODO: Need to change to ostream
+  void Report() const;
  private:
   int id_;
-  std::list<Passenger *> passengers_;   //considered array, vector, queue, list
-  //int passengers_present_;            //derived information - not needed?
+  std::list<Passenger *> passengers_;  // considered array, vector, queue, list
+  // int passengers_present_;  // derived information - not needed?
   double longitude_;
-  double latitude_;						                //are we using long/lat coords?			
+  double latitude_;  // are we using long/lat coords?
 };
-#endif //SRC_STOP_H
+#endif  // SRC_STOP_H_

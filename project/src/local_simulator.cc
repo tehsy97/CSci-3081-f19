@@ -28,8 +28,8 @@ bool LocalSimulator::Update() {
   std::cout << "~~~~~~~~~~~~~ The time is now " << simulation_time_elapsed_;
   std::cout << " ~~~~~~~~~~~~~" << std::endl;
   
-  pass_.Update();
-  pass_.Report();
+  pass_->Update();
+  pass_->Report();
   
   return true;
 }

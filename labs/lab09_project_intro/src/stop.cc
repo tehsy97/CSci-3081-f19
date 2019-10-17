@@ -12,16 +12,29 @@
 Stop::Stop(int id, double longitude, double latitude) {
     // Defaults to Westbound Coffman Union stop
     // no initialization of list of passengers necessary
+    id_ = id;
+    longitude_ = longitude;
+    latitude_ = latitude;
 }
 
 
 void Stop::LoadPassengers(Bus * bus) {
     // loading some passengers onto a bus
+    for (std::list<Passenger *>::iterator it = passengers_.begin();
+        it != passengers_.end(); it++) {
+            bus->LoadPassenger(*it);
+    }
+
+    while (!passengers_.empty()) {
+        passengers_.pop_back();
+    }
 }
 
 
 void Stop::AddPassengers(Passenger * pass) {
     // add the passenger to the stop
+    passengers_.push_back(pass);
+
 }
 
 

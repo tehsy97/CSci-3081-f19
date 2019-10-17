@@ -34,3 +34,7 @@
 
 # build folder
 ./build
+
+#doxygen files
+html
+latex

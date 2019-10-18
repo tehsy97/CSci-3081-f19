@@ -16,7 +16,11 @@ Passenger::Passenger(int destination_stop_id, std::string name): name_(name),
 }
 
 void Passenger::Update() {
-  wait_at_stop_++;
+  if (IsOnBus()) {
+    time_on_bus_ += 1;
+  } else {
+    wait_at_stop_ += 1;
+  }
 }
 
 void Passenger::GetOnBus() {
@@ -24,11 +28,11 @@ void Passenger::GetOnBus() {
 }
 
 int Passenger::GetTotalWait() const {
-  return wait_at_stop_;
+  return wait_at_stop_ + time_on_bus_;
 }
 
 bool Passenger::IsOnBus() const {
-  return false;
+  return time_on_bus_;
 }
 
 int Passenger::GetDestination() const {

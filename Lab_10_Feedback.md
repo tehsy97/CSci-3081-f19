@@ -1,6 +1,6 @@
 ### Feedback for Lab 10
 
-Run on October 18, 09:30:08 AM.
+Run on October 18, 10:47:35 AM.
 
 
 ### Necessary Files and Structure
@@ -8,8 +8,6 @@ Run on October 18, 09:30:08 AM.
 + Pass: Check that directory "labs" exists.
 
 + Pass: Check that directory "labs/lab10_advanced_git" exists.
-
-+ Pass: Check that directory "project" exists.
 
 
 ### Git Usage
@@ -26,7 +24,7 @@ Run on October 18, 09:30:08 AM.
 
 dc2615074ce7775de20ff76310d5c58e5604c4a0	refs/heads/fix/01-compilation-errors
 
-70a0074f9a1d6f6ec90a57ac4e78af359f8f0984	refs/heads/master
+30880d7e031b57d22d1f91aa173f842d88686c34	refs/heads/master
 
 
 
@@ -132,6 +130,8 @@ Sufficient commits (found=13,required=4)
 + Pass: Checkout devel branch.
 
 
+
++ Pass: Check that directory "project" exists.
 
 + Pass: Change into directory "project".
 

@@ -1,6 +1,6 @@
 ### Feedback for Lab 10
 
-Run on October 17, 22:04:34 PM.
+Run on October 17, 23:04:31 PM.
 
 
 ### Necessary Files and Structure
@@ -26,7 +26,7 @@ Run on October 17, 22:04:34 PM.
 
 dc2615074ce7775de20ff76310d5c58e5604c4a0	refs/heads/fix/01-compilation-errors
 
-6c764a007712539177d48b8bd34de77b3c7752b8	refs/heads/master
+e132ff28b78644b51326387b689d4cc3d46d7f2e	refs/heads/master
 
 
 
@@ -137,20 +137,7 @@ Sufficient commits (found=13,required=4)
 
 + Pass: Check that file "makefile" exists.
 
-+ Fail: Check that make compiles.
-
-    Make compile fails with errors:.
-<pre>cd src; make -j
-make[1]: Entering directory '/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Lab_10_Feedback/repo-teh00001/project/src'
-==== Auto-Generating Dependencies for ../drivers/transit_sim.cc. ====
-g++ -MM -MF /project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Lab_10_Feedback/repo-teh00001/project/build/objdrivers/transit_sim.d -MP -MT /project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Lab_10_Feedback/repo-teh00001/project/build/objdrivers/transit_sim.o -W -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -Wno-old-style-cast -Wno-cast-align -g -std=c++11 -c -I.. -I. -I./.. -I../drivers ../drivers/transit_sim.cc
-g++: error: unrecognized command line option -Wsuggest-override
-makefile:100: recipe for target '/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Lab_10_Feedback/repo-teh00001/project/build/objdrivers/transit_sim.o' failed
-make[1]: *** [/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Lab_10_Feedback/repo-teh00001/project/build/objdrivers/transit_sim.o] Error 1
-make[1]: Leaving directory '/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Lab_10_Feedback/repo-teh00001/project/src'
-makefile:10: recipe for target 'TransitSim' failed
-make: *** [TransitSim] Error 2
-</pre>
++ Pass: Check that make compiles.
 
 
 

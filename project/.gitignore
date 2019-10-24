@@ -2,3 +2,6 @@ build
 *.o
 *.exe
 *.out
+
+html
+latex

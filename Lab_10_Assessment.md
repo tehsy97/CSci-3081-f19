@@ -1,18 +1,20 @@
-### Feedback for Lab 10
+### Assessment for Lab 10
 
-Run on October 19, 07:54:40 AM.
+#### Total score: _100.0_ / _100_
+
+Run on October 19, 09:20:05 AM.
 
 
 ### Necessary Files and Structure
 
-+ Pass: Check that directory "labs" exists.
++  _10_ / _10_ : Pass: Check that directory "labs" exists.
 
-+ Pass: Check that directory "labs/lab10_advanced_git" exists.
++  _10_ / _10_ : Pass: Check that directory "labs/lab10_advanced_git" exists.
 
 
 ### Git Usage
 
-+ Pass: Run git ls-remote to check for existence of specific branch- Branch devel found
++  _10_ / _10_ : Pass: Run git ls-remote to check for existence of specific branch- Branch devel found
 
 + Pass: Checkout devel branch.
 
@@ -26,11 +28,11 @@ Run on October 19, 07:54:40 AM.
 
 		dc2615074ce7775de20ff76310d5c58e5604c4a0	refs/heads/fix/01-compilation-errors
 
-		261ba01c051a654a24d5039e23e47866a1d0bfcd	refs/heads/master
+		5337cfc32dd961390590c772665ae10e894fba2b	refs/heads/master
 
 
 
-+ Pass: Checking for the correct number of branches
++  _10_ / _10_ : Pass: Checking for the correct number of branches
 
 Sufficient branches found (found=2, required=2):
 
@@ -108,7 +110,7 @@ fix/01-compilation-errors
 
 
 
-+ Pass: Check git commit history
++  _5_ / _5_ : Pass: Check git commit history
 Sufficient commits (found=19,required=4)
 
 
@@ -128,7 +130,7 @@ Sufficient commits (found=19,required=4)
 
 
 
-+ Pass: Run ghi for total number of issues in Github repo (Found: 2, Expected: 2) 
++  _10.0_ / _10_ : Pass: Run ghi for total number of issues in Github repo (Found: 2, Expected: 2) 
 
  [OPEN issue #] : 
 
@@ -147,13 +149,15 @@ Sufficient commits (found=19,required=4)
 
 
 
-+ Pass: Check that directory "project" exists.
++  _10_ / _10_ : Pass: Check that directory "project" exists.
 
 + Pass: Change into directory "project".
 
-+ Pass: Check that file "makefile" exists.
++  _5_ / _5_ : Pass: Check that file "makefile" exists.
 
-+ Pass: Check that make compiles.
++  _30_ / _30_ : Pass: Check that make compiles.
 
 
+
+#### Total score: _100.0_ / _100_
 

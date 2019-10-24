@@ -1,6 +1,10 @@
 # TransitSim: a Proof-of-Concept Transit System Simulator
 
-## Iteration 1 - VERSION 1, October 15th - NOTE, THIS DOCUMENT IS SUBJECT TO CHANGE. CHECK IT EVERY DAY OR TWO
+## Iteration 1 - VERSION 3, October 21st - NOTE, THIS DOCUMENT IS SUBJECT TO CHANGE. CHECK IT EVERY DAY OR TWO
+
+**Version 3 - Changed Delivery Requirements for Iteration 1 Preliminary Delivery 1: Submit your diagram in a PDF file via the Canvas using the item named Iteration 1 Preliminary Deliverable 1**
+
+Version 2 - removed stale link to Doxygen information, replaced with live and useful links
 <hr>
 
 | Date | Item | Description |
@@ -13,7 +17,7 @@ Your project should demonstrate thoughtful software development with good design
 
 #### Deliverables and Submission Process
 
-Everything will be submitted via Github. We will pull your repository at the specified due dates and grade according to the contents at that time.
+Everything **EXCEPT THE PDF FILES YOUR SUBMIT CONTAINING YOUR UML** will be submitted via Github. We will pull your repository at the specified due dates and grade according to the contents at that time.
 
 > Please verify that your submission compiles on a cselabs machine and it is complete. You will receive no grade or be heavily penalized if your code does not compile upon submission.
 
@@ -177,7 +181,7 @@ The UML diagram is a visual aid that helps other programmers better understand t
 
 The iteration 1 UML should reflect the changes you made while completing the code requirements. We will be looking for proper use of UML components, and a correct depiction of the code structure.
 
-There are many free tools that you can use to create the UML. **Submit your UML as a .pdf or some other easily readable format**.
+There are many free tools that you can use to create the UML. **Submit your UML as a .pdf file.**  If you cannot save your UML diagram directly to a PDF format, take a picture of it, embed the picture in a Microsoft word document, save the document as a PDF and submit it.
 
 #### Doxygen
 
@@ -217,7 +221,7 @@ This is the breakdown for point distribution:
 
 Preliminary Turn-in #1 will require you to turn in a UML diagram of the project code. You will depict project code you've already been given, but also your proposed solution structure for the entities that you'll be developing in this iteration. **__At this point in time, the reality is that it is YOU who needs to understand the code we have provided,  and this exercise will be a tremendous help in that regard, saving you hours when you start to code.__**  Keep in mind that UML is a visual aid and should include only those aspects that are essential, otherwise your diagram will get too cluttered and overwhelming to the reader. Keep in mind that you can add notes and clarification within the document.
 
-This is a draft of the final product, and we anticipate that it will be revised and improved. We will be looking for general proper use of UML syntax, and a correct depiction of the code structure of the existing project code (code from shared-upstream's support-code branch). **Submit your UML as a .pdf or some other easily readable format. Your diagram should reside in the project/docs directory and be named: UML_DRAFT**.
+This is a draft of the final product, and we anticipate that it will be revised and improved. We will be looking for general proper use of UML syntax, and a correct depiction of the code structure of the existing project code (code from shared-upstream's support-code branch). **Submit your Prelimary Deliverable 1 UML diagram as a .pdf file through the Iteration 1 Preliminary Deliverable 1 item on the class Canvas site. Your diagram should be named: UML_DRAFT**.
 
 #### Complete Iteration Documentation ( 40% )
 
@@ -288,8 +292,9 @@ Style:
 - https://www.python.org/downloads/
 
 Documentation:
-- http://www.stack.nl/~dimitri/doxygen/
+- http://www.doxygen.nl/manual/docblocks.html
 - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+- https://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/doxygen-howto.html
 
 IDEs:
 - Xemacs: https://www.xemacs.org/

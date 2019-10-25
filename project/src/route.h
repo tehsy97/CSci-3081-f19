@@ -19,7 +19,7 @@ class Route {
  public:
   Route(std::string name, Stop ** stops, double * distances, int num_stops);
   void Update();
-  void Report();
+  void Report(std::ostream &out);
  private:
   std::list<Stop *> stops_;
   std::list<double> distances_between_;  // length = num_stops_ - 1

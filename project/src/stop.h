@@ -22,7 +22,7 @@ class Stop {
   int GetId() const;
   int AddPassengers(Passenger *);
   void Update();
-  void Report() const;
+  void Report(std::ostream &out) const;
 
  private:
   int id_;

@@ -26,7 +26,7 @@ class Bus {
   bool LoadPassenger(Passenger *);  // returning revenue delta
   bool Move();
   void Update();
-  void Report();
+  void Report(std::ostream &out);
 
  private:
   std::list<Passenger *> passengers_;

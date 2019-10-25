@@ -9,10 +9,10 @@
 #include <list>
 #include <vector>
 
-#include "bus.h"
-#include "stop.h"
-#include "route.h"
-#include "passenger_generator.h"
+#include "src/bus.h"
+#include "src/stop.h"
+#include "src/route.h"
+#include "src/passenger_generator.h"
 
 class Simulator {
  public:
@@ -20,14 +20,14 @@ class Simulator {
   virtual bool Update() = 0;
 
  protected:
-  //bus and stop list will be iterated over to update
-  //list is efficient in traversal
-  std::list<Bus *> active_buses_;         //buses leave scope
+  // bus and stop list will be iterated over to update
+  // list is efficient in traversal
+  std::list<Bus *> active_buses_;         // buses leave scope
   std::list<Stop *> all_stops_;
-  
-  //prototype_routes and distance lists will be accessed directly
-  //list is not efficient at direct selection by index
-  std::vector<Route *> prototype_routes;   //routes for copying on bus creation
+
+  // prototype_routes and distance lists will be accessed directly
+  // list is not efficient at direct selection by index
+  std::vector<Route *> prototype_routes;   // routes for copying on bus creation
   std::vector<double *> distance_between_sets_;
   std::vector<PassengerGenerator *> passenger_generators_;
 };

@@ -39,7 +39,6 @@ class PassengerTests : public ::testing::Test {
 
 };
 
-
 /*******************************************************************************
  * Test Cases
  ******************************************************************************/
@@ -49,4 +48,3 @@ TEST_F(PassengerTests, Constructor) {
   	passenger->GetOnBus();
   	EXPECT_EQ(passenger->IsOnBus(), true);
 };
-

@@ -49,7 +49,7 @@ int main() {
       }
       else {
         Passenger * departing_passenger = *it;
-        departing_passenger->Report();
+        departing_passenger->Report(std::cout);
         
         //When removing the passenger, the iterator gets incremented to the next element.
         //We need to push it back so that the for loop increment places the iterator at

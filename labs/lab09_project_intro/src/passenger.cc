@@ -10,7 +10,7 @@
 #include <iostream>
 #include <string>
 
-
+using namespace std;
 int Passenger::count_ = 0;
 
 // Passenger::Passenger(Stop * dest = NULL, std::string name = "Nobody") {
@@ -33,7 +33,7 @@ void Passenger::GetOnBus() {
 }
 
 int Passenger::GetTotalWait() const {
-  return wait_at_stop_ + time_on_bus_;
+  return wait_at_stop_;
 }
 
 bool Passenger::IsOnBus() const {

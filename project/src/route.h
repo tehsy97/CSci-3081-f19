@@ -28,4 +28,3 @@ class Route {
   // double trip_time_; // derived data - total distance travelled on route
 };
 #endif  // SRC_ROUTE_H_
-

@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
 
 int Passenger::count_ = 0;
 
@@ -18,7 +19,7 @@ Passenger::Passenger(int destination_stop_id, std::string name): name_(name),
 void Passenger::Update() {
   if (IsOnBus()) {
     time_on_bus_ += 1;
-  } else {
+  } else { 
     wait_at_stop_ += 1;
   }
 }

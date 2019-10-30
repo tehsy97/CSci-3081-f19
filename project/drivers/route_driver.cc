@@ -1,5 +1,5 @@
 /**
- * @file transit_sim.cc
+ * @file route_driver.cc
  *
  * @copyright 2019 3081 Staff, All rights reserved.
  */
@@ -9,24 +9,28 @@
 #include <list>
 #include <random>
 #include <ctime>
-#include <string>  // convert int to string for names
 
-#include "src/bus.h"
 #include "src/passenger.h"
-#include "src/random_passenger_generator.h"
-#include "src/route.h"
 #include "src/stop.h"
+#include "src/route.h"
+#include "src/random_passenger_generator.h"
+
+  /*Route(Stop * stops, double * distances, int num_stops, PassengerGenerator *);
+
+  // Copy Constructor - Prototype pattern
+  // Route(const Route &r);
+  
+  void Update();
+  bool IsAtEnd() const;
+  Stop * GetDestinationStop() const;
+  double GetTotalRouteDistance() const;
+  Stop * NextStop() const;
+  double GetNextStopDistance() const;
+ private:
+  int GenerateNewPassengers();			// generates passengers on its route*/
+
 
 int main() {
-  /* Publication note:
-      This driver does NOT take into account the late design decision
-      to use prototype, i.e. there is no clone mechanism for Routes.
-      
-      Any update to this driver should refactor the code to make use of
-      the Clone() method for each prototype route, rather than creating 
-      a new one.
-  */
-
   int rounds = 50;  // Number of rounds of generation to simulate in test
 
   srand((long)time(NULL));  // Seed the random number generator...
@@ -34,7 +38,7 @@ int main() {
   // Stop ** all_stops = new Stop *[12];
   Stop ** CC_EB_stops = new Stop *[6];
   Stop ** CC_WB_stops = new Stop *[6];
-  std::list<Stop *> CC_EB_stops_list;  
+  std::list<Stop *> CC_EB_stops_list;
   std::list<Stop *> CC_WB_stops_list;
 
   // Eastbound stops
@@ -99,9 +103,9 @@ int main() {
   CC_EB_probs.push_back(.05);  // Pre-transit
   CC_EB_probs.push_back(.05);  // STP 1
   CC_EB_probs.push_back(0);  // STP 1
-  // TODO(username): is this always true? If so, we may want to reduce the
+  // TODO(Username): is this always true? If so, we may want to reduce the
   // length of probs to_char_type
-  //        remove possibility of generating passengers with nowhere to go
+  //   remove possibility of generating passengers with nowhere to go
 
   std::list<double> CC_WB_probs;  // realistic .35, .05, .01, .01, .2, 0
   CC_WB_probs.push_back(.35);  // stp 2
@@ -114,90 +118,88 @@ int main() {
   RandomPassengerGenerator CC_EB_generator(CC_EB_probs, CC_EB_stops_list);
   RandomPassengerGenerator CC_WB_generator(CC_WB_probs, CC_WB_stops_list);
 
-  Route CC1_EB("Campus Connector 1- Eastbound", CC_EB_stops, CC_EB_distances,
-    6, &CC_EB_generator);
-  Route CC1_WB("Campus Connector 1- Westbound", CC_WB_stops, CC_WB_distances,
-    6, &CC_WB_generator);
-  Route CC2_EB("Campus Connector 1- Eastbound", CC_EB_stops, CC_EB_distances,
-    6, &CC_EB_generator);
-  Route CC2_WB("Campus Connector 1- Westbound", CC_WB_stops, CC_WB_distances,
-    6, &CC_WB_generator);
+  Route CC_EB("Campus Connector - Eastbound", CC_EB_stops, CC_EB_distances, 6,
+    &CC_EB_generator);
+  Route CC_WB("Campus Connector - Westbound", CC_WB_stops, CC_WB_distances, 6,
+    &CC_WB_generator);
 
-  int cc1_counter = 10000;
-  int cc2_counter = 20000;
-
-  Bus campus_connector1(std::to_string(cc1_counter), &CC1_EB, &CC1_WB, 60, 1);
-  Bus campus_connector2(std::to_string(cc2_counter), &CC2_WB, &CC2_EB, 60, 1);
+  Bus campus_connector("00001", &CC_EB, &CC_WB, 60, 1);
 
   std::cout << "/*\n *\n * Initial Report\n *\n*/" << std::endl;
-  std::cout  << "\t*** Bus Reports ***" << std::endl << std::endl;
-  campus_connector1.Report(std::cout);
-  campus_connector2.Report(std::cout);
 
-  std::cout  << std::endl << "\t*** Stop Reports ***" << std::endl
+  CC_EB.Update();
+  CC_WB.Update();
+
+  std::cout  << std::endl << "\t*** Route Reports ***" << std::endl
     << std::endl;
   std::cout  << std::endl << "\t\t ~ Eastbound ~ " << std::endl << std::endl;
-
-  for (std::list<Stop *>::const_iterator it = CC_EB_stops_list.begin();
-    it != CC_EB_stops_list.end(); it++) {
-    (*it)->Report(std::cout);
-  }
-
+  CC_EB.Report(std::cout);
   std::cout  << std::endl << "\t\t ~ Westbound ~ " << std::endl << std::endl;
-  for (std::list<Stop *>::const_iterator it = CC_WB_stops_list.begin();
-    it != CC_WB_stops_list.end(); it++) {
-    (*it)->Report(std::cout);
-  }
+  CC_WB.Report(std::cout);
+
+  int EB_distance = 1;  // starting at the first stop in the route
+  int WB_distance = 1;  // will start at the first stop in the route
+  // (which is the last stop in the prior route)
+
+  int passengers_loaded_on_bus = 0;
 
   for (int i = 0; i < rounds; i++) {
     std::cout << "/*\n **\n ***\n **** Generation #" << (i+1)
       << "\n ***\n **\n */" << std::endl;
 
-    campus_connector1.Update();
-    campus_connector2.Update();
-    CC1_EB.Update();
-    CC1_WB.Update();
+    CC_EB.Update();
+    CC_WB.Update();
 
-    if (campus_connector1.IsTripComplete()) {
-      cc1_counter++;
-      CC1_EB = Route("Campus Connector 1- Eastbound", CC_EB_stops,
-        CC_EB_distances, 6, &CC_EB_generator);
-      CC1_WB = Route("Campus Connector 1- Westbound", CC_WB_stops,
-        CC_WB_distances, 6, &CC_WB_generator);
-      campus_connector1 = Bus(std::to_string(cc1_counter), &CC1_EB, &CC1_WB,
-        60, 1);
-    }
-    if (campus_connector2.IsTripComplete()) {
-      cc2_counter++;
-      CC2_EB = Route("Campus Connector 1- Eastbound", CC_EB_stops,
-        CC_EB_distances, 6, &CC_EB_generator);
-      CC2_WB = Route("Campus Connector 1- Westbound", CC_WB_stops,
-        CC_WB_distances, 6, &CC_WB_generator);
-      campus_connector1 = Bus(std::to_string(cc2_counter), &CC2_EB, &CC2_WB,
-        60, 1);
+    // Bus move
+    if (EB_distance != -1) {
+      EB_distance--;
+    } else {
+      WB_distance--;
     }
 
-    std::cout  << "\t*** Bus Reports ***" << std::endl << std::endl;
-    campus_connector1.Report(std::cout);
-    campus_connector2.Report(std::cout);
+    if (EB_distance == 0) {
+      if (CC_EB.IsAtEnd()) {
+        EB_distance = -1;
+      }
+      Stop * stop_arrived_at = CC_EB.GetDestinationStop();
+      std::cout << std::endl << "Passengers getting on at: "
+        << stop_arrived_at->GetId() << std::endl << std::endl;
+      passengers_loaded_on_bus +=
+        stop_arrived_at->LoadPassengers(&campus_connector);
+      CC_EB.NextStop();
+      EB_distance = CC_EB.GetNextStopDistance();
+    } else if (WB_distance == 0) {
+      if (CC_WB.IsAtEnd()) {
+        WB_distance = -1;
+      }
+      Stop * stop_arrived_at = CC_WB.GetDestinationStop();
+      std::cout << std::endl << "Passengers getting on at: "
+        << stop_arrived_at->GetId() << std::endl << std::endl;
+      passengers_loaded_on_bus +=
+        stop_arrived_at->LoadPassengers(&campus_connector);
+      CC_WB.NextStop();
+      WB_distance = CC_WB.GetNextStopDistance();
+    } else if (EB_distance != -1) {
+      std::cout << std::endl << "Distance to next stop: " << EB_distance
+        << std::endl << std::endl;
+    } else {
+      std::cout << std::endl << "Distance to next stop: " << WB_distance
+        << std::endl << std::endl;
+    }
 
-    std::cout  << std::endl << "\t*** Stop Reports ***" << std::endl
+    std::cout  << std::endl << "\t*** Route Reports ***" << std::endl
       << std::endl;
     std::cout  << std::endl << "\t\t ~ Eastbound ~ " << std::endl << std::endl;
-
-    for (std::list<Stop *>::const_iterator it = CC_EB_stops_list.begin();
-      it != CC_EB_stops_list.end(); it++) {
-      (*it)->Report(std::cout);
-    }
-
+    CC_EB.Report(std::cout);
     std::cout  << std::endl << "\t\t ~ Westbound ~ " << std::endl << std::endl;
-    for (std::list<Stop *>::const_iterator it = CC_WB_stops_list.begin();
-      it != CC_WB_stops_list.end(); it++) {
-      (*it)->Report(std::cout);
-    }
+    CC_WB.Report(std::cout);
 
     std::cout << std::endl << std::endl;
   }
+
+  std::cout << "*\n*\n*\n*\n*\t PASSENGERS LOADED ONTO BUS *\n*\n*\n*\n*\n"
+    << std::endl;
+  std::cout << passengers_loaded_on_bus << std::endl;
 
   return 0;
 }

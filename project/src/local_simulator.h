@@ -8,7 +8,7 @@
 
 #include <vector>
 
-#include "simulator.h"
+#include "src/simulator.h"
 
 class LocalSimulator : public Simulator {
  public:
@@ -19,4 +19,4 @@ class LocalSimulator : public Simulator {
   Passenger * pass_;
 };
 
-#endif // SRC_LOCAL_SIMULATOR_H_
+#endif  // SRC_LOCAL_SIMULATOR_H_

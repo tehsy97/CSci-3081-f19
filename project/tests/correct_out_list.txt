@@ -1,0 +1,25 @@
+Name: Mal
+Destination: 10
+Total Wait: 11
+	Wait at Stop: 10
+	Time on bus: 1
+Name: Jayne
+Destination: 23
+Total Wait: 24
+	Wait at Stop: 23
+	Time on bus: 1
+Name: Zoe
+Destination: 33
+Total Wait: 34
+	Wait at Stop: 33
+	Time on bus: 1
+Name: Kaylee
+Destination: 42
+Total Wait: 43
+	Wait at Stop: 42
+	Time on bus: 1
+Name: Wash
+Destination: 50
+Total Wait: 51
+	Wait at Stop: 50
+	Time on bus: 1

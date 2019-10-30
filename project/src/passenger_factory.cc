@@ -21,9 +21,9 @@ std::uniform_int_distribution<std::mt19937::result_type> dist(1, 1000);
 // Here I will create an array of prefixes to help generate names.
 // I am banking on multiplication to ensure a large number of names
 // by using 7 prefixes and 20 stems, and 16 suffixes I should be able to
-// create about 7 * 20 * 16 = 2240 names out of 312 bytes of data (In my earlier
-// example from the forum I used this code to generate male and female names,
-// but here I combined them).
+// create about 7 * 20 * 16 = 2240 names out of 312 bytes of data (In my
+// earlier example from the forum I used this code to generate male and
+// female names, but here I combined them).
 
 static const char* NamePrefixArray[7] = {
 "",  // who said we need to add a prefix?
@@ -49,16 +49,17 @@ static const char* NameStemsArray[20] = {
 "inept", "iuv", "obe", "ocul", "orbis"
 };
 
-/*******************************************************************************
+/*****************************************************************************
  * Member Functions
- ******************************************************************************/
+ ****************************************************************************/
 // Code for name generation adapted from:
-// https://www.dreamincode.net/forums/topic/27024-data-modeling-for-games-in-c-part-ii/
+// https://www.dreamincode.net/forums/topic/
+// 27024-data-modeling-for-games-in-c-part-ii/
 Passenger * PassengerFactory::Generate(int curr_stop, int last_stop) {
   std::string new_name = NameGeneration();
 
-  //  common use of random integer generation to determine
-  //  what stop the passenger will depart the bus
+  // common use of random integer generation to determine
+  // what stop the passenger will depart the bus
 
   int destination = (dist(e) % (last_stop - curr_stop)) + curr_stop + 1;
 

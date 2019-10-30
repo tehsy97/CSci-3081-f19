@@ -20,6 +20,7 @@ class Stop {
   explicit Stop(int, double = 44.973723, double = -93.235365);
   // Adding passengers to the stop (from the generator)
   int GetId() const;
+  void LoadPassengers(Bus *);
   int AddPassengers(Passenger *);
   void Update();
   void Report(std::ostream &out) const;

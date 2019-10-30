@@ -15,8 +15,21 @@ Stop::Stop(int id, double longitude, double latitude) : id_(id),
   // no initialization of list of passengers necessary
 }
 
+void Stop::LoadPassengers(Bus * bus) {
+    // loading some passengers onto a bus
+    for (std::list<Passenger *>::iterator it = passengers_.begin();
+        it != passengers_.end(); it++) {
+            bus->LoadPassenger(*it);
+    }
+
+    while (!passengers_.empty()) {
+        passengers_.pop_back();
+    }
+}
+
 int Stop::AddPassengers(Passenger * pass) {
-  return 0;
+  passengers_.push_back(pass);
+  return 1;
 }
 
 void Stop::Update() {

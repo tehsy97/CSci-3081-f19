@@ -21,19 +21,21 @@ class Passenger {  // : public Reporter {
   * @param[in] string holding a name of a created passenger.
   *
   */
-  explicit Passenger(int = -1, std::string = "Nobody");
-  void Update();
-  void GetOnBus();
-  int GetTotalWait() const;
-  bool IsOnBus() const;
-  int GetDestination() const;
-  void Report(std::ostream &out) const;
+    explicit Passenger(int = -1, std::string = "Nobody");
+    void Update();
+    void GetOnBus();
+    int GetTotalWait() const;
+    bool IsOnBus() const;
+    int GetDestination() const;
+    int GetWaitAtStop() const;
+    void Report(std::ostream &out) const;
+
  private:
-  std::string name_;
-  int destination_stop_id_;
-  int wait_at_stop_;
-  int time_on_bus_;
-  int id_;
-  static int count_;   // global count, used to set ID for new instances
+    std::string name_;
+    int destination_stop_id_;
+    int wait_at_stop_;
+    int time_on_bus_;
+    int id_;
+    static int count_;  // global count, used to set ID for new instances
 };
 #endif  // SRC_PASSENGER_H_

@@ -5,8 +5,6 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int Passenger::count_ = 0;
 
 // Passenger::Passenger(Stop * dest = NULL, std::string name = "Nobody") {
@@ -19,13 +17,15 @@ Passenger::Passenger(int destination_stop_id, std::string name): name_(name),
 void Passenger::Update() {
   if (IsOnBus()) {
     time_on_bus_ += 1;
-  } else { 
+  } else {
     wait_at_stop_ += 1;
   }
 }
 
 void Passenger::GetOnBus() {
-  time_on_bus_ = 1;
+  if (!time_on_bus_) {
+    time_on_bus_ = 1;
+  }
 }
 
 int Passenger::GetTotalWait() const {
@@ -38,6 +38,10 @@ bool Passenger::IsOnBus() const {
 
 int Passenger::GetDestination() const {
   return destination_stop_id_;
+}
+
+int Passenger::GetWaitAtStop() const {
+  return wait_at_stop_;
 }
 
 void Passenger::Report(std::ostream &out) const {

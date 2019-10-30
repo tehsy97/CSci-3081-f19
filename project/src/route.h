@@ -15,6 +15,7 @@
 #include "./stop.h"
 
 class PassengerGenerator;
+class Stop;
 
 class Route {
  public:

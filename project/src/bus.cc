@@ -30,6 +30,10 @@ bool Bus::Move() {
 //  fuel_ = max_fuel_;
 // }
 
+bool Bus::IsTripComplete() {
+  return (!distance_remaining_);
+}
+
 void Bus::Update() {  // using common Update format
   Move();
 }

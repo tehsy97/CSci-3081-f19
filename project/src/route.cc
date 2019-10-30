@@ -7,7 +7,7 @@
 #include "src/route.h"
 
 Route::Route(std::string name, Stop ** stops, double * distances,
-  int num_stops) {
+  int num_stops, PassengerGenerator * generator) {
   for (int i = 0; i < num_stops; i++) {
     stops_.push_back(stops[i]);
   }

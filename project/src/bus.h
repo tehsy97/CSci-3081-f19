@@ -25,6 +25,7 @@ class Bus {
                                                  double speed = 1);
   bool LoadPassenger(Passenger *);  // returning revenue delta
   bool Move();
+  bool IsTripComplete();
   void Update();
   void Report(std::ostream &out);
 

@@ -5,7 +5,7 @@
  */
 
 #include <random>
-#include <chrono>
+#include <ctime>
 
 #include "src/random_passenger_generator.h"
 
@@ -22,7 +22,7 @@ RandomPassengerGenerator::RandomPassengerGenerator(std::list<double> probs,
  */
 
 int RandomPassengerGenerator::GeneratePassengers() {
-  unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+  int64_t seed = time(0);
   std:: minstd_rand0 my_rand(seed);
 
   int passengers_added = 0;
@@ -33,7 +33,7 @@ int RandomPassengerGenerator::GeneratePassengers() {
   stop_iter = stops_.end();
   stop_iter--;
   int last_stop_index = (*stop_iter)->GetId();
-  
+
   // TODO(Staff): check for accuracy
   std::cout << "Time to generate!" << std::endl;
   for (prob_iter = generation_probabilities_.begin(),
@@ -47,7 +47,8 @@ int RandomPassengerGenerator::GeneratePassengers() {
     // while there is still a (>.01%) chance of generating a passenger, try
     while (current_generation_probability > .0001) {
       // generate a random double value_comp
-      double generation_value = ((my_rand() - my_rand.min()) / (my_rand.max() * 1.0));
+      double generation_value =
+                    ((my_rand() - my_rand.min()) / (my_rand.max() * 1.0));
       // e.g. `.54234234 < .90`, generate a passenger
       // `.912353254 !< .90`, don't generate
       // this gives us a 90% chance of creating a passenger

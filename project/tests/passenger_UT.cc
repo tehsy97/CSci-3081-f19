@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * @file passengers_UT.cc
  *
@@ -11,6 +12,10 @@
  * when grading, so you can't use it to fudge the tests anyway.
  *
  * This file is used by the CS3081W auto-grading system.
+=======
+/* STUDENTS: YOU MUST ADD YOUR PASSENGER UNIT TESTS TO THIS FILE. FORMAT YOUR
+ * TESTS TO FIT THE SPECIFICATIONS GIVEN BY THE TESTS PROVIDED IN THIS FILE.
+>>>>>>> support-code
  *
  * Please note, the assessment tests for grading, will use the same include
  * files, class names, and function names for accessing students' code that you

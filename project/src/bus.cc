@@ -18,7 +18,12 @@ Bus::Bus(std::string name, Route * out, Route * in,
 
 
 bool Bus::LoadPassenger(Passenger * new_passenger) {
-  return true;
+  // loading passenger onto a bus
+  if((passenger_max_capacity_ - passengers_.size()) > 0){
+    passengers_.push_back(new_passenger);
+    return true;
+  }
+  return false;
 }
 
 bool Bus::Move() {
@@ -31,7 +36,9 @@ bool Bus::Move() {
 // }
 
 bool Bus::IsTripComplete() {
-  return (!distance_remaining_);
+  // complete two routes 
+  // hit incoming route then end 
+  return true;
 }
 
 void Bus::Update() {  // using common Update format

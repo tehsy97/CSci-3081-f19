@@ -123,6 +123,10 @@ int main() {
   Route CC_WB("Campus Connector - Westbound", CC_WB_stops, CC_WB_distances, 6,
     &CC_WB_generator);
 
+  ////////////////////////
+  // Route * clone_r = CC_EB.Clone();
+  ///////////////////////
+
   Bus campus_connector("00001", &CC_EB, &CC_WB, 60, 1);
 
   std::cout << "/*\n *\n * Initial Report\n *\n*/" << std::endl;
@@ -158,6 +162,8 @@ int main() {
     }
 
     if (EB_distance == 0) {
+      // std::cout << CC_EB.IsAtEnd() << std::endl;
+      // return 0;
       if (CC_EB.IsAtEnd()) {
         EB_distance = -1;
       }
@@ -166,6 +172,12 @@ int main() {
         << stop_arrived_at->GetId() << std::endl << std::endl;
       passengers_loaded_on_bus +=
         stop_arrived_at->LoadPassengers(&campus_connector);
+      std::cout << std::endl << "Passengers loaded on bus: "
+        << passengers_loaded_on_bus << std::endl << std::endl;
+      // std::cout << std::endl << "total distance: "
+      //   << CC_WB.GetTotalRouteDistance() << std::endl << std::endl;
+      
+        return 0;
       CC_EB.NextStop();
       EB_distance = CC_EB.GetNextStopDistance();
     } else if (WB_distance == 0) {

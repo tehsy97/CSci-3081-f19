@@ -167,7 +167,7 @@ int main() {
       campus_connector1 = Bus(std::to_string(cc1_counter), &CC1_EB, &CC1_WB,
         60, 1);
     }
-    if (campus_connector2.IsTripComplete()) {
+    if (campus_connector1.IsTripComplete()) {
       cc2_counter++;
       CC2_EB = Route("Campus Connector 1- Eastbound", CC_EB_stops,
         CC_EB_distances, 6, &CC_EB_generator);

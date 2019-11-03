@@ -52,7 +52,7 @@ int main() {
   for (std::list<Stop *>::iterator stop_iter = my_stops.begin();
     stop_iter != my_stops.end(); stop_iter++) {
     (*stop_iter)->Update();
-    std::cout  << std::endl << "\t*** Stop Report ***" << std::endl
+    std::cout << std::endl << "\t*** Stop Report ***" << std::endl
       << std::endl;
     (*stop_iter)->Report(std::cout);
   }
@@ -61,6 +61,8 @@ int main() {
     std::cout << "/*\n *\n * Generation #" << (i+1) << "\n *\n*/" << std::endl;
 
     total_generated += generator->GeneratePassengers();
+
+    // std::cout << "total_generated" << total_generated << std::endl;
 
     std::cout << "/*\n *\n * Report\n *\n*/" << std::endl;
 

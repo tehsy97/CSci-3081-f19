@@ -113,6 +113,11 @@ int main() {
 
   RandomPassengerGenerator CC_EB_generator(CC_EB_probs, CC_EB_stops_list);
   RandomPassengerGenerator CC_WB_generator(CC_WB_probs, CC_WB_stops_list);
+  
+  //////////////////////////////////////////
+  // CC_EB_generator.GeneratePassengers();
+  // CC_WB_generator.GeneratePassengers();
+  /////////////////////////////////////////
 
   Route CC1_EB("Campus Connector 1- Eastbound", CC_EB_stops, CC_EB_distances,
     6, &CC_EB_generator);

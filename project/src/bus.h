@@ -27,7 +27,7 @@ class Bus {
   bool LoadPassenger(Passenger *);  // returning revenue delta
   bool Move();
   bool IsTripComplete();
-  void Update();
+  void Update();  // remove passengers
   void Report(std::ostream &out);
 
  private:

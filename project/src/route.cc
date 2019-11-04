@@ -54,16 +54,14 @@ void Route::Update() {
   // double GetNextStopDistance() const;
 
 bool Route::IsAtEnd() const {
-  std::cout << stops_.front() << std::endl;
-  std::cout << stops_.back() << std::endl;
-  
-  return stops_.front() == stops_.back();
+  // std::cout << stops_.front() << std::endl;
+  // std::cout << stops_.back() << std::endl;
+  return stops_.front() == stops_.back() || stops_.empty();
 }
 
 void Route::NextStop(){
   stops_.pop_front();
   distances_between_.pop_front();
-  return;
 }
 
 Stop * Route::GetDestinationStop() const {

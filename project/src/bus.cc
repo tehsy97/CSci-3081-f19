@@ -37,7 +37,8 @@ bool Bus::Move() {
 
 bool Bus::IsTripComplete() {
   // complete two routes 
-  // hit incoming route then end 
+  // hit incoming route then end
+  
   return true;
 }
 

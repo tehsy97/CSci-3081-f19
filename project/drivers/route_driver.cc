@@ -123,6 +123,10 @@ int main() {
   Route CC_WB("Campus Connector - Westbound", CC_WB_stops, CC_WB_distances, 6,
     &CC_WB_generator);
 
+
+  CC_EB_generator.GeneratePassengers();
+  CC_WB_generator.GeneratePassengers();
+  
   ////////////////////////
   // Route * clone_r = CC_EB.Clone();
   ///////////////////////
@@ -146,11 +150,12 @@ int main() {
   // (which is the last stop in the prior route)
 
   int passengers_loaded_on_bus = 0;
-
+  
   for (int i = 0; i < rounds; i++) {
     std::cout << "/*\n **\n ***\n **** Generation #" << (i+1)
       << "\n ***\n **\n */" << std::endl;
       // CC_EB_generator.GeneratePassengers();
+      // CC_WB_generator.GeneratePassengers();
     if (i == 10){
       return 0;
     }
@@ -173,10 +178,9 @@ int main() {
       Stop * stop_arrived_at = CC_EB.GetDestinationStop();
       std::cout << std::endl << "Passengers getting on at: "
         << stop_arrived_at->GetId() << std::endl << std::endl;
-      
       passengers_loaded_on_bus +=
         stop_arrived_at->LoadPassengers(&campus_connector);
-      std::cout << std::endl << "Passengers loaded on bus: "
+      std::cout << std::endl << "**************************** EB Passengers loaded on bus: "
         << passengers_loaded_on_bus << std::endl << std::endl;
       // std::cout << std::endl << "total distance: "
       //   << CC_WB.GetTotalRouteDistance() << std::endl << std::endl;
@@ -194,6 +198,10 @@ int main() {
       passengers_loaded_on_bus +=
         stop_arrived_at->LoadPassengers(&campus_connector);
       CC_WB.NextStop();
+
+      std::cout << std::endl << "************************* WB  Passengers loaded on bus: "
+        << passengers_loaded_on_bus << std::endl << std::endl;
+
       WB_distance = CC_WB.GetNextStopDistance();
     } else if (EB_distance != -1) {
       std::cout << std::endl << "Distance to next stop: " << EB_distance

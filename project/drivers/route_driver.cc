@@ -150,7 +150,10 @@ int main() {
   for (int i = 0; i < rounds; i++) {
     std::cout << "/*\n **\n ***\n **** Generation #" << (i+1)
       << "\n ***\n **\n */" << std::endl;
-
+      CC_EB_generator.GeneratePassengers();
+    if (i == 10){
+      return 0;
+    }
     CC_EB.Update();
     CC_WB.Update();
 
@@ -170,6 +173,7 @@ int main() {
       Stop * stop_arrived_at = CC_EB.GetDestinationStop();
       std::cout << std::endl << "Passengers getting on at: "
         << stop_arrived_at->GetId() << std::endl << std::endl;
+      
       passengers_loaded_on_bus +=
         stop_arrived_at->LoadPassengers(&campus_connector);
       std::cout << std::endl << "Passengers loaded on bus: "
@@ -177,7 +181,7 @@ int main() {
       // std::cout << std::endl << "total distance: "
       //   << CC_WB.GetTotalRouteDistance() << std::endl << std::endl;
       
-        return 0;
+        // return 0;
       CC_EB.NextStop();
       EB_distance = CC_EB.GetNextStopDistance();
     } else if (WB_distance == 0) {

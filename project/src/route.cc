@@ -61,6 +61,8 @@ bool Route::IsAtEnd() const {
 }
 
 void Route::NextStop(){
+  stops_.pop_front();
+  distances_between_.pop_front();
   return;
 }
 
@@ -80,7 +82,7 @@ double Route::GetTotalRouteDistance() const {
 }
 
 double Route::GetNextStopDistance() const {
-  return 0.0;
+  return distances_between_.front();
 }
 
 void Route::Report(std::ostream &out) {

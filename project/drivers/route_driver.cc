@@ -150,7 +150,7 @@ int main() {
   for (int i = 0; i < rounds; i++) {
     std::cout << "/*\n **\n ***\n **** Generation #" << (i+1)
       << "\n ***\n **\n */" << std::endl;
-      CC_EB_generator.GeneratePassengers();
+      // CC_EB_generator.GeneratePassengers();
     if (i == 10){
       return 0;
     }

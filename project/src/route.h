@@ -19,16 +19,70 @@ class Stop;
 
 class Route {
  public:
+ /**
+  * @brief Constructs a route with a standard name, Stops,
+  * distances, number of stops, and passenger generator.
+  *
+  * @param[in] string holding route name
+  * @param[in] Stop double pointer pointing to a list of stops
+  * @param[in] double pointer array storing a list of distances between stops
+  * @param[in] int holding a stops number
+  * @param[in] Passenger Generator pointer pointing
+  *            to Random Passenger Generator constructor
+  */
   Route(std::string name, Stop ** stops, double * distances, int num_stops,
         PassengerGenerator * generator_);
+
+  /**
+  * @brief Deep copy constructor
+  * 
+  * @return a copy of route (constructor)
+  */
   Route * Clone();
+
+  /**
+  * @brief Update each stops in the route
+  */
   void Update();
+
+  /**
+  * @brief print information and status of route (stops)
+  */  
   void Report(std::ostream&);
+
+  /**
+  * @brief check if has reach the end of route
+  * 
+  * @return boolean
+  */
   bool IsAtEnd() const;
+
+  /**
+  * @brief get to the next stop in the route
+  */
   void NextStop();  // Change destination_stop_ to next stop
+
+  /**
+  * @brief get the stop in the route
+  * 
+  * @return Stop pointer
+  */
   Stop * GetDestinationStop() const;    // Get pointer to next stop
+
+  /**
+  * @brief get the total distance in route
+  * 
+  * @return double
+  */
   double GetTotalRouteDistance() const;
+
+  /**
+  * @brief get the distance to the next stop
+  * 
+  * @return double
+  */
   double GetNextStopDistance() const;
+
  private:
   int GenerateNewPassengers();  // generates passengers on its route
   PassengerGenerator * generator_;
@@ -37,8 +91,8 @@ class Route {
   std::string name_;
   int num_stops_;
 
-//   int destination_stop_index_;  // always starts at zero, no init needed
-//   Stop * destination_stop_;
-//   double trip_time_; // derived data - total distance travelled on route
+  int destination_stop_index_;  // always starts at zero, no init needed
+  Stop * destination_stop_;
+  double trip_time_; // derived data - total distance travelled on route
 };
 #endif  // SRC_ROUTE_H_

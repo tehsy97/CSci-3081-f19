@@ -7,7 +7,7 @@
 
 ### Section 0: Change this when compiling on non-CSELabs machines ###
 
-PROJECT_NAME = route_driver
+PROJECT_NAME = bus_driver
 
 # Path to root of repo
 REPOROOTDIR = $(shell git rev-parse --show-toplevel)

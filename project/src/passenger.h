@@ -13,22 +13,59 @@
 
 class Passenger {  // : public Reporter {
  public:
-  /**
-  * @brief Constructs a passenger with a standard name and id.
-  *
-  *
-  * @param[in] int holding an id number
-  * @param[in] string holding a name of a created passenger.
-  *
-  */
-    explicit Passenger(int = -1, std::string = "Nobody");
-    void Update();
-    void GetOnBus();
-    int GetTotalWait() const;
-    bool IsOnBus() const;
-    int GetDestination() const;
-    int GetWaitAtStop() const;
-    void Report(std::ostream &out) const;
+      /**
+       * @brief Constructs a passenger with a standard name and id.
+       *
+       *
+       * @param[in] int holding an id number
+       * @param[in] string holding a name of a created passenger.
+       *
+       */
+      explicit Passenger(int = -1, std::string = "Nobody");
+
+      /**
+       * @brief update passengers time at stop and time on bus
+       */
+      void Update();
+
+      /**
+       * @brief check if passengers are not on bus then get them on bus
+       */
+      void GetOnBus();
+
+      /**
+       * @brief get passenger total wait time to get to destination. 
+       * This include time on bus and time waited at stop
+       *
+       * @return integer
+       */
+      int GetTotalWait() const;
+
+      /**
+       * @brief check if passenger is on bus
+       *
+       * @return boolean
+       */
+      bool IsOnBus() const;
+
+      /**
+       * @brief get the passenger destination stop id
+       *
+       * @return integer
+       */
+      int GetDestination() const;
+
+      /**
+       * @brief get passenger time waited at stop
+       *
+       * @return integer.
+       */
+      int GetWaitAtStop() const;
+
+      /**
+       * @brief print out passenger information at status
+       */
+      void Report(std::ostream &out) const;
 
  private:
     std::string name_;

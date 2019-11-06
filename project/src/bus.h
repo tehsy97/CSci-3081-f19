@@ -21,7 +21,6 @@ class Stop;
 
 class Bus {
  public:
- 
   Bus(std::string name, Route * out, Route * in, int capacity = 60,
                                                  double speed = 1);
   bool LoadPassenger(Passenger *);  // returning revenue delta

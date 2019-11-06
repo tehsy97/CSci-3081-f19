@@ -20,13 +20,12 @@ int Stop::LoadPassengers(Bus * bus) {
     int count = 0;
     for (std::list<Passenger *>::iterator it = passengers_.begin();
         it != passengers_.end();) {
-            if(!bus->LoadPassenger(*it)){
+            if (!bus->LoadPassenger(*it)) {
               it++;
             } else {
               it = passengers_.erase(it);
               count += 1;
             }
-            
     }
     return count;
 }

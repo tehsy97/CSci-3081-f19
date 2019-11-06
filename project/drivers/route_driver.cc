@@ -156,9 +156,9 @@ int main() {
       << "\n ***\n **\n */" << std::endl;
       // CC_EB_generator.GeneratePassengers();
       // CC_WB_generator.GeneratePassengers();
-    if (i == 10){
-      return 0;
-    }
+    // if (i == 10){
+    //   return 0;
+    // }
     CC_EB.Update();
     CC_WB.Update();
 

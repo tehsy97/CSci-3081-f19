@@ -12,7 +12,18 @@
 
 class LocalSimulator : public Simulator {
  public:
+  /**
+  * @brief Create routes with stops and generates passengers.
+  *
+  * @return boolean
+  */
   bool Start() override;
+
+  /**
+  * @brief Update passengers, stops, and bus status for each simulation time
+  *
+  * @return boolean
+  */
   bool Update() override;
  private:
   std::vector<int> bus_counters_;

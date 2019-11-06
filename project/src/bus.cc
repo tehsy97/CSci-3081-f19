@@ -6,8 +6,8 @@
 
 #include "src/bus.h"
 
-Bus::Bus(std::string name, Route * out, Route * in,
-  int capacity, double speed) {
+Bus::Bus(std::string name, Route * out, Route * in, int capacity,
+  double speed) {
   name_ = name;
   outgoing_route_ = out;
   incoming_route_ = in;
@@ -19,14 +19,16 @@ Bus::Bus(std::string name, Route * out, Route * in,
 
 bool Bus::LoadPassenger(Passenger * new_passenger) {
   // loading passenger onto a bus
-  if((passenger_max_capacity_ - passengers_.size()) > 0){
+  if ((passenger_max_capacity_ - passengers_.size()) > 0) {
     passengers_.push_back(new_passenger);
+    new_passenger->GetOnBus();
     return true;
   }
   return false;
 }
 
 bool Bus::Move() {
+  
   return true;
 }
 
@@ -36,13 +38,14 @@ bool Bus::Move() {
 // }
 
 bool Bus::IsTripComplete() {
-  // complete two routes 
+  // complete two routes
   // hit incoming route then end
-  
+
   return true;
 }
 
 void Bus::Update() {  // using common Update format
+// update passenger
   Move();
 }
 

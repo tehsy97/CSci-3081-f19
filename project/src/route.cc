@@ -17,9 +17,10 @@ Route::Route(std::string name, Stop ** stops, double * distances,
 
   name_ = name;
   num_stops_ = num_stops;
+  destination_stop_index_ = 0;
 }
 
-Route * Route::Clone(){
+Route * Route::Clone() {
   Stop ** stops_clone = new Stop *[num_stops_];
   double * distances_clone = new double[(num_stops_ - 1)];
   int i = 0;
@@ -30,13 +31,14 @@ Route * Route::Clone(){
   }
 
   i = 0;
-  for(std::list<double>::iterator it = distances_between_.begin();
+  for (std::list<double>::iterator it = distances_between_.begin();
     it != distances_between_.end(); it++) {
     distances_clone[i] = *it;
     i++;
   }
 
-  Route * route_clone = new Route(name_, stops_clone, distances_clone, num_stops_, generator_); 
+  Route * route_clone = new Route (name_, stops_clone, distances_clone,
+    num_stops_, generator_);
   return route_clone;
 }
 
@@ -47,32 +49,31 @@ void Route::Update() {
   }
 }
 
-  // bool IsAtEnd() const;
-  // void NextStop();  // Change destination_stop_ to next stop
-  // Stop * GetDestinationStop() const;    // Get pointer to next stop
-  // double GetTotalRouteDistance() const;
-  // double GetNextStopDistance() const;
-
 bool Route::IsAtEnd() const {
-  // std::cout << stops_.front() << std::endl;
-  // std::cout << stops_.back() << std::endl;
-  return stops_.front() == stops_.back() || stops_.empty();
+  return destination_stop_index_ == (num_stops_-1);
 }
 
-void Route::NextStop(){
-  stops_.pop_front();
-  distances_between_.pop_front();
+void Route::NextStop() {
+  if (!IsAtEnd()){
+    destination_stop_index_ ++;
+  }else{
+    destination_stop_index_ = -1;
+  }
+
 }
 
 Stop * Route::GetDestinationStop() const {
-  // pass in generator here maybe????
-  // return new Stop(-1, -1,-1);
-  return stops_.front();
+  std::list<Stop *>::const_iterator it;
+  if ((stops_.size() > (unsigned) destination_stop_index_) &&
+    (destination_stop_index_ != -1)) {
+    it = std::next(stops_.begin(), destination_stop_index_);
+  }
+  return *it;
 }
 
 double Route::GetTotalRouteDistance() const {
   double total_dist = 0;
-  for(std::list<double>::const_iterator it = distances_between_.begin();
+  for (std::list<double>::const_iterator it = distances_between_.begin();
     it != distances_between_.end(); it++) {
     total_dist += *it;
   }
@@ -80,7 +81,14 @@ double Route::GetTotalRouteDistance() const {
 }
 
 double Route::GetNextStopDistance() const {
-  return distances_between_.front();
+  std::list<double>::const_iterator it;
+  if (destination_stop_index_ > 0 &&
+    distances_between_.size() >= (unsigned) destination_stop_index_) {
+    it = std::next(distances_between_.begin(), destination_stop_index_ - 1);
+  } else {
+    return 0;
+  }
+  return *it;
 }
 
 void Route::Report(std::ostream &out) {

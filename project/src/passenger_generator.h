@@ -15,9 +15,24 @@ class Stop;  // forward declaration
 
 class PassengerGenerator {
  public:
+  /**
+  * @brief Constructs a passenger generator with a list of probabilities
+  * and a list of stops
+  *
+  * @param[in] list type double holding probabilities
+  * @param[in] stop pointer list holding stops
+  *
+  */
   PassengerGenerator(std::list<double>, std::list<Stop *>);
   // Makes the class abstract, cannot instantiate and forces subclass override
+
+  /**
+  * @brief pure virtual function of GeneratePassengers() in Passenger Generator
+  *
+  * @return interger
+  */  
   virtual int GeneratePassengers() = 0;  // pure virtual
+
  protected:
   std::list<double> generation_probabilities_;
   std::list<Stop *> stops_;

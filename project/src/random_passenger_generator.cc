@@ -4,14 +4,13 @@
  * @copyright 2019 3081 Staff, All rights reserved.
  */
 
-#include <random>
-#include <ctime>
-
 #include "src/random_passenger_generator.h"
+
+std::minstd_rand0 RandomPassengerGenerator::my_rand(time(0));
 
 // Nothing to do here, just pass args along
 RandomPassengerGenerator::RandomPassengerGenerator(std::list<double> probs,
-    std::list<Stop *> stops) : PassengerGenerator(probs, stops) { }
+    std::list<Stop *> stops) : PassengerGenerator(probs, stops) {}
 
 /*
  *  GeneratePassengers uses the route's passenger generation probabilities per stop to determine how many passengers to create.
@@ -24,9 +23,6 @@ RandomPassengerGenerator::RandomPassengerGenerator(std::list<double> probs,
  */
 
 int RandomPassengerGenerator::GeneratePassengers() {
-  int64_t seed = time(0);
-  std:: minstd_rand0 my_rand(seed);
-
   int passengers_added = 0;
   std::list<double>::iterator prob_iter;
   std::list<Stop *>::iterator stop_iter;
@@ -35,7 +31,6 @@ int RandomPassengerGenerator::GeneratePassengers() {
   stop_iter = stops_.end();
   stop_iter--;
   int last_stop_index = (*stop_iter)->GetId();
-
   // TODO(Staff): check for accuracy
   std::cout << "Time to generate!" << std::endl;
   for (prob_iter = generation_probabilities_.begin(),
@@ -46,10 +41,11 @@ int RandomPassengerGenerator::GeneratePassengers() {
     // get this stop's probability
     double initial_generation_probability = *prob_iter;
     double current_generation_probability = initial_generation_probability;
+
     // while there is still a (>.01%) chance of generating a passenger, try
     while (current_generation_probability > .0001) {
       // generate a random double value_comp
-      double generation_value =
+      double generation_value = 
         ((my_rand() - my_rand.min()) / (my_rand.max() * 1.0));
 
       // e.g. `.54234234 < .90`, generate a passenger
@@ -58,14 +54,10 @@ int RandomPassengerGenerator::GeneratePassengers() {
       if (generation_value < current_generation_probability) {
         // use the passenger factory to determine the destination
         // return value is 1 if passenger was added, 0 if it wasn't
-        std::cout << "Asking factory to gen passenger" << std::endl;
         Passenger * tmp = PassengerFactory::
                           Generate(stop_index,
                                  last_stop_index);
-        std::cout << "Passenger generated: " << tmp << std::endl;
-        // Add passenger into passenger list in class Stop at that stop
         passengers_added += (*stop_iter)->AddPassengers(tmp);
-        std::cout << "Passenger added to stop" << std::endl;
       }
       // whether you generated or not, square the probability (reducing it)
       current_generation_probability *= initial_generation_probability;

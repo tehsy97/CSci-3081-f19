@@ -31,7 +31,7 @@
 
 
 int main() {
-  int rounds = 50;  // Number of rounds of generation to simulate in test
+  int rounds = 2;  // Number of rounds of generation to simulate in test
 
   srand((long)time(NULL));  // Seed the random number generator...
 

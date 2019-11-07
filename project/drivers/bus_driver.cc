@@ -13,7 +13,7 @@
 
 int main() {
     
-  int rounds = 50; //Number of rounds of generation to simulate in test
+  int rounds = 10; //Number of rounds of generation to simulate in test
   
   srand((long)time(NULL)); //Seed the random number generator...
 
@@ -106,12 +106,15 @@ int main() {
   Route CC2_EB("Campus Connector 1- Eastbound", CC_EB_stops, CC_EB_distances, 6, &CC_EB_generator);
   Route CC2_WB("Campus Connector 1- Westbound", CC_WB_stops, CC_WB_distances, 6, &CC_WB_generator);
   
+  CC_EB_generator.GeneratePassengers();
+  CC_WB_generator.GeneratePassengers();
+
   int cc1_counter = 10000;
   int cc2_counter = 20000;
   
   Bus campus_connector1(std::to_string(cc1_counter), &CC1_EB, &CC1_WB, 60, 1);
   Bus campus_connector2(std::to_string(cc2_counter), &CC2_WB, &CC2_EB, 60, 1);
-    
+
   std::cout << "/*\n *\n * Initial Report\n *\n*/" << std::endl;
   std::cout  << "\t*** Bus Reports ***" << std::endl << std::endl;
   campus_connector1.Report(std::cout);

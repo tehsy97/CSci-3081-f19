@@ -35,8 +35,8 @@ class Route {
 
   /**
   * @brief Deep copy constructor
-  * 
-  * @return a copy of route (constructor)
+  *
+  * @return a copy of route * (constructor)
   */
   Route * Clone();
 
@@ -47,13 +47,13 @@ class Route {
 
   /**
   * @brief print information and status of route (stops)
-  */  
+  */
   void Report(std::ostream&);
 
   /**
   * @brief check if has reach the end of route
-  * 
-  * @return boolean
+  *
+  * @return const boolean
   */
   bool IsAtEnd() const;
 
@@ -64,22 +64,22 @@ class Route {
 
   /**
   * @brief get the stop in the route
-  * 
-  * @return Stop pointer
+  *
+  * @return const Stop *
   */
   Stop * GetDestinationStop() const;    // Get pointer to next stop
 
   /**
   * @brief get the total distance in route
-  * 
-  * @return double
+  *
+  * @return const double
   */
   double GetTotalRouteDistance() const;
 
   /**
   * @brief get the distance to the next stop
-  * 
-  * @return double
+  *
+  * @return const double
   */
   double GetNextStopDistance() const;
 

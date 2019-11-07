@@ -42,6 +42,9 @@ int Bus::UnloadPassenger(int stop_id) {
 
 bool Bus::Move() {
   distance_remaining_ = distance_remaining_ - 1;
+  if(distance_remaining_ < 0){
+    distance_remaining_ = 0;
+  }
   return true;
 }
 // bool Refuel() {

@@ -189,7 +189,7 @@ bool LocalSimulator::Update() {
     (*it)++;
     
     // if time since last [index] == bus gen timing[index]
-    if ((*it) >= (*bus_gen_timing_iter)) {
+    if (0 >= (*bus_gen_timing_iter)) {
       // create a new bus! routes are:
       // prototype_routes_[index * 2] & prototype_routes_[index * 2 + 1]
       Route * outbound = (*prototype_route_iter);
@@ -200,9 +200,11 @@ bool LocalSimulator::Update() {
       active_buses_.push_back(new Bus(std::to_string((*bus_counter_iter)),
                                   outbound->Clone(), inbound->Clone(), 60, 1));
       (*bus_counter_iter)++;
+      (*bus_gen_timing_iter) = 10;
     } else {
       prototype_route_iter++;
       prototype_route_iter++;
+      (*bus_gen_timing_iter)--;
     }
   }
 

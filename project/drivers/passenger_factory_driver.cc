@@ -1,14 +1,19 @@
+/**
+ * @file passenger_factory_driver.cc
+ *
+ * @copyright 2019 3081 Staff, All rights reserved.
+ */
+
 #include <iostream>
 #include <random>
 #include <ctime>
 
-#include "passenger.h"
-#include "passenger_factory.h"
+#include "src/passenger.h"
+#include "src/passenger_factory.h"
 
 int main() {
-  
-  srand((long)time(NULL)); //Seed the random number generator...
-  
+  srand((long)time(NULL));  // Seed the random number generator...
+
   std::cout << "Let's begin..." << std::endl;
   int current = 1;
   int end = 20;
@@ -21,11 +26,10 @@ int main() {
     tmp = PassengerFactory::Generate(current, end);
     std::cout << "Reporting: " << std::endl;
     tmp->Report(std::cout);
-    
+
     delete tmp;
   }
 
   std::cout << "After loop..." << std::endl;
-  
   return 0;
 }

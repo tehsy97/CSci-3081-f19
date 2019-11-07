@@ -21,12 +21,12 @@ Stop::Stop(int id, double longitude, double latitude) {
 void Stop::LoadPassengers(Bus * bus) {
     // loading some passengers onto a bus
     for (std::list<Passenger *>::iterator it = passengers_.begin();
-        it != passengers_.end(); it++) {
-            bus->LoadPassenger(*it);
-    }
-
-    while (!passengers_.empty()) {
-        passengers_.pop_back();
+        it != passengers_.end();) {
+            if(bus->LoadPassenger(*it)){
+                it = passengers_.erase(it);
+            } else {
+                it++;
+            }           
     }
 }
 

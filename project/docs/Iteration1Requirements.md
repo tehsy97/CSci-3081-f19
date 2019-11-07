@@ -1,6 +1,9 @@
 # TransitSim: a Proof-of-Concept Transit System Simulator
 
-## Iteration 1 - VERSION 4, October 24th - NOTE, THIS DOCUMENT IS SUBJECT TO CHANGE. CHECK IT EVERY DAY OR TWO
+## Iteration 1 - VERSION 7, October 30th - NOTE, THIS DOCUMENT IS SUBJECT TO CHANGE. CHECK IT EVERY DAY OR TWO
+* Version 7 - removed the other stale link to Doxygen information, replaced with live and useful links
+* Version 6 - Update GetTotalWait description in Priority 1
+* Version 5 - clarifications about Unit Test creation instructions
 * Version 4 - added Table of Contents, small wording adjustments
 * Version 3 - Changed Delivery Requirements for Iteration 1 Preliminary Delivery 1: Submit your diagram in a PDF file via the Canvas using the item named Iteration 1 Preliminary Deliverable 1
 * Version 2 - removed stale link to Doxygen information, replaced with live and useful links
@@ -9,7 +12,7 @@
 | Date | Item | Description |
 |:----:|:-----|:------------|
 | TUE, Oct 22, 11:55pm | UML diagram of proposed solution | **Submit via Canvas and Github on devel.**|
-| WED, Oct 30, 11:55pm | Preliminary testing submission   | Pass automated tests. **Submit files via Github on devel.** |
+| WED, Oct 30, 11:55pm | Preliminary testing submission   | Pass automated tests. **Submit tests within `passenger_UT.cc` via Github on devel.** |
 | WED, Nov 06, 11:55pm | Documentation and Code Implementation | Automated tests and inspection. **Submit all deliverables in their proper directories via Github on master.** |
 
 Your project should demonstrate thoughtful software development with good design quality while rigorously following the process you learned in Lab 10. This iteration will help you to establish those good habits. You will create design documents including a UML diagram. You will use Doxygen compliant comments to comment your code and then automatically generate code documentation. Code style will comply to the Google Style Guide. Intermediate deadlines will keep you on track in the iterative process you are using to develop Iteration 1, and the project this semester.
@@ -120,7 +123,7 @@ _NOTE: if you are familiar with graphics or animations, this is akin to a frame 
 
 ###### _ Get Total Wait _
 
-Returns the sum of all timesteps the Passenger has waited at a stop before getting on the bus. This time does *NOT* include the timestep during which the Passenger gets on a bus.
+Returns the sum of all timesteps the Passenger has waited at a stop before getting on the bus PLUS the time the passenger was on the bus. This time *does* include the timestep during which the Passenger gets on a bus (attributed to time on bus).
 
 ###### _ Report _
 
@@ -173,7 +176,7 @@ https://github.com/google/googletest
 
 Unit tests are essential in a large-scale project because the entire code base can be tested regularly and automatically _as it is being developed_. In the strictest application of **Test-Driven Development (TDD)**, the tests are written _before_ the code, which helps solidify requirements and write testable code.
 
-A sample test file is provided in the `/project/tests` directory. This directory must be a sibling to your _src_ directory and will be home to all of your test files. When you _make_ the tests, they will generate an executable (in `build/bin`) which, when executed, displays a report of the tests. Use this file as a guide to your own testing. While the requirements for testing in **Preliminary Turn-in #2** (more later) are rather light, you can expect a much more robust testing requirement in later iterations. Do not slack on making good tests for your code!
+A sample test file is provided in the `/project/tests` directory. This directory must be a sibling to your _src_ directory and will be home to all of your test files. When you _make_ the tests, they will generate an executable (in `build/bin`) which, when executed, displays a report of the tests. Use this file as a guide to your own testing. While the requirements for testing in **Preliminary Deliverable #2** (more later) are rather light, you can expect a much more robust testing requirement in later iterations. Do not slack on making good tests for your code!
 
 Refer back to Lab 08 is remember how you wrote unit tests for the Date class and its methods.
 
@@ -225,7 +228,7 @@ There are many free tools that you can use to create the UML. **Submit your UML 
 
 ### 5.2 Doxygen <a name ="5.2">
 
-Doxygen automatically generates documentation of class and code structure when you follow some simple conventions for commenting within your code (_see_ http://www.stack.nl/~dimitri/doxygen/). We will be discussing Doxygen in class and in lab. To start with, look over the documentation provided with the code base to understand how to document classes, methods, parameters, and even _todo's_ and _bugs_ in your code. In lab, you learned how to compile with your Doxyfile and generate web pages. Please look over the generated web pages for missing and incorrect information. The requirements for Doxygen include:
+Doxygen automatically generates documentation of class and code structure when you follow some simple conventions for commenting within your code (_see_ http://www.doxygen.nl/manual/docblocks.html and other references in section 9 below). We will be discussing Doxygen in class and in lab. To start with, look over the documentation provided with the code base to understand how to document classes, methods, parameters, and even _todo's_ and _bugs_ in your code. In lab, you learned how to compile with your Doxyfile and generate web pages. Please look over the generated web pages for missing and incorrect information. The requirements for Doxygen include:
 
 - the file `/docs/Doxyfile` to generate documentation (this file is provided, so you shouldn't have to do anything with regard to this requirement).
 
@@ -259,7 +262,7 @@ This is the breakdown for point distribution:
 
 #### 6.1.1 Draft of UML Diagram ( 10% ) <a name ="6.1.1">
 
-Preliminary Turn-in #1 will require you to turn in a UML diagram of the project code. You will depict project code you've already been given, but also your proposed solution structure for the entities that you'll be developing in this iteration. **__At this point in time, the reality is that it is YOU who needs to understand the code we have provided,  and this exercise will be a tremendous help in that regard, saving you hours when you start to code.__**  Keep in mind that UML is a visual aid and should include only those aspects that are essential, otherwise your diagram will get too cluttered and overwhelming to the reader. Keep in mind that you can add notes and clarification within the document.
+**Preliminary Deliverable #1** will require you to turn in a UML diagram of the project code. You will depict project code you've already been given, but also your proposed solution structure for the entities that you'll be developing in this iteration. **__At this point in time, the reality is that it is YOU who needs to understand the code we have provided,  and this exercise will be a tremendous help in that regard, saving you hours when you start to code.__**  Keep in mind that UML is a visual aid and should include only those aspects that are essential, otherwise your diagram will get too cluttered and overwhelming to the reader. Keep in mind that you can add notes and clarification within the document.
 
 This is a draft of the final product, and we anticipate that it will be revised and improved. We will be looking for general proper use of UML syntax, and a correct depiction of the code structure of the existing project code (code from shared-upstream's support-code branch). **Submit your Prelimary Deliverable 1 UML diagram as a .pdf file through the Iteration 1 Preliminary Deliverable 1 item on the class Canvas site. Your diagram should be named: UML_DRAFT**.
 
@@ -291,7 +294,9 @@ TAs will inspect code for good naming conventions, good code organization, and i
 
 #### 6.2.1 Preliminary Testing Submission ( 10% ) <a name ="6.2.1">
 
-In the week prior to the due date of the completed iteration, we will confirm that you have submitted work for Preliminary Turn-in #2. You must include at least three (3) unit tests of your Passenger class to receive full points for the preliminary submission. There will be no manual inspection of the code at this point -- it is strictly a test for completed functionality and testing. We will ensure that your tests are effective using automatic means, similar to the Testing lab. There will be transparency in this process in that you will know what functionality will be tested, and you will see the results. Points earned at this stage are independent of the 40% points for the final submission.
+In the week prior to the due date of the completed iteration, we will confirm that you have submitted work for **Preliminary Deliverable #2**. You must include at least three (3) unit tests of your Passenger class to receive full points for the preliminary submission. There will be no manual inspection of the code at this point -- it is strictly a test for completed functionality and testing. We will ensure that your tests are effective using automatic means, similar to the Testing lab. There will be transparency in this process in that you will know what functionality will be tested, and you will see the results. Points earned at this stage are independent of the 40% points for the final submission.
+
+**Please add your tests to the `passenger_UT.cc` file already given to you within the testing directory. Any additional testing files will not be inspected.**
 
 #### 6.2.2 Completed Iteration Code ( 40% ) <a name ="6.2.2">
 

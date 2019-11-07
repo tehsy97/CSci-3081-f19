@@ -14,7 +14,7 @@ REPOROOTDIR = $(shell git rev-parse --show-toplevel)
 
 ### Section I: Definitions ###
 
-# Root of the source tree for the project (e.g., could be just . or ./src)
+# Root of the source tree for project (e.g., could be just . or ./src)
 SRCDIR = .
 DRIVERDIR = ../drivers
 

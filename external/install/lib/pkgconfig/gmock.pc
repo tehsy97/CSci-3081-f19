@@ -1,0 +1,10 @@
+libdir=/home/teh00001/3081_f19/repo-teh00001/external/install/lib
+includedir=/home/teh00001/3081_f19/repo-teh00001/external/install/include
+
+Name: gmock
+Description: GoogleMock (without main() function)
+Version: 1.10.0
+URL: https://github.com/google/googletest
+Requires: gtest
+Libs: -L${libdir} -lgmock -lpthread
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=1 -lpthread

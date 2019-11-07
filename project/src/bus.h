@@ -9,6 +9,7 @@
 #include <iostream>
 #include <list>
 #include <string>
+#include <cmath>
 
 #include "src/passenger.h"
 #include "src/route.h"
@@ -21,11 +22,54 @@ class Stop;
 
 class Bus {
  public:
+  /**
+  * @brief Constructs a Bus with a name, outgoing route, incoming route,
+  * capacity, and speed.
+  *
+  * @param[in] string holding name
+  * @param[in] route pointer holding outgoing route
+  * @param[in] route pointer holding a incoming route
+  * @param[in] int holding capacity number
+  * @param[in] double holding speed number
+  */
   Bus(std::string name, Route * out, Route * in, int capacity = 60,
                                                  double speed = 1);
+  /**
+  * @brief Get passengers on bus
+  * 
+  * @return boolean
+  */
   bool LoadPassenger(Passenger *);  // returning revenue delta
+
+  /**
+  * @brief Get passengers off the bus with they reach their destination
+  * 
+  * @return integer
+  */
+  int UnloadPassenger(int);
+
+  /**
+  * @brief Move bus closer to next destination
+  * 
+  * @return boolean
+  */
   bool Move();
-  void Update();
+
+  /**
+  * @brief check if bus has complete its outgoing and incoming route
+  * 
+  * @return boolean
+  */
+  bool IsTripComplete();
+
+  /**
+  * @brief Update bus, stop, passengers, and routes status
+  */
+  void Update();  // remove passengers
+
+  /**
+  * @brief Print bus information and status
+  */
   void Report(std::ostream &out);
 
  private:

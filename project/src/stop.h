@@ -17,11 +17,51 @@ class Bus;
 
 class Stop {
  public:
+  /**
+  * @brief Constructs a stop with a id number, longitude, and latitude.
+  *
+  *
+  * @param[in] int holding an stop id number
+  * @param[in] double holding a stop longitude
+  * @param[in] double holding a stop latitude
+  *
+  */
   explicit Stop(int, double = 44.973723, double = -93.235365);
   // Adding passengers to the stop (from the generator)
+
+  /**
+  * @brief Get stop id number
+  * 
+  * @return integer
+  */
   int GetId() const;
+
+  /**
+  * @brief Load and count passengers in a stop list onto bus
+  *
+  * @param[in] Bus pointer pointing at Bus class
+  * 
+  * @return integer
+  */
+  int LoadPassengers(Bus *);
+
+  /**
+  * @brief Add passengers into the stop passengers list and return 1
+  * 
+  * @param[in] Passenger pointer pointing at passenger
+  * 
+  * @return integer
+  */
   int AddPassengers(Passenger *);
+
+  /**
+  * @brief Update passengers status at this stop 
+  */
   void Update();
+
+  /**
+  * @brief print stops status as well as pasenger status at that stop
+  */
   void Report(std::ostream &out) const;
 
  private:

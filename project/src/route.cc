@@ -37,9 +37,8 @@ Route * Route::Clone() {
     i++;
   }
 
-  Route * route_clone = new Route (name_, stops_clone, distances_clone,
+  return new Route(name_, stops_clone, distances_clone,
     num_stops_, generator_);
-  return route_clone;
 }
 
 void Route::Update() {
@@ -50,16 +49,16 @@ void Route::Update() {
 }
 
 bool Route::IsAtEnd() const {
-  return destination_stop_index_ == (num_stops_-1);
+  return (destination_stop_index_ == (num_stops_-1)) ||
+    (destination_stop_index_ == -1);
 }
 
 void Route::NextStop() {
-  if (!IsAtEnd()){
-    destination_stop_index_ ++;
-  }else{
+  if (!IsAtEnd()) {
+    destination_stop_index_ += 1;
+  } else {
     destination_stop_index_ = -1;
   }
-
 }
 
 Stop * Route::GetDestinationStop() const {

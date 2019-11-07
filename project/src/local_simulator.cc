@@ -3,7 +3,7 @@
  *
  * @copyright 2019 3081 Staff, All rights reserved.
  */
- 
+
 #include "src/local_simulator.h"
 
 #include <vector>
@@ -36,7 +36,7 @@ bool LocalSimulator::Start() {
   Stop * stop_CC_EB_1 = new Stop(0, 44.972392, -93.243774);
   // student union station
   Stop * stop_CC_EB_2 = new Stop(1, 44.973580, -93.235071);
-  // Oak St & Wash Ave
+  // Oak St & Washington Ave
   Stop * stop_CC_EB_3 = new Stop(2, 44.975392, -93.226632);
   Stop * stop_CC_EB_4 = new Stop(3, 44.975837, -93.222174);  // before transit
   Stop * stop_CC_EB_5 = new Stop(4, 44.980753, -93.180669);  // tway
@@ -122,9 +122,9 @@ bool LocalSimulator::Start() {
   CC_EB_probs.push_back(.01);  // State fair
   CC_EB_probs.push_back(.01);  // Buford
   CC_EB_probs.push_back(0);  // SPSC - MUST BE 0
-  // TODO(Username): is this always true?
-  // If so, we may want to reduce the length of probs to_char_type
-  //       remove possibility of generating passengers with nowhere to go
+  // TODO(Username): is this always true? If so, we may want to reduce
+  //  the length of probs to_char_type
+  //        remove possibility of generating passengers with nowhere to go
 
   std::list<double> CC_WB_probs;  // realistic .35, .05, .01, .01, .2, 0
   CC_WB_probs.push_back(.35);  // SPSC
@@ -143,9 +143,9 @@ bool LocalSimulator::Start() {
   // RandomPassengerGenerator CC_WB_generator(CC_WB_probs, CC_WB_stops_list);
 
   RandomPassengerGenerator * CC_EB_generator =
-    new RandomPassengerGenerator (CC_EB_probs, CC_EB_stops_list);
+    new RandomPassengerGenerator(CC_EB_probs, CC_EB_stops_list);
   RandomPassengerGenerator * CC_WB_generator =
-    new RandomPassengerGenerator (CC_WB_probs, CC_WB_stops_list);
+    new RandomPassengerGenerator(CC_WB_probs, CC_WB_stops_list);
 
   // Test to ensure generators are working
   // Helpful for debugging
@@ -153,22 +153,22 @@ bool LocalSimulator::Start() {
   CC_WB_generator->GeneratePassengers();
 
   // Again, MUST be dynamic...
-  // Route CC_EB("Campus Connector - Eastbound",
-  //   CC_EB_stops, CC_EB_distances, 8, &CC_EB_generator);
-  // Route CC_WB("Campus Connector - Westbound",
-  //    CC_WB_stops, CC_WB_distances, 9, &CC_WB_generator);
+  // Route CC_EB("Campus Connector - Eastbound", CC_EB_stops,
+  //   CC_EB_distances, 8, &CC_EB_generator);
+  // Route CC_WB("Campus Connector - Westbound", CC_WB_stops,
+  //   CC_WB_distances, 9, &CC_WB_generator);
 
-  Route * CC_EB = new Route ("Campus Connector - Eastbound",
-    CC_EB_stops, CC_EB_distances, 8, CC_EB_generator);
-  Route * CC_WB = new Route ("Campus Connector - Westbound",
-    CC_WB_stops, CC_WB_distances, 9, CC_WB_generator);
+  Route * CC_EB = new Route("Campus Connector - Eastbound", CC_EB_stops,
+    CC_EB_distances, 8, CC_EB_generator);
+  Route * CC_WB = new Route("Campus Connector - Westbound", CC_WB_stops,
+    CC_WB_distances, 9, CC_WB_generator);
 
   prototype_routes_.push_back(CC_EB);
   prototype_routes_.push_back(CC_WB);
 
   prototype_routes_[0]->Report(std::cout);
   prototype_routes_[1]->Report(std::cout);
-  std::cout << "*********************above is prototype route at start()*******************" << std::endl;
+
   bus_counters_.push_back(10000);
 
   // This will eventually be replaced by configuration/command line argument
@@ -200,8 +200,6 @@ bool LocalSimulator::Update() {
       it++, bus_gen_timing_iter++, bus_counter_iter++) {
     (*it)++;
 
-    // std::cout << *time_since_last_bus_generation_.begin() << "    " << *time_since_last_bus_generation_.end() << std::endl;
-    // return 0;
     // if time since last [index] == bus gen timing[index]
     if (0 >= (*bus_gen_timing_iter)) {
       // create a new bus! routes are:
@@ -232,12 +230,12 @@ bool LocalSimulator::Update() {
 
     // REQUIRES USE OF IsTripComplete, which was not required
     // Buses which are "done" will just keep having Update() called
-    // Students MAY need to deal with this, not sure yet...
+    //  Students MAY need to deal with this, not sure yet...
     // remove bus if trip is complete
-    // if ((*bus_iter)->IsTripComplete()) {
-    //  bus_iter = active_buses_.erase(bus_iter);
-    //  bus_iter--;
-    //}
+    if ((*bus_iter)->IsTripComplete()) {
+     bus_iter = active_buses_.erase(bus_iter);
+     bus_iter--;
+    }
   }
 
   // for each stop
@@ -247,6 +245,5 @@ bool LocalSimulator::Update() {
     (*route_iter)->Update();
     (*route_iter)->Report(std::cout);
   }
-
   return true;
 }

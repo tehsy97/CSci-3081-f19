@@ -16,15 +16,28 @@ Bus::Bus(std::string name, Route * out, Route * in, int capacity,
   distance_remaining_ = 0;
 }
 
-
 bool Bus::LoadPassenger(Passenger * new_passenger) {
   // loading passenger onto a bus
-  if ((passenger_max_capacity_ - passengers_.size()) > 0) {
+  if ((unsigned)passenger_max_capacity_ > passengers_.size()) {
     passengers_.push_back(new_passenger);
     new_passenger->GetOnBus();
     return true;
   }
   return false;
+}
+
+int Bus::UnloadPassenger(int stop_id) {
+  int count = 0;
+  for (std::list<Passenger *>::iterator it = passengers_.begin();
+    it != passengers_.end();) {
+    if ((*it)->GetDestination() == stop_id) {
+      it = passengers_.erase(it);
+      count += 1;
+    } else {
+      ++it;
+    }
+  }
+  return count;
 }
 
 bool Bus::Move() {
@@ -37,48 +50,47 @@ bool Bus::Move() {
 // }
 
 bool Bus::IsTripComplete() {
-  if ( outgoing_route_->IsAtEnd() && incoming_route_->IsAtEnd()) {
-    return true;
-  } else {
-    return false;
-  }
+  return outgoing_route_->IsAtEnd() && incoming_route_->IsAtEnd();
 }
 
-void Bus::Update() { //using common Update format
-   if ((int)distance_remaining_ == 0) { 
-    if (outgoing_route_->IsAtEnd()){
-      Stop * stop_arrived_at = incoming_route_->GetDestinationStop();
-      for(std::list<Passenger *>::iterator it = passengers_.begin();it != passengers_.end(); it++){
-        if ((*it)->GetDestination() == stop_arrived_at->GetId()) {
-           Passenger * departing_passenger = *it;
-           it = passengers_.erase(it);
-           it--;
-           delete departing_passenger;
-        }
-      }
-      stop_arrived_at->LoadPassengers(this);
-
+void Bus::Update() {  // using common Update format
+  if ((static_cast <int> (ceil(distance_remaining_))) == 0) {
+    Stop * stop_arrived_at;
+    if (outgoing_route_->IsAtEnd()) {
+      stop_arrived_at = incoming_route_->GetDestinationStop();
       incoming_route_->NextStop();
       distance_remaining_ = incoming_route_->GetNextStopDistance();
-
+      std ::cout << "*************this is incoming route:"
+        << distance_remaining_<< std::endl;
     } else {
-      Stop * stop_arrived_at =  outgoing_route_->GetDestinationStop();
-      for(std::list<Passenger *>::iterator it = passengers_.begin();it != passengers_.end(); it++){
-        if ((*it)->GetDestination() == stop_arrived_at->GetId()) {
-           Passenger * departing_passenger = *it;
-           it = passengers_.erase(it);
-           it--;
-           delete departing_passenger;
-        }
-      stop_arrived_at->LoadPassengers(this);
+      stop_arrived_at = outgoing_route_->GetDestinationStop();
+      for (std::list<Passenger *>::iterator it = passengers_.begin();
+        it != passengers_.end(); it++) {
+        (*it)->Update();
+      }
       outgoing_route_->NextStop();
-      distance_remaining_ =  outgoing_route_->GetNextStopDistance();
+      distance_remaining_ = outgoing_route_->GetNextStopDistance();
+      std ::cout << "**********this is outcoming route id: "
+        << stop_arrived_at->GetId() << std::endl;
     }
-   }
+
+    // unload passengers in the bus who have reach their destination
+    int passengers_unloaded = UnloadPassenger(stop_arrived_at->GetId());
+
+    // std::cout << "Passengers_unloaded at stop " << stop_arrived_at->GetId()
+    //     << ": " << Passengers_unloaded << std::endl << std::endl;
+
+    // load passengers at the stop to the bus
+    stop_arrived_at->LoadPassengers(this);
   } else {
-     Move();
+    Move();
+    for (std::list<Passenger *>::iterator it = passengers_.begin();
+      it != passengers_.end(); it++) {
+      (*it)->Update();
+    }
   }
 }
+
 void Bus::Report(std::ostream &out) {
   out << "Name: " << name_ << std::endl;
   out << "Speed: " << speed_ << std::endl;

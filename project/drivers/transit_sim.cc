@@ -8,12 +8,12 @@
 #include <iostream>
 #include <random>
 
-#include "src/local_simulator.h"
+#include "local_simulator.h"
 
 int main() {
     
-  // int rounds = 50; //Number of rounds of generation to simulate in test
-  int rounds = 50;
+  int rounds = 50; //Number of rounds of generation to simulate in test
+  
   srand((long)time(NULL)); //Seed the random number generator...
   
   LocalSimulator my_sim;

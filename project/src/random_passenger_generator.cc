@@ -45,7 +45,7 @@ int RandomPassengerGenerator::GeneratePassengers() {
     // while there is still a (>.01%) chance of generating a passenger, try
     while (current_generation_probability > .0001) {
       // generate a random double value_comp
-      double generation_value = 
+      double generation_value =
         ((my_rand() - my_rand.min()) / (my_rand.max() * 1.0));
 
       // e.g. `.54234234 < .90`, generate a passenger

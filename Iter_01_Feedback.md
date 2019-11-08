@@ -1,6 +1,6 @@
 ### Feedback for Iteration 1
 
-Run on November 07, 23:30:33 PM.
+Run on November 08, 00:29:33 AM.
 
 <hr>
 
@@ -58,6 +58,10 @@ This feedback is being batched and will run every few hours. Note that these fee
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/local_simulator.d -MP -MT ../build/obj/tests/local_simulator.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/local_simulator.cc
 ==== Compiling ../src/local_simulator.cc into ../build/obj/tests/local_simulator.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/local_simulator.o ../src/local_simulator.cc
+==== Auto-Generating Dependencies for ../src/passenger_factory.cc. ====
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passenger_factory.d -MP -MT ../build/obj/tests/passenger_factory.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/passenger_factory.cc
+==== Compiling ../src/passenger_factory.cc into ../build/obj/tests/passenger_factory.o. ====
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/passenger_factory.o ../src/passenger_factory.cc
 ==== Auto-Generating Dependencies for ../src/bus.cc. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/bus.d -MP -MT ../build/obj/tests/bus.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/bus.cc
 ==== Compiling ../src/bus.cc into ../build/obj/tests/bus.o. ====
@@ -86,10 +90,6 @@ This feedback is being batched and will run every few hours. Note that these fee
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/stop.d -MP -MT ../build/obj/tests/stop.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/stop.cc
 ==== Compiling ../src/stop.cc into ../build/obj/tests/stop.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/stop.o ../src/stop.cc
-==== Auto-Generating Dependencies for ../src/passenger_factory.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passenger_factory.d -MP -MT ../build/obj/tests/passenger_factory.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/passenger_factory.cc
-==== Compiling ../src/passenger_factory.cc into ../build/obj/tests/passenger_factory.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/passenger_factory.o ../src/passenger_factory.cc
 ==== Auto-Generating Dependencies for passengers_UT.cc. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passengers_UT.d -MP -MT ../build/obj/tests/passengers_UT.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 passengers_UT.cc
 ==== Compiling passengers_UT.cc into ../build/obj/tests/passengers_UT.o. ====
@@ -99,7 +99,7 @@ This feedback is being batched and will run every few hours. Note that these fee
 ==== Compiling passenger_UT.cc into ../build/obj/tests/passenger_UT.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/passenger_UT.o passenger_UT.cc
 ==== Linking ../build/bin/unittest. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/local_simulator.o ../build/obj/tests/bus.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/stop.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/passengers_UT.o ../build/obj/tests/passenger_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -lGL
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/local_simulator.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/bus.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/stop.o ../build/obj/tests/passengers_UT.o ../build/obj/tests/passenger_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -lGL
 /usr/bin/ld: cannot find -lgtest_main
 /usr/bin/ld: cannot find -lgtest
 /usr/bin/ld: cannot find -lgmock
@@ -234,7 +234,7 @@ make: *** [check-style-cse] Error 126
 
     Make compile fails with errors:.
 <pre>==== Linking ../build/bin/unittest. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/local_simulator.o ../build/obj/tests/bus.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/stop.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/passengers_UT.o ../build/obj/tests/passenger_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -lGL
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/local_simulator.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/bus.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/stop.o ../build/obj/tests/passengers_UT.o ../build/obj/tests/passenger_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -lGL
 /usr/bin/ld: cannot find -lgtest_main
 /usr/bin/ld: cannot find -lgtest
 /usr/bin/ld: cannot find -lgmock
@@ -335,7 +335,7 @@ make: *** [check-style-cse] Error 126
 
 		493913d4284d8228a12e4755feb05d98f2821d9a	refs/heads/iteration_priority_2
 
-		adb0d18ddc8f5d2b055fb6fc0c608dcdf5c3e9b8	refs/heads/master
+		ba206dce3ce58f50120334bccbbea697db84dd85	refs/heads/master
 
 		53abec124c2c63fbf091b457d0fcf60469f3b012	refs/heads/preliminary_testing_submission
 

@@ -63,8 +63,8 @@ void Bus::Update() {  // using common Update format
       stop_arrived_at = incoming_route_->GetDestinationStop();
       incoming_route_->NextStop();
       distance_remaining_ = incoming_route_->GetNextStopDistance();
-      std ::cout << "*************this is incoming route:"
-        << distance_remaining_<< std::endl;
+      // std ::cout << "*************this is incoming route:"
+        // << distance_remaining_<< std::endl;
     } else {
       stop_arrived_at = outgoing_route_->GetDestinationStop();
       for (std::list<Passenger *>::iterator it = passengers_.begin();
@@ -73,8 +73,8 @@ void Bus::Update() {  // using common Update format
       }
       outgoing_route_->NextStop();
       distance_remaining_ = outgoing_route_->GetNextStopDistance();
-      std ::cout << "**********this is outcoming route id: "
-        << stop_arrived_at->GetId() << std::endl;
+      // std ::cout << "**********this is outcoming route id: "
+        // << stop_arrived_at->GetId() << std::endl;
     }
 
     // unload passengers in the bus who have reach their destination

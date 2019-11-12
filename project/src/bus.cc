@@ -42,7 +42,7 @@ int Bus::UnloadPassenger(int stop_id) {
 
 bool Bus::Move() {
   distance_remaining_ = distance_remaining_ - 1;
-  if(distance_remaining_ < 0){
+  if (distance_remaining_ < 0) {
     distance_remaining_ = 0;
   }
   return true;
@@ -78,7 +78,8 @@ void Bus::Update() {  // using common Update format
     }
 
     // unload passengers in the bus who have reach their destination
-    int passengers_unloaded = UnloadPassenger(stop_arrived_at->GetId());
+    // int passengers_unloaded = UnloadPassenger(stop_arrived_at->GetId());
+    UnloadPassenger(stop_arrived_at->GetId());
 
     // std::cout << "Passengers_unloaded at stop " << stop_arrived_at->GetId()
     //     << ": " << Passengers_unloaded << std::endl << std::endl;

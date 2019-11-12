@@ -29,7 +29,6 @@
 # Executables
 *.exe
 *.out
-<<<<<<< HEAD
 *.app
 *.pvt
 
@@ -39,3 +38,5 @@ build
 #doxygen files
 html
 latex
+Doxygen
+html/classPassenger.html

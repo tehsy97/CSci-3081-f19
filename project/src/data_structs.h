@@ -1,3 +1,4 @@
+
 /**
  * @file data_structs.h
  *
@@ -18,18 +19,18 @@ struct Position {
 };
 
 struct BusData {
-    BusData() : id(""), pos(Position()), numPassengers(0), capacity(0) {}
+    BusData() : id(""), position(Position()), num_passengers(0), capacity(0) {}
     std::string id; // some unique identifier for the bus
-    Position pos; // long lat position of bus
-    int numPassengers;
+    Position position; // long lat position of bus
+    int num_passengers;
     int capacity;
 };
 
 struct StopData {
-    StopData() : id(""), pos(Position()), numPeople(0) {}
+    StopData() : id(""), position(Position()), num_people(0) {}
     std::string id; // some unique identifier for the stop
-    Position pos; // long lat position of bus
-    int numPeople;
+    Position position; // long lat position of bus
+    int num_people;
 };
 
 struct RouteData {

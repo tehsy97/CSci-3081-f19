@@ -105,3 +105,83 @@ void Bus::Report(std::ostream &out) {
     (*it)->Report(out);
   }
 }
+
+void Bus::UpdateBusData() {
+// Store a unique identifier for the bus(name) in the BusData id atttribute.
+// Use the current route to get the previous stop (on the current route).
+// You will need to figure out a way (write a new function, etc.) to get the
+// bus's previous stop. Compute and store the average of the latitudes and
+// longitudes belonging to the current and previous stops.
+// Store the averages in the BusData position attribute. (This algorithm is
+// somewhat clunky and not realistic. We may update this in the future.)
+// Populate the numPassengers and capacity attributes within your BusData
+// variable.
+  bus_visualizer.id = name_;
+
+  if ((static_cast <int> (ceil(distance_remaining_))) == 0) {
+    Stop * previous_stop_;
+    Stop * current_stop_;
+    if (outgoing_route_->IsAtEnd()) {
+      current_stop_ = incoming_route_->GetDestinationStop();
+      previous_stop_ = incoming_route_->GetPreviousStop();
+    } else {
+      current_stop_ = outgoing_route_->GetDestinationStop();
+      previous_stop_ = outgoing_route_->GetPreviousStop();
+    }
+    // Route * route;
+    // RouteData route_data_ = route->GetRouteData();
+    
+    double cur_prev_longitude = 0;
+    double cur_prev_latitude = 0;
+    // for (auto it = route_data_.stops.begin();
+    //   it != route_data_.stops.end(); it++){
+    //     if((*it).id == std::to_string(current_stop_->GetId()) ||
+    //       (*it).id == std::to_string(previous_stop_->GetId())){
+    //       cur_prev_longitude += (*it).pos.x;
+    //       cur_prev_latitude += (*it).pos.y;
+    //     } 
+    // }
+
+    if (current_stop_ != NULL && previous_stop_ != NULL) {
+      cur_prev_longitude += ((current_stop_->GetStopData()).pos.x + (previous_stop_->GetStopData()).pos.x);
+      cur_prev_latitude += ((current_stop_->GetStopData()).pos.y + (previous_stop_->GetStopData()).pos.y);
+    } else if (current_stop_ == NULL) {
+      cur_prev_longitude += (previous_stop_->GetStopData()).pos.x;
+      cur_prev_latitude += (previous_stop_->GetStopData()).pos.y;
+    } else {
+      cur_prev_longitude += (current_stop_->GetStopData()).pos.x;
+      cur_prev_latitude += (current_stop_->GetStopData()).pos.y;
+    }
+    bus_visualizer.pos.x = cur_prev_longitude / 2;
+    bus_visualizer.pos.y = cur_prev_latitude / 2;
+  }
+
+  bus_visualizer.numPassengers = passengers_.size();
+  bus_visualizer.capacity = passenger_max_capacity_;
+}
+
+BusData Bus::GetBusData() {
+  return bus_visualizer;
+}
+
+std::string Bus::GetName() const {
+  return name_;
+}
+
+Stop * Bus::GetNextStop() {
+  if (outgoing_route_->IsAtEnd()) {
+    incoming_route_->NextStop();
+    return incoming_route_->GetDestinationStop();
+  } else {
+    outgoing_route_->NextStop();
+    return outgoing_route_->GetDestinationStop();
+  }
+}
+
+size_t Bus::GetNumPassengers() {
+  return passengers_.size();
+}
+
+int Bus::GetCapacity() {
+  return passenger_max_capacity_;
+}

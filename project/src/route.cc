@@ -100,3 +100,48 @@ void Route::Report(std::ostream &out) {
     stop_counter++;
   }
 }
+
+std::string Route::GetName() {
+  return name_;
+}
+
+std::list<Stop *> Route::GetStops() {
+  return stops_;
+}
+
+void Route::UpdateRouteData() {
+// Make sure to include a member variable RouteData within the Route class.
+
+// Store a unique identifier for the route(name) in the RouteData id atttribute.
+// Create a vector that holds StopData structs.
+// Loop through the Route's stops and do the following:
+// store a unique identifier for the stop(id) in the StopData id attribute,
+// position (latitude and longitude), and the number of passengers at the stop
+// in a temporary StopData struct
+// store the temporary StopData struct in the vector of StopData structs you
+// created in step 2 (i.e. "push_back" the struct)
+// After the loop finishes, store the vector of StopData structs in the stops
+// attribute of the Route class's new attribute to store Route Data.
+
+  route_visualizer.id = name_;
+
+  std::vector<StopData> stops_data;
+  for (std::list<Stop *>::iterator it = stops_.begin();
+    it != stops_.end(); it++) {
+      stops_data.push_back((*it)->GetStopData());
+  }
+  route_visualizer.stops = stops_data;
+}
+
+RouteData Route::GetRouteData() {
+  return route_visualizer;
+}
+
+Stop * Route::GetPreviousStop() {
+  std::list<Stop *>::iterator it;
+  if(destination_stop_index_ > 1 && destination_stop_index_ != -1){
+    it = std::next(stops_.begin(), destination_stop_index_-1);
+    return *it;
+  }
+  return NULL;
+}

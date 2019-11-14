@@ -221,20 +221,56 @@ bool LocalSimulator::Update() {
   }
 
   // for each bus
-  for (std::list<Bus *>::iterator bus_iter = active_buses_.begin();
+//   for (std::list<Bus *>::iterator bus_iter = active_buses_.begin();
+//       bus_iter != active_buses_.end(); bus_iter++) {
+//     // update bus
+//     (*bus_iter)->Update();
+//     // bus report
+//     (*bus_iter)->Report(std::cout);
+
+//     // REQUIRES USE OF IsTripComplete, which was not required
+//     // Buses which are "done" will just keep having Update() called
+//     //  Students MAY need to deal with this, not sure yet...
+//     // remove bus if trip is complete
+//     if ((*bus_iter)->IsTripComplete()) {
+//      bus_iter = active_buses_.erase(bus_iter);
+//      bus_iter--;
+//     }
+//   }
+
+//   // for each stop
+//   for (std::vector<Route *>::iterator route_iter = prototype_routes_.begin();
+//       route_iter != prototype_routes_.end(); route_iter++) {
+//     // update stop
+//     (*route_iter)->Update();
+//     (*route_iter)->Report(std::cout);
+//     (*route_iter)->UpdateRouteData();
+//   }
+//   return true;
+// }
+
+
+for (std::list<Bus *>::iterator bus_iter = active_buses_.begin();
       bus_iter != active_buses_.end(); bus_iter++) {
     // update bus
     (*bus_iter)->Update();
+    (*bus_iter)->UpdateBusData();
     // bus report
     (*bus_iter)->Report(std::cout);
+    BusData Bus_iter = (*bus_iter)->GetBusData();
+    std::cout << "bus string" << Bus_iter.id << std::endl;
+    std::cout << "bus numPassengers" << Bus_iter.numPassengers<<std::endl;
+    std::cout << "bus capacity" << Bus_iter.capacity << std::endl;
+
+
 
     // REQUIRES USE OF IsTripComplete, which was not required
     // Buses which are "done" will just keep having Update() called
-    //  Students MAY need to deal with this, not sure yet...
+    //   Students MAY need to deal with this, not sure yet...
     // remove bus if trip is complete
     if ((*bus_iter)->IsTripComplete()) {
-     bus_iter = active_buses_.erase(bus_iter);
-     bus_iter--;
+      bus_iter = active_buses_.erase(bus_iter);
+      bus_iter--;
     }
   }
 
@@ -244,6 +280,19 @@ bool LocalSimulator::Update() {
     // update stop
     (*route_iter)->Update();
     (*route_iter)->Report(std::cout);
+    (*route_iter)->UpdateRouteData();
+    RouteData Route_iter = (*route_iter)->GetRouteData();
+    std::cout << Route_iter.id  << "~~~~~~~~~~~ The route stop refresh begin " << std::endl;
+    for(std::vector<StopData>::iterator it = Route_iter.stops.begin();
+      it != Route_iter.stops.end(); it++) {
+        std::cout << "stop name :" << (*it).id <<std::endl;
+        std::cout << "stop position x: " <<(*it).pos.x << "y: "<< (*it).pos.y<< std::endl;
+        std::cout << "stop number of people :" << (*it).numPeople <<std::endl;
+    }
+      std::cout << Route_iter.id  << "~~~~~~~~~~~ The route stop refresh end " << std::endl;
+
+
   }
+
   return true;
 }

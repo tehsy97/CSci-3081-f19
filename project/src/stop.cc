@@ -57,8 +57,8 @@ void Stop::Report(std::ostream &out) const {
 
 StopData Stop::GetStopData() {
   stops_visualizer.id = std::to_string(id_);
-  stops_visualizer.pos.x = longitude_;
-  stops_visualizer.pos.y = latitude_;
-  stops_visualizer.numPeople = passengers_.size();
+  stops_visualizer.position.x = longitude_;
+  stops_visualizer.position.y = latitude_;
+  stops_visualizer.num_people = passengers_.size();
   return stops_visualizer;
 }

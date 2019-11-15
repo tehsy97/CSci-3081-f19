@@ -137,26 +137,26 @@ void Bus::UpdateBusData() {
     //   it != route_data_.stops.end(); it++){
     //     if((*it).id == std::to_string(current_stop_->GetId()) ||
     //       (*it).id == std::to_string(previous_stop_->GetId())){
-    //       cur_prev_longitude += (*it).pos.x;
-    //       cur_prev_latitude += (*it).pos.y;
+    //       cur_prev_longitude += (*it).position.x;
+    //       cur_prev_latitude += (*it).position.y;
     //     } 
     // }
 
     if (current_stop_ != NULL && previous_stop_ != NULL) {
-      cur_prev_longitude += ((current_stop_->GetStopData()).pos.x + (previous_stop_->GetStopData()).pos.x);
-      cur_prev_latitude += ((current_stop_->GetStopData()).pos.y + (previous_stop_->GetStopData()).pos.y);
+      cur_prev_longitude += ((current_stop_->GetStopData()).position.x + (previous_stop_->GetStopData()).position.x);
+      cur_prev_latitude += ((current_stop_->GetStopData()).position.y + (previous_stop_->GetStopData()).position.y);
     } else if (current_stop_ == NULL) {
-      cur_prev_longitude += (previous_stop_->GetStopData()).pos.x;
-      cur_prev_latitude += (previous_stop_->GetStopData()).pos.y;
+      cur_prev_longitude += (previous_stop_->GetStopData()).position.x;
+      cur_prev_latitude += (previous_stop_->GetStopData()).position.y;
     } else {
-      cur_prev_longitude += (current_stop_->GetStopData()).pos.x;
-      cur_prev_latitude += (current_stop_->GetStopData()).pos.y;
+      cur_prev_longitude += (current_stop_->GetStopData()).position.x;
+      cur_prev_latitude += (current_stop_->GetStopData()).position.y;
     }
-    bus_visualizer.pos.x = cur_prev_longitude / 2;
-    bus_visualizer.pos.y = cur_prev_latitude / 2;
+    bus_visualizer.position.x = cur_prev_longitude / 2;
+    bus_visualizer.position.y = cur_prev_latitude / 2;
   }
 
-  bus_visualizer.numPassengers = passengers_.size();
+  bus_visualizer.num_passengers = passengers_.size();
   bus_visualizer.capacity = passenger_max_capacity_;
 }
 

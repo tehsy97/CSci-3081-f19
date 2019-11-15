@@ -259,7 +259,7 @@ for (std::list<Bus *>::iterator bus_iter = active_buses_.begin();
     (*bus_iter)->Report(std::cout);
     BusData Bus_iter = (*bus_iter)->GetBusData();
     std::cout << "bus string" << Bus_iter.id << std::endl;
-    std::cout << "bus numPassengers" << Bus_iter.numPassengers<<std::endl;
+    std::cout << "bus numPassengers" << Bus_iter.num_passengers<<std::endl;
     std::cout << "bus capacity" << Bus_iter.capacity << std::endl;
 
 
@@ -286,8 +286,8 @@ for (std::list<Bus *>::iterator bus_iter = active_buses_.begin();
     for(std::vector<StopData>::iterator it = Route_iter.stops.begin();
       it != Route_iter.stops.end(); it++) {
         std::cout << "stop name :" << (*it).id <<std::endl;
-        std::cout << "stop position x: " <<(*it).pos.x << "y: "<< (*it).pos.y<< std::endl;
-        std::cout << "stop number of people :" << (*it).numPeople <<std::endl;
+        std::cout << "stop position x: " <<(*it).position.x << "y: "<< (*it).position.y<< std::endl;
+        std::cout << "stop number of people :" << (*it).num_people <<std::endl;
     }
       std::cout << Route_iter.id  << "~~~~~~~~~~~ The route stop refresh end " << std::endl;
 

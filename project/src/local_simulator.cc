@@ -291,7 +291,6 @@ for (std::list<Bus *>::iterator bus_iter = active_buses_.begin();
     }
       std::cout << Route_iter.id  << "~~~~~~~~~~~ The route stop refresh end " << std::endl;
 
-
   }
 
   return true;

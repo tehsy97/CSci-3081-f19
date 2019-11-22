@@ -26,7 +26,11 @@ ConfigManager::~ConfigManager() {
 void ConfigManager::ReadConfig(const std::string filename) {
 
     std::ifstream configFile("config/" + filename);
-
+    
+    if(!configFile.is_open()){
+        std::cout << "Fail to open file: " << filename << std::endl;
+        exit(0);
+    }
     //std::hash<std::string> stringHash;
 
     std::list<Stop *> stops = std::list<Stop *>();

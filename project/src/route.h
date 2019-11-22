@@ -113,8 +113,8 @@ class Route {
   int num_stops_;
 
   int destination_stop_index_;  // always starts at zero, no init needed
-//   Stop * destination_stop_;
-//   double trip_time_;  // derived data - total distance travelled on route
+  Stop * destination_stop_;
+  double trip_time_;  // derived data - total distance travelled on route
 
   RouteData route_visualizer;
 };

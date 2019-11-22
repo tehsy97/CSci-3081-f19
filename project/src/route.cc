@@ -14,10 +14,11 @@ Route::Route(std::string name, Stop ** stops, double * distances,
   for (int i = 0; i < num_stops - 1; i++) {
     distances_between_.push_back(distances[i]);
   }
-
+  generator->GeneratePassengers();
   name_ = name;
   num_stops_ = num_stops;
   destination_stop_index_ = 0;
+  generator_ = generator;
 }
 
 Route * Route::Clone() {
@@ -46,27 +47,29 @@ void Route::Update() {
     it != stops_.end(); it++) {
     (*it)->Update();
   }
+
+  UpdateRouteData();
 }
 
 bool Route::IsAtEnd() const {
-  return (destination_stop_index_ == (num_stops_-1)) ||
-    (destination_stop_index_ == -1);
+  return (destination_stop_index_ == (num_stops_-1)); // ||
+    // (destination_stop_index_ == -1);
 }
 
 void Route::NextStop() {
   if (!IsAtEnd()) {
     destination_stop_index_ += 1;
-  } else {
-    destination_stop_index_ = -1;
   }
+  //  else {
+  //   destination_stop_index_ = -1;
+  // }
 }
 
 Stop * Route::GetDestinationStop() const {
   std::list<Stop *>::const_iterator it;
-  if ((stops_.size() > (unsigned) destination_stop_index_) &&
-    (destination_stop_index_ != -1)) {
-    it = std::next(stops_.begin(), destination_stop_index_);
-  }
+  it = std::next(stops_.begin(), destination_stop_index_);
+    
+  std::cout << "last stop: " << (*it)->GetId() << std::endl;
   return *it;
 }
 
@@ -84,6 +87,7 @@ double Route::GetNextStopDistance() const {
   if (destination_stop_index_ > 0 &&
     distances_between_.size() >= (unsigned) destination_stop_index_) {
     it = std::next(distances_between_.begin(), destination_stop_index_ - 1);
+    // it = std::next(distances_between_.begin(), destination_stop_index_);
   } else {
     return 0;
   }
@@ -139,7 +143,7 @@ RouteData Route::GetRouteData() {
 
 Stop * Route::GetPreviousStop() {
   std::list<Stop *>::iterator it;
-  if(destination_stop_index_ > 1 && destination_stop_index_ != -1){
+  if(destination_stop_index_ > 0){
     it = std::next(stops_.begin(), destination_stop_index_-1);
     return *it;
   }

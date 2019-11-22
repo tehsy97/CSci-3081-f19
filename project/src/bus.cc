@@ -41,12 +41,14 @@ int Bus::UnloadPassenger(int stop_id) {
 }
 
 bool Bus::Move() {
-  distance_remaining_ = distance_remaining_ - 1;
-  if (distance_remaining_ < 0) {
-    distance_remaining_ = 0;
-  }
+  distance_remaining_ = distance_remaining_ - speed_;
+  // if (distance_remaining_ < 0) {
+  //   distance_remaining_ = 0;
+  // }
+  UpdateBusData();
   return true;
 }
+
 // bool Refuel() {
 //  // This may become more complex in the future
 //  fuel_ = max_fuel_;
@@ -57,8 +59,8 @@ bool Bus::IsTripComplete() {
 }
 
 void Bus::Update() {  // using common Update format
+  Stop * stop_arrived_at;
   if ((static_cast <int> (ceil(distance_remaining_))) == 0) {
-    Stop * stop_arrived_at;
     if (outgoing_route_->IsAtEnd()) {
       stop_arrived_at = incoming_route_->GetDestinationStop();
       incoming_route_->NextStop();
@@ -71,6 +73,7 @@ void Bus::Update() {  // using common Update format
         it != passengers_.end(); it++) {
         (*it)->Update();
       }
+      
       outgoing_route_->NextStop();
       distance_remaining_ = outgoing_route_->GetNextStopDistance();
       // std ::cout << "**********this is outcoming route id: "
@@ -86,6 +89,24 @@ void Bus::Update() {  // using common Update format
 
     // load passengers at the stop to the bus
     stop_arrived_at->LoadPassengers(this);
+  } else if (distance_remaining_ < 0) {
+    if (outgoing_route_->IsAtEnd()) {
+      stop_arrived_at = incoming_route_->GetDestinationStop();
+      if(UnloadPassenger(stop_arrived_at->GetId()) || stop_arrived_at->LoadPassengers(this)){
+        distance_remaining_ = 0;
+      } else { 
+        incoming_route_->NextStop();
+        distance_remaining_ += incoming_route_->GetNextStopDistance();
+      }
+    } else {
+      stop_arrived_at = outgoing_route_->GetDestinationStop();
+      if(UnloadPassenger(stop_arrived_at->GetId()) || stop_arrived_at->LoadPassengers(this)){
+        distance_remaining_ = 0;
+      } else {
+        outgoing_route_->NextStop();
+        distance_remaining_ += outgoing_route_->GetNextStopDistance();
+      }
+    }
   } else {
     Move();
     for (std::list<Passenger *>::iterator it = passengers_.begin();
@@ -93,7 +114,8 @@ void Bus::Update() {  // using common Update format
       (*it)->Update();
     }
   }
-}
+  
+ }
 
 void Bus::Report(std::ostream &out) {
   out << "Name: " << name_ << std::endl;
@@ -119,11 +141,13 @@ void Bus::UpdateBusData() {
   bus_visualizer.id = name_;
 
   if ((static_cast <int> (ceil(distance_remaining_))) == 0) {
+    
+  } else {
     Stop * previous_stop_;
     Stop * current_stop_;
     if (outgoing_route_->IsAtEnd()) {
-      current_stop_ = incoming_route_->GetDestinationStop();
-      previous_stop_ = incoming_route_->GetPreviousStop();
+        current_stop_ = incoming_route_->GetDestinationStop();
+        previous_stop_ = incoming_route_->GetPreviousStop();
     } else {
       current_stop_ = outgoing_route_->GetDestinationStop();
       previous_stop_ = outgoing_route_->GetPreviousStop();
@@ -133,14 +157,6 @@ void Bus::UpdateBusData() {
     
     double cur_prev_longitude = 0;
     double cur_prev_latitude = 0;
-    // for (auto it = route_data_.stops.begin();
-    //   it != route_data_.stops.end(); it++){
-    //     if((*it).id == std::to_string(current_stop_->GetId()) ||
-    //       (*it).id == std::to_string(previous_stop_->GetId())){
-    //       cur_prev_longitude += (*it).position.x;
-    //       cur_prev_latitude += (*it).position.y;
-    //     } 
-    // }
 
     if (current_stop_ != NULL && previous_stop_ != NULL) {
       cur_prev_longitude += ((current_stop_->GetStopData()).position.x + (previous_stop_->GetStopData()).position.x);

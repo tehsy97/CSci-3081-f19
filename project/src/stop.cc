@@ -40,6 +40,7 @@ void Stop::Update() {
     it != passengers_.end(); it++) {
     (*it)->Update();
   }
+  GetStopData();
 }
 
 int Stop::GetId() const {

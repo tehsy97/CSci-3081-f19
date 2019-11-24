@@ -1,0 +1,7 @@
+Usage: ./build/bin/ExampleServer 8081
+Time to generate!
+Time to generate!
+Using default config file: config.txt
+libwebsocket init failed
+
+starting server...

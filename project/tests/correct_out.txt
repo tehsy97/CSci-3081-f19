@@ -1,5 +1,5 @@
 Name: Zoe
 Destination: 33
 Total Wait: 34
-	Wait at Stop: 33
-	Time on bus: 1
+	Wait at Stop: 2
+	Time on bus: 32

@@ -1,0 +1,6418 @@
+/*************************
+
+         STARTING
+        SIMULATION
+*************************/
+Time to generate!
+Time to generate!
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 0
+	Wait at Stop: 0
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 0
+	Wait at Stop: 0
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 0
+	Wait at Stop: 0
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 0
+	Wait at Stop: 0
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 0
+	Wait at Stop: 0
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+/*************************
+
+           BEGIN
+          UPDATING
+*************************/
+~~~~~~~~~~~~~ The time is now 1 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 1
+	Wait at Stop: 1
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 1
+	Wait at Stop: 1
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 1
+	Wait at Stop: 1
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 1
+	Wait at Stop: 1
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 1
+	Wait at Stop: 1
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 2 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 2
+	Wait at Stop: 2
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 2
+	Wait at Stop: 2
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 2
+	Wait at Stop: 2
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 2
+	Wait at Stop: 2
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 2
+	Wait at Stop: 2
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 3 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 3
+	Wait at Stop: 3
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 3
+	Wait at Stop: 3
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 3
+	Wait at Stop: 3
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 3
+	Wait at Stop: 3
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 3
+	Wait at Stop: 3
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 4 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 4
+	Wait at Stop: 4
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 4
+	Wait at Stop: 4
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 4
+	Wait at Stop: 4
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 4
+	Wait at Stop: 4
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 4
+	Wait at Stop: 4
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 5 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 5
+	Wait at Stop: 5
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 5
+	Wait at Stop: 5
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 5
+	Wait at Stop: 5
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 5
+	Wait at Stop: 5
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 5
+	Wait at Stop: 5
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 6 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 6
+	Wait at Stop: 6
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 6
+	Wait at Stop: 6
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 6
+	Wait at Stop: 6
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 6
+	Wait at Stop: 6
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 6
+	Wait at Stop: 6
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 7 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 7
+	Wait at Stop: 7
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 7
+	Wait at Stop: 7
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 7
+	Wait at Stop: 7
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 7
+	Wait at Stop: 7
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 7
+	Wait at Stop: 7
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 8 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 8
+	Wait at Stop: 8
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 8
+	Wait at Stop: 8
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 8
+	Wait at Stop: 8
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 8
+	Wait at Stop: 8
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 8
+	Wait at Stop: 8
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 9 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 9
+	Wait at Stop: 9
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 9
+	Wait at Stop: 9
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 9
+	Wait at Stop: 9
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 9
+	Wait at Stop: 9
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 9
+	Wait at Stop: 9
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 10 ~~~~~~~~~~~~~
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 1
+Name: Beladurus
+Destination: 3
+Total Wait: 10
+	Wait at Stop: 10
+	Time on bus: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 10
+	Wait at Stop: 10
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :1
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 10
+	Wait at Stop: 10
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 10
+	Wait at Stop: 10
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 10
+	Wait at Stop: 10
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 11 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 4
+	Passengers (1): 
+Name: Beladurus
+Destination: 3
+Total Wait: 11
+	Wait at Stop: 10
+	Time on bus: 1
+bus string10000
+bus numPassengers1
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 11
+	Wait at Stop: 11
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 11
+	Wait at Stop: 11
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 11
+	Wait at Stop: 11
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 11
+	Wait at Stop: 11
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 12 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 3
+	Passengers (1): 
+Name: Beladurus
+Destination: 3
+Total Wait: 12
+	Wait at Stop: 10
+	Time on bus: 2
+bus string10000
+bus numPassengers1
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 12
+	Wait at Stop: 12
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 12
+	Wait at Stop: 12
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 12
+	Wait at Stop: 12
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 12
+	Wait at Stop: 12
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 13 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 2
+	Passengers (1): 
+Name: Beladurus
+Destination: 3
+Total Wait: 13
+	Wait at Stop: 10
+	Time on bus: 3
+bus string10000
+bus numPassengers1
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 13
+	Wait at Stop: 13
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 13
+	Wait at Stop: 13
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 13
+	Wait at Stop: 13
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 13
+	Wait at Stop: 13
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 14 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 1
+	Passengers (1): 
+Name: Beladurus
+Destination: 3
+Total Wait: 14
+	Wait at Stop: 10
+	Time on bus: 4
+bus string10000
+bus numPassengers1
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 14
+	Wait at Stop: 14
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 14
+	Wait at Stop: 14
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 14
+	Wait at Stop: 14
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 14
+	Wait at Stop: 14
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 15 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 0
+	Passengers (1): 
+Name: Beladurus
+Destination: 3
+Total Wait: 15
+	Wait at Stop: 10
+	Time on bus: 5
+bus string10000
+bus numPassengers1
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 1
+Name: Bellextr
+Destination: 3
+Total Wait: 15
+	Wait at Stop: 15
+	Time on bus: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :1
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 15
+	Wait at Stop: 15
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 15
+	Wait at Stop: 15
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 15
+	Wait at Stop: 15
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 16 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 4
+	Passengers (2): 
+Name: Beladurus
+Destination: 3
+Total Wait: 15
+	Wait at Stop: 10
+	Time on bus: 5
+Name: Bellextr
+Destination: 3
+Total Wait: 16
+	Wait at Stop: 15
+	Time on bus: 1
+bus string10000
+bus numPassengers2
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 16
+	Wait at Stop: 16
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 16
+	Wait at Stop: 16
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 16
+	Wait at Stop: 16
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 17 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 3
+	Passengers (2): 
+Name: Beladurus
+Destination: 3
+Total Wait: 16
+	Wait at Stop: 10
+	Time on bus: 6
+Name: Bellextr
+Destination: 3
+Total Wait: 17
+	Wait at Stop: 15
+	Time on bus: 2
+bus string10000
+bus numPassengers2
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 17
+	Wait at Stop: 17
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 17
+	Wait at Stop: 17
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 17
+	Wait at Stop: 17
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 18 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 2
+	Passengers (2): 
+Name: Beladurus
+Destination: 3
+Total Wait: 17
+	Wait at Stop: 10
+	Time on bus: 7
+Name: Bellextr
+Destination: 3
+Total Wait: 18
+	Wait at Stop: 15
+	Time on bus: 3
+bus string10000
+bus numPassengers2
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 18
+	Wait at Stop: 18
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 18
+	Wait at Stop: 18
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 18
+	Wait at Stop: 18
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 19 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 1
+	Passengers (2): 
+Name: Beladurus
+Destination: 3
+Total Wait: 18
+	Wait at Stop: 10
+	Time on bus: 8
+Name: Bellextr
+Destination: 3
+Total Wait: 19
+	Wait at Stop: 15
+	Time on bus: 4
+bus string10000
+bus numPassengers2
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 19
+	Wait at Stop: 19
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 19
+	Wait at Stop: 19
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 19
+	Wait at Stop: 19
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 20 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 0
+	Passengers (2): 
+Name: Beladurus
+Destination: 3
+Total Wait: 19
+	Wait at Stop: 10
+	Time on bus: 9
+Name: Bellextr
+Destination: 3
+Total Wait: 20
+	Wait at Stop: 15
+	Time on bus: 5
+bus string10000
+bus numPassengers2
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 20
+	Wait at Stop: 20
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 20
+	Wait at Stop: 20
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 20
+	Wait at Stop: 20
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 21 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 2
+	Passengers (2): 
+Name: Beladurus
+Destination: 3
+Total Wait: 19
+	Wait at Stop: 10
+	Time on bus: 9
+Name: Bellextr
+Destination: 3
+Total Wait: 20
+	Wait at Stop: 15
+	Time on bus: 5
+bus string10000
+bus numPassengers2
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 21
+	Wait at Stop: 21
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 21
+	Wait at Stop: 21
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 21
+	Wait at Stop: 21
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 22 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 1
+	Passengers (2): 
+Name: Beladurus
+Destination: 3
+Total Wait: 20
+	Wait at Stop: 10
+	Time on bus: 10
+Name: Bellextr
+Destination: 3
+Total Wait: 21
+	Wait at Stop: 15
+	Time on bus: 6
+bus string10000
+bus numPassengers2
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 4
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 22
+	Wait at Stop: 22
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 22
+	Wait at Stop: 22
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 22
+	Wait at Stop: 22
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 23 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 0
+	Passengers (2): 
+Name: Beladurus
+Destination: 3
+Total Wait: 21
+	Wait at Stop: 10
+	Time on bus: 11
+Name: Bellextr
+Destination: 3
+Total Wait: 22
+	Wait at Stop: 15
+	Time on bus: 7
+bus string10000
+bus numPassengers2
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 3
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 23
+	Wait at Stop: 23
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 23
+	Wait at Stop: 23
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 23
+	Wait at Stop: 23
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 24 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 19
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 2
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 24
+	Wait at Stop: 24
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 24
+	Wait at Stop: 24
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 24
+	Wait at Stop: 24
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 25 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 18
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 25
+	Wait at Stop: 25
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 25
+	Wait at Stop: 25
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 25
+	Wait at Stop: 25
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 26 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 17
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 26
+	Wait at Stop: 26
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 26
+	Wait at Stop: 26
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 26
+	Wait at Stop: 26
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 27 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 16
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 4
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 27
+	Wait at Stop: 27
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 27
+	Wait at Stop: 27
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 27
+	Wait at Stop: 27
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 28 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 15
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 3
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 28
+	Wait at Stop: 28
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 28
+	Wait at Stop: 28
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 28
+	Wait at Stop: 28
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 29 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 14
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 2
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 29
+	Wait at Stop: 29
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 29
+	Wait at Stop: 29
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 29
+	Wait at Stop: 29
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 30 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 13
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 30
+	Wait at Stop: 30
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 30
+	Wait at Stop: 30
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 30
+	Wait at Stop: 30
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 31 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 12
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 31
+	Wait at Stop: 31
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 31
+	Wait at Stop: 31
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 31
+	Wait at Stop: 31
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 32 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 11
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 2
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 32
+	Wait at Stop: 32
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 32
+	Wait at Stop: 32
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 32
+	Wait at Stop: 32
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 33 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 10
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 4
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 33
+	Wait at Stop: 33
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 33
+	Wait at Stop: 33
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 33
+	Wait at Stop: 33
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 34 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 9
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 3
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 34
+	Wait at Stop: 34
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 34
+	Wait at Stop: 34
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 34
+	Wait at Stop: 34
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 35 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 8
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 19
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 2
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 35
+	Wait at Stop: 35
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 35
+	Wait at Stop: 35
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 35
+	Wait at Stop: 35
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 36 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 7
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 18
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 36
+	Wait at Stop: 36
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 36
+	Wait at Stop: 36
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 36
+	Wait at Stop: 36
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 37 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 6
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 17
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 37
+	Wait at Stop: 37
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 37
+	Wait at Stop: 37
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 37
+	Wait at Stop: 37
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 38 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 5
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 16
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 4
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 38
+	Wait at Stop: 38
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 38
+	Wait at Stop: 38
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 38
+	Wait at Stop: 38
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 39 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 4
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 15
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 3
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 39
+	Wait at Stop: 39
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 39
+	Wait at Stop: 39
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 39
+	Wait at Stop: 39
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 40 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 3
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 14
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 2
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 40
+	Wait at Stop: 40
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 40
+	Wait at Stop: 40
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 40
+	Wait at Stop: 40
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 41 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 2
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 13
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 41
+	Wait at Stop: 41
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 41
+	Wait at Stop: 41
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 41
+	Wait at Stop: 41
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 42 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 12
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 42
+	Wait at Stop: 42
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 42
+	Wait at Stop: 42
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 42
+	Wait at Stop: 42
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 43 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 11
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 2
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 43
+	Wait at Stop: 43
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 43
+	Wait at Stop: 43
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 43
+	Wait at Stop: 43
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 44 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 10
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: 10003
+Speed: 1
+Distance to next stop: 4
+	Passengers (0): 
+bus string10003
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 44
+	Wait at Stop: 44
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 44
+	Wait at Stop: 44
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 44
+	Wait at Stop: 44
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 45 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 9
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: 10003
+Speed: 1
+Distance to next stop: 3
+	Passengers (0): 
+bus string10003
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 45
+	Wait at Stop: 45
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 45
+	Wait at Stop: 45
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 45
+	Wait at Stop: 45
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 46 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 8
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 19
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: 10003
+Speed: 1
+Distance to next stop: 2
+	Passengers (0): 
+bus string10003
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 46
+	Wait at Stop: 46
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 46
+	Wait at Stop: 46
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 46
+	Wait at Stop: 46
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 47 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 7
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 18
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: 10003
+Speed: 1
+Distance to next stop: 1
+	Passengers (0): 
+bus string10003
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 47
+	Wait at Stop: 47
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 47
+	Wait at Stop: 47
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 47
+	Wait at Stop: 47
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 48 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10000
+bus numPassengers0
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 6
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 17
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: 10003
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+bus string10003
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 1
+Name: Evaesus
+Destination: 11
+Total Wait: 48
+	Wait at Stop: 48
+	Time on bus: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 48
+	Wait at Stop: 48
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 48
+	Wait at Stop: 48
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :1
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 49 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 2
+	Passengers (1): 
+Name: Evaesus
+Destination: 11
+Total Wait: 49
+	Wait at Stop: 48
+	Time on bus: 1
+bus string10000
+bus numPassengers1
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 5
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 16
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: 10003
+Speed: 1
+Distance to next stop: 4
+	Passengers (0): 
+bus string10003
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 49
+	Wait at Stop: 49
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 49
+	Wait at Stop: 49
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+~~~~~~~~~~~~~ The time is now 50 ~~~~~~~~~~~~~
+Name: 10000
+Speed: 1
+Distance to next stop: 1
+	Passengers (1): 
+Name: Evaesus
+Destination: 11
+Total Wait: 50
+	Wait at Stop: 48
+	Time on bus: 2
+bus string10000
+bus numPassengers1
+bus capacity60
+Name: 10001
+Speed: 1
+Distance to next stop: 4
+	Passengers (0): 
+bus string10001
+bus numPassengers0
+bus capacity60
+Name: 10002
+Speed: 1
+Distance to next stop: 15
+	Passengers (0): 
+bus string10002
+bus numPassengers0
+bus capacity60
+Name: 10003
+Speed: 1
+Distance to next stop: 3
+	Passengers (0): 
+bus string10003
+bus numPassengers0
+bus capacity60
+Name: Campus Connector - Eastbound
+Num stops: 8
+ID: 0
+Passengers waiting: 0
+ID: 1
+Passengers waiting: 0
+ID: 2
+Passengers waiting: 0
+ID: 3
+Passengers waiting: 0
+ID: 4
+Passengers waiting: 0
+ID: 5
+Passengers waiting: 0
+ID: 6
+Passengers waiting: 0
+ID: 7
+Passengers waiting: 0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :0
+stop position x: 44.9724y: -93.2438
+stop number of people :0
+stop name :1
+stop position x: 44.9736y: -93.2351
+stop number of people :0
+stop name :2
+stop position x: 44.9754y: -93.2266
+stop number of people :0
+stop name :3
+stop position x: 44.9758y: -93.2222
+stop number of people :0
+stop name :4
+stop position x: 44.9808y: -93.1807
+stop number of people :0
+stop name :5
+stop position x: 44.9834y: -93.1788
+stop number of people :0
+stop name :6
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :7
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+Campus Connector - Eastbound~~~~~~~~~~~~~ The route stop refresh end 
+Name: Campus Connector - Westbound
+Num stops: 9
+ID: 8
+Passengers waiting: 0
+ID: 9
+Passengers waiting: 0
+ID: 10
+Passengers waiting: 0
+ID: 11
+Passengers waiting: 0
+ID: 12
+Passengers waiting: 0
+ID: 13
+Passengers waiting: 0
+ID: 14
+Passengers waiting: 0
+ID: 15
+Passengers waiting: 2
+Name: Belextrimus
+Destination: 16
+Total Wait: 50
+	Wait at Stop: 50
+	Time on bus: 0
+Name: Natrinept
+Destination: 16
+Total Wait: 50
+	Wait at Stop: 50
+	Time on bus: 0
+ID: 16
+Passengers waiting: 0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh begin 
+stop name :8
+stop position x: 44.9846y: -93.1864
+stop number of people :0
+stop name :9
+stop position x: 44.9845y: -93.1817
+stop number of people :0
+stop name :10
+stop position x: 44.9837y: -93.1788
+stop number of people :0
+stop name :11
+stop position x: 44.9807y: -93.1808
+stop number of people :0
+stop name :12
+stop position x: 44.9764y: -93.2218
+stop number of people :0
+stop name :13
+stop position x: 44.9781y: -93.2292
+stop number of people :0
+stop name :14
+stop position x: 44.9784y: -93.236
+stop number of people :0
+stop name :15
+stop position x: 44.9745y: -93.2369
+stop number of people :2
+stop name :16
+stop position x: 44.9726y: -93.2436
+stop number of people :0
+Campus Connector - Westbound~~~~~~~~~~~~~ The route stop refresh end 
+/*************************
+
+        SIMULATION
+         COMPLETE
+*************************/

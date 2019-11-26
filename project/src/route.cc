@@ -69,7 +69,7 @@ Stop * Route::GetDestinationStop() const {
   std::list<Stop *>::const_iterator it;
   it = std::next(stops_.begin(), destination_stop_index_);
     
-  std::cout << "last stop: " << (*it)->GetId() << std::endl;
+  // std::cout << "last stop: " << (*it)->GetId() << std::endl;
   return *it;
 }
 

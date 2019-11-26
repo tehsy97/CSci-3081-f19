@@ -17,9 +17,11 @@ class Stop;
 
 class ConfigurationSimulator {
  public:
+  ConfigurationSimulator();
   ConfigurationSimulator(ConfigManager*);
   ~ConfigurationSimulator();
-
+  void UsageMessage();
+  bool CheckCommandLine(int argc, std::string filename);
   void Start();
   void Update();
 

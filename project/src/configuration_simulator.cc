@@ -3,18 +3,59 @@
  *
  * @copyright 2019 3081 Staff, All rights reserved.
  */
+
+#include <string>
+#include <fstream>
 #include "src/configuration_simulator.h"
 #include "bus.h"
 #include "route.h"
 
+ConfigurationSimulator::ConfigurationSimulator() {
 
+}
 
 ConfigurationSimulator::ConfigurationSimulator(ConfigManager* configManager) {
     configManager_ = configManager;
 }
 
 ConfigurationSimulator::~ConfigurationSimulator() {
-    delete configManager_;
+
+}
+
+void ConfigurationSimulator::UsageMessage() {
+  std::cout << "Usage: ./build/bin/configuration_sim <config_filename>\n";
+}
+
+bool ConfigurationSimulator::CheckCommandLine(int argc, std::string filename) {
+
+  if (argc == 2) {
+      // std::cout<< "hh" << std::endl;
+    try {
+      int filename_len = filename.length();
+      // std::cout<< "hhhh" << std::endl;
+      if (filename.substr(filename_len-4) == ".txt" && filename_len > 4) {
+          // std::cout<< "hhhhhhhh" << std::endl;
+        // filename = "../config/" + filename;
+        std::ifstream infile(filename);
+        if(infile.is_open()){
+          infile.close();
+        } else {
+          throw "Couldn't open file";
+        }
+      } else {
+        throw "Invalid file type";
+      }
+    } catch (...) {
+      std::cout << "Error opening file: " << filename << std::endl;
+      std::cout << "Default configuration file will be used." << std::endl;
+      return false;
+    }
+  } else {
+    UsageMessage();
+    std::cout << "Default configuration file will be used." << std::endl;
+    return false;
+  } 
+  return true;
 }
 
 void ConfigurationSimulator::Start() {

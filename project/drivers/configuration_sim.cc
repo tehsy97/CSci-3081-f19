@@ -9,32 +9,6 @@
 #include "src/config_manager.h"
 #include "src/configuration_simulator.h"
 
-void UsageMessage(){
-  std::cout << "Usage: ./build/bin/configuration_sim <config_filename>\n";
-}
-
-bool CheckCommandLine(int argc, char**argv){
-  if (argc != 2){
-    UsageMessage();
-    return false;
-  }
-
-  std::ifstream infile(argv[argc-1]);
-
-  try {
-    if(infile.is_open()){
-      infile.close();
-      return true;
-    } else {
-      throw "Couldn't open file";
-    }
-
-  } catch (const std::exception &e){
-    std::cout << "Exception: " << e.what() << std::endl;
-    return false;
-  }
-  return true;
-}
 int main(int argc, char**argv) {
   // NOTE: this usage will change depending on
   //       how you build your config_sim classes
@@ -50,46 +24,50 @@ int main(int argc, char**argv) {
   //     Call Update on ConfigurationSimulator
   // else
   //   echo info to the user about needing a config file name
-  char ** argc_list = argv;
-  if(CheckCommandLine(argc, argc_list)){
-    ConfigManager * config_manager = new ConfigManager();
-
-    config_manager->ReadConfig(argc_list[argc-1]);
-
-    ConfigurationSimulator config_sim(config_manager);
-
-    int rounds = 50; //Number of rounds of generation to simulate in test
-
-
-    std::cout << "/*************************" << std::endl << std::endl;
-    std::cout << "         STARTING" << std::endl;
-    std::cout << "        SIMULATION" << std::endl;
-    std::cout << "*************************/" << std::endl;
-
-    config_sim.Start();  //   Call Start on ConfigurationSimulator
-
-    std::cout << "/*************************" << std::endl << std::endl;
-    std::cout << "           BEGIN" << std::endl;
-    std::cout << "          UPDATING" << std::endl;
-    std::cout << "*************************/" << std::endl;
-
-    //   Start for loop, length of simulation (set by ourself)
-
-    for (int i = 0; i < rounds; i++) {
-      config_sim.Update(); //     Call Update on ConfigurationSimulator
-    }
-
-    std::cout << "/*************************" << std::endl << std::endl;
-    std::cout << "        SIMULATION" << std::endl;
-    std::cout << "         COMPLETE" << std::endl;
-    std::cout << "*************************/" << std::endl;
-
+  //char ** argc_list = argv;
+  std::string filename;
+  if (argc < 2) {
+    filename = "config.txt";
   } else {
-    UsageMessage();
+    filename = argv[1];
+  }
+  
+  ConfigManager * config_manager = new ConfigManager();
+  ConfigurationSimulator config_sim;
+  
+  // std::cout << config_sim.CheckCommandLine(argc, ("config/" + filename)) << std::endl;
+  // std::cout << "fdfadsf" << std::endl;
+  if (!config_sim.CheckCommandLine(argc, ("config/" + filename))){
+    config_manager->ReadConfig("config.txt");  
+  } else {
+    config_manager->ReadConfig(filename);
   }
 
+  config_sim = ConfigurationSimulator (config_manager);
+  int rounds = 50; //Number of rounds of generation to simulate in test
 
+  std::cout << "/*************************" << std::endl << std::endl;
+  std::cout << "         STARTING" << std::endl;
+  std::cout << "        SIMULATION" << std::endl;
+  std::cout << "*************************/" << std::endl;
 
+  config_sim.Start();  //   Call Start on ConfigurationSimulator
 
+  std::cout << "/*************************" << std::endl << std::endl;
+  std::cout << "           BEGIN" << std::endl;
+  std::cout << "          UPDATING" << std::endl;
+  std::cout << "*************************/" << std::endl;
+
+  //   Start for loop, length of simulation (set by ourself)
+
+  for (int i = 0; i < rounds; i++) {
+    config_sim.Update(); //     Call Update on ConfigurationSimulator
+  }
+
+  std::cout << "/*************************" << std::endl << std::endl;
+  std::cout << "        SIMULATION" << std::endl;
+  std::cout << "         COMPLETE" << std::endl;
+  std::cout << "*************************/" << std::endl;
+ 
   return 0;
 }

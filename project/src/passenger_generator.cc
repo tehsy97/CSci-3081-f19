@@ -10,6 +10,11 @@
 
 PassengerGenerator::PassengerGenerator(std::list<double> probs,
    std::list<Stop *> stops) {
+  //probability of last stop of routes will always be zero
+  if (!probs.empty()) {
+    probs.pop_back();
+    probs.push_back(0);
+  }
   generation_probabilities_ = probs;
   stops_ = stops;
 }

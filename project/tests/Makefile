@@ -218,4 +218,3 @@ $(CS3081DIR):
 
 clobber: clean
 	cd $(ROOTDIR)/external; make clobber
-	

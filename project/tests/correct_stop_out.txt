@@ -1,0 +1,17 @@
+ID: 1
+Passengers waiting: 3
+Name: p1
+Destination: 10
+Total Wait: 2
+	Wait at Stop: 2
+	Time on bus: 0
+Name: p3
+Destination: 13
+Total Wait: 1
+	Wait at Stop: 1
+	Time on bus: 0
+Name: p2
+Destination: 12
+Total Wait: 0
+	Wait at Stop: 0
+	Time on bus: 0

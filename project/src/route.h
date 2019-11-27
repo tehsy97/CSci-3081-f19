@@ -13,6 +13,7 @@
 
 #include "./passenger_generator.h"
 #include "./stop.h"
+#include "./data_structs.h"
 
 class PassengerGenerator;
 class Stop;
@@ -83,6 +84,26 @@ class Route {
   */
   double GetNextStopDistance() const;
 
+  /**
+  * @brief called by the visualizer to get
+  * the name of the route
+  *
+  * @return string
+  */
+  std::string GetName();
+
+  /**
+  * @brief called by the visualizer to get
+  * the route's list of Stop pointers
+  */
+  std::list<Stop *> GetStops();
+
+  void UpdateRouteData();
+
+  RouteData GetRouteData();
+
+  Stop * GetPreviousStop();
+
  private:
   int GenerateNewPassengers();  // generates passengers on its route
   PassengerGenerator * generator_;
@@ -92,7 +113,9 @@ class Route {
   int num_stops_;
 
   int destination_stop_index_;  // always starts at zero, no init needed
-//   Stop * destination_stop_;
-//   double trip_time_;  // derived data - total distance travelled on route
+  Stop * destination_stop_;
+  double trip_time_;  // derived data - total distance travelled on route
+
+  RouteData route_visualizer;
 };
 #endif  // SRC_ROUTE_H_

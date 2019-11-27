@@ -12,6 +12,7 @@
 
 #include "src/bus.h"
 #include "src/passenger.h"
+#include "./data_structs.h"
 
 class Bus;
 
@@ -31,7 +32,7 @@ class Stop {
 
   /**
   * @brief Get stop id number
-  * 
+  *
   * @return integer
   */
   int GetId() const;
@@ -40,22 +41,22 @@ class Stop {
   * @brief Load and count passengers in a stop list onto bus
   *
   * @param[in] Bus pointer pointing at Bus class
-  * 
+  *
   * @return integer
   */
   int LoadPassengers(Bus *);
 
   /**
   * @brief Add passengers into the stop passengers list and return 1
-  * 
+  *
   * @param[in] Passenger pointer pointing at passenger
-  * 
+  *
   * @return integer
   */
   int AddPassengers(Passenger *);
 
   /**
-  * @brief Update passengers status at this stop 
+  * @brief Update passengers status at this stop
   */
   void Update();
 
@@ -63,6 +64,8 @@ class Stop {
   * @brief print stops status as well as pasenger status at that stop
   */
   void Report(std::ostream &out) const;
+
+  StopData GetStopData();
 
  private:
   int id_;
@@ -72,5 +75,6 @@ class Stop {
   // derived information - not needed depending on passengers_
   // data structure implementation?
   // int passengers_present_;
+  StopData stops_visualizer;
 };
 #endif  // SRC_STOP_H_

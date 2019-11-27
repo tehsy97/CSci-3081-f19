@@ -14,6 +14,7 @@
 #include "src/passenger.h"
 #include "src/route.h"
 #include "src/stop.h"
+#include "./data_structs.h"
 
 class PassengerUnloader;
 class PassengerLoader;
@@ -36,28 +37,28 @@ class Bus {
                                                  double speed = 1);
   /**
   * @brief Get passengers on bus
-  * 
+  *
   * @return boolean
   */
   bool LoadPassenger(Passenger *);  // returning revenue delta
 
   /**
   * @brief Get passengers off the bus with they reach their destination
-  * 
+  *
   * @return integer
   */
   int UnloadPassenger(int);
 
   /**
   * @brief Move bus closer to next destination
-  * 
+  *
   * @return boolean
   */
   bool Move();
 
   /**
   * @brief check if bus has complete its outgoing and incoming route
-  * 
+  *
   * @return boolean
   */
   bool IsTripComplete();
@@ -72,7 +73,50 @@ class Bus {
   */
   void Report(std::ostream &out);
 
+  /**
+  * @brief Print bus information and status
+  * called by the visualizer to instruct
+  * the bus object to populate the BusData
+  * struct with the latest information
+  * (see the file data_structs.h to
+  * determine what information the BusData
+  * struct stores.). This a nontivial
+  * method, so we will outline its operation
+  * (which you have to implement), below.
+  */
+  void UpdateBusData();
+
+  /**
+  * @brief called by the visualizer to get then
+  * name of the bus
+  */
+  BusData GetBusData();
+
+  /**
+  * @brief called by the visualizer to get the name of the bus
+  */
+ std::string GetName() const;
+
+  /**
+  * @brief called by the visualizer to get the pointer
+  * to the bus's next stop
+  */
+ Stop * GetNextStop();
+
+  /**
+  * @brief called by the visualizer to get the current
+  * number of passengers on the bus
+  */
+ size_t GetNumPassengers();
+
+  /**
+  * @brief called by the visualizer to get the maximum
+  * number of passengers that the bus can hold
+  */
+ int GetCapacity();
+
  private:
+  BusData bus_visualizer;
   std::list<Passenger *> passengers_;
   int passenger_max_capacity_;
   std::string name_;

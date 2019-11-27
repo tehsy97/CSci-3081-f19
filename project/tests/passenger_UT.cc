@@ -58,6 +58,8 @@ class PassengerTests : public ::testing::Test {
  ******************************************************************************/
 
 TEST_F(PassengerTests, Constructor) {
+    EXPECT_EQ(passenger->GetDestination(), -1);
+	EXPECT_EQ(passenger1->GetDestination(), 33);
     EXPECT_EQ(passenger->IsOnBus(), false);
     passenger->GetOnBus();
     EXPECT_EQ(passenger->IsOnBus(), true);
@@ -129,9 +131,9 @@ TEST_F(PassengerTests, passenger) {
         if (passenger1->GetDestination() != time) {
             passenger1->Update();
         } else {
-            test_in.open("../build/bin/gtest_out.txt");
+            test_in.open("../build/bin/passenger_out.txt");
             if (!test_in.is_open()) {
-                std::cout << "Unable to open file: gtest_out.txt" << std::endl;
+                std::cout << "Unable to open file: passenger_out.txt" << std::endl;
             }
             passenger1->GetOnBus();
             passenger1->Report(test_in);  // write output into file
@@ -139,14 +141,14 @@ TEST_F(PassengerTests, passenger) {
         }
     }
 
-    correct_out.open("correct_out.txt");
+    correct_out.open("correct_passenger_out.txt");
     if (!correct_out.is_open()) {
-        std::cout << "Unable to open file: correct_out.txt" << std::endl;
+        std::cout << "Unable to open file: correct_passenger_out.txt" << std::endl;
     }
 
-    test_out.open("../build/bin/gtest_out.txt");
+    test_out.open("../build/bin/passenger_out.txt");
     if (!test_out.is_open()) {
-        std::cout << "Unable to open file: gtest_out.txt" << std::endl;
+        std::cout << "Unable to open file: passenger_out.txt" << std::endl;
     }
 
     // while(!test_out.eof() && !correct_out.eof()){
@@ -166,9 +168,9 @@ TEST_F(PassengerTests, passenger) {
 }
 
 TEST_F(PassengerTests, passenger_list) {
-    test_in.open("../build/bin/gtest_out_list.txt");
+    test_in.open("../build/bin/passenger_out_list.txt");
     if (!test_in.is_open()) {
-        std::cout << "Unable to open file: gtest_out_list.txt to write"
+        std::cout << "Unable to open file: passenger_out_list.txt to write"
           << std::endl;
     }
 
@@ -220,14 +222,14 @@ TEST_F(PassengerTests, passenger_list) {
     }
     test_in.close();
 
-    correct_out.open("correct_out_list.txt");
+    correct_out.open("correct_passenger_out_list.txt");
     if (!correct_out.is_open()) {
-        std::cout << "Unable to open file: correct_out_list.txt" << std::endl;
+        std::cout << "Unable to open file: correct_passenger_out_list.txt" << std::endl;
     }
 
-    test_out.open("../build/bin/gtest_out_list.txt");
+    test_out.open("../build/bin/passenger_out_list.txt");
     if (!test_out.is_open()) {
-        std::cout << "Unable to open file: gtest_out_list.txt to read"
+        std::cout << "Unable to open file: passenger_out_list.txt to read"
           << std::endl;
     }
 
@@ -241,7 +243,7 @@ TEST_F(PassengerTests, passenger_list) {
       getline(correct_out, expected_output)) {
         // std::cout << output << std::endl;
         // std::cout << expected_output << std::endl;
-        EXPECT_EQ(output, expected_output);
+        EXPECT_EQ(expected_output, output);
     }
     test_out.close();
     correct_out.close();

@@ -40,6 +40,7 @@ void Stop::Update() {
     it != passengers_.end(); it++) {
     (*it)->Update();
   }
+  GetStopData();
 }
 
 int Stop::GetId() const {
@@ -53,4 +54,12 @@ void Stop::Report(std::ostream &out) const {
     it != passengers_.end(); it++) {
     (*it)->Report(out);
   }
+}
+
+StopData Stop::GetStopData() {
+  stops_visualizer.id = std::to_string(id_);
+  stops_visualizer.position.x = longitude_;
+  stops_visualizer.position.y = latitude_;
+  stops_visualizer.num_people = passengers_.size();
+  return stops_visualizer;
 }

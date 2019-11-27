@@ -1,0 +1,56 @@
+Name: bus
+Speed: 1
+Distance to next stop: 0
+	Passengers (0): 
+Name: bus
+Speed: 1
+Distance to next stop: 1
+	Passengers (3): 
+Name: yuyu
+Destination: 2
+Total Wait: 1
+	Wait at Stop: 0
+	Time on bus: 1
+Name: chochow
+Destination: 3
+Total Wait: 1
+	Wait at Stop: 0
+	Time on bus: 1
+Name: shin
+Destination: 3
+Total Wait: 1
+	Wait at Stop: 0
+	Time on bus: 1
+Name: bus
+Speed: 1
+Distance to next stop: 0
+	Passengers (3): 
+Name: yuyu
+Destination: 2
+Total Wait: 2
+	Wait at Stop: 0
+	Time on bus: 2
+Name: chochow
+Destination: 3
+Total Wait: 2
+	Wait at Stop: 0
+	Time on bus: 2
+Name: shin
+Destination: 3
+Total Wait: 2
+	Wait at Stop: 0
+	Time on bus: 2
+Name: bus
+Speed: 1
+Distance to next stop: 1
+	Passengers (2): 
+Name: chochow
+Destination: 3
+Total Wait: 14
+	Wait at Stop: 0
+	Time on bus: 14
+Name: shin
+Destination: 3
+Total Wait: 14
+	Wait at Stop: 0
+	Time on bus: 14

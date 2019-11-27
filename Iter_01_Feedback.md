@@ -1,6 +1,6 @@
 ### Feedback for Iteration 1
 
-Run on November 07, 22:57:44 PM.
+Run on November 08, 12:50:44 PM.
 
 <hr>
 
@@ -62,10 +62,6 @@ This feedback is being batched and will run every few hours. Note that these fee
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/bus.d -MP -MT ../build/obj/tests/bus.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/bus.cc
 ==== Compiling ../src/bus.cc into ../build/obj/tests/bus.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/bus.o ../src/bus.cc
-../src/bus.cc: In member function void Bus::Update():
-../src/bus.cc:78:9: warning: unused variable passengers_unloaded [-Wunused-variable]
-     int passengers_unloaded = UnloadPassenger(stop_arrived_at->GetId());
-         ^~~~~~~~~~~~~~~~~~~
 ==== Auto-Generating Dependencies for ../src/random_passenger_generator.cc. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/random_passenger_generator.d -MP -MT ../build/obj/tests/random_passenger_generator.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/random_passenger_generator.cc
 ==== Compiling ../src/random_passenger_generator.cc into ../build/obj/tests/random_passenger_generator.o. ====
@@ -102,12 +98,8 @@ This feedback is being batched and will run every few hours. Note that these fee
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passenger_UT.d -MP -MT ../build/obj/tests/passenger_UT.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 passenger_UT.cc
 ==== Compiling passenger_UT.cc into ../build/obj/tests/passenger_UT.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/passenger_UT.o passenger_UT.cc
-==== Auto-Generating Dependencies for passenger_factory_UT.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passenger_factory_UT.d -MP -MT ../build/obj/tests/passenger_factory_UT.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 passenger_factory_UT.cc
-==== Compiling passenger_factory_UT.cc into ../build/obj/tests/passenger_factory_UT.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/passenger_factory_UT.o passenger_factory_UT.cc
 ==== Linking ../build/bin/unittest. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/local_simulator.o ../build/obj/tests/bus.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/stop.o ../build/obj/tests/passengers_UT.o ../build/obj/tests/passenger_UT.o ../build/obj/tests/passenger_factory_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -lGL
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/local_simulator.o ../build/obj/tests/bus.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/stop.o ../build/obj/tests/passengers_UT.o ../build/obj/tests/passenger_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -lGL
 /usr/bin/ld: cannot find -lgtest_main
 /usr/bin/ld: cannot find -lgtest
 /usr/bin/ld: cannot find -lgmock
@@ -147,20 +139,16 @@ make: *** [check-style-cse] Error 126
 
 
 
-+ Skip: Restoring mainpage.h
++ Pass: Restoring mainpage.h
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Change into directory "..".
 
-  This test was not run because of an earlier failing test.
++ Pass: Change into directory "..".
 
 
 #### Doxygen Tests
 
-+ Fail: Change into directory "docs/".
-
-     Directory "docs/" not found.
++ Pass: Change into directory "docs/".
 
 
 ##### .gitignore configured properly
@@ -169,19 +157,13 @@ make: *** [check-style-cse] Error 126
 
 + Pass: Check that file/directory "latex" does not exist.
 
-+ Fail: Check that file "Doxyfile" exists.
++ Pass: Check that file "Doxyfile" exists.
 
-     "Doxyfile" not found.
++ Pass: Generating documentation by running doxygen
 
-+ Fail: Generating documentation by running doxygen
++ Pass: Check that directory "html" exists.
 
-+ Fail: Check that directory "html" exists.
-
-     "html" not found.
-
-+ Fail: Check that file "html/classPassenger.html" exists.
-
-     "html/classPassenger.html" not found.
++ Pass: Check that file "html/classPassenger.html" exists.
 
 + Pass: Removing generated html and/or latex directories...
 
@@ -241,40 +223,8 @@ make: *** [check-style-cse] Error 126
 + Fail: Check that make compiles.
 
     Make compile fails with errors:.
-<pre>==== Auto-Generating Dependencies for ../src/local_simulator.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/local_simulator.d -MP -MT ../build/obj/tests/local_simulator.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/local_simulator.cc
-==== Compiling ../src/local_simulator.cc into ../build/obj/tests/local_simulator.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/local_simulator.o ../src/local_simulator.cc
-==== Auto-Generating Dependencies for ../src/bus.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/bus.d -MP -MT ../build/obj/tests/bus.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/bus.cc
-==== Compiling ../src/bus.cc into ../build/obj/tests/bus.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/bus.o ../src/bus.cc
-../src/bus.cc: In member function void Bus::Update():
-../src/bus.cc:81:9: warning: unused variable passengers_unloaded [-Wunused-variable]
-     int passengers_unloaded = UnloadPassenger(stop_arrived_at->GetId());
-         ^~~~~~~~~~~~~~~~~~~
-==== Auto-Generating Dependencies for ../src/random_passenger_generator.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/random_passenger_generator.d -MP -MT ../build/obj/tests/random_passenger_generator.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/random_passenger_generator.cc
-==== Compiling ../src/random_passenger_generator.cc into ../build/obj/tests/random_passenger_generator.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/random_passenger_generator.o ../src/random_passenger_generator.cc
-==== Auto-Generating Dependencies for ../src/passenger_generator.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passenger_generator.d -MP -MT ../build/obj/tests/passenger_generator.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/passenger_generator.cc
-==== Compiling ../src/passenger_generator.cc into ../build/obj/tests/passenger_generator.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/passenger_generator.o ../src/passenger_generator.cc
-==== Auto-Generating Dependencies for ../src/route.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/route.d -MP -MT ../build/obj/tests/route.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/route.cc
-==== Compiling ../src/route.cc into ../build/obj/tests/route.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/route.o ../src/route.cc
-../src/route.cc: In constructor Route::Route(std::__cxx11::string, Stop**, double*, int, PassengerGenerator*):
-../src/route.cc:10:39: warning: unused parameter generator [-Wunused-parameter]
-   int num_stops, PassengerGenerator * generator) {
-                                       ^~~~~~~~~
-==== Auto-Generating Dependencies for ../src/stop.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/stop.d -MP -MT ../build/obj/tests/stop.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11 ../src/stop.cc
-==== Compiling ../src/stop.cc into ../build/obj/tests/stop.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/stop.o ../src/stop.cc
-==== Linking ../build/bin/unittest. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/local_simulator.o ../build/obj/tests/bus.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/stop.o ../build/obj/tests/passengers_UT.o ../build/obj/tests/passenger_UT.o ../build/obj/tests/passenger_factory_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -lGL
+<pre>==== Linking ../build/bin/unittest. ====
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/local_simulator.o ../build/obj/tests/bus.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/stop.o ../build/obj/tests/passengers_UT.o ../build/obj/tests/passenger_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/kyllo089/grading-environment/grading-scripts/grading/Iter_01_Feedback/repo-teh00001/external/install/lib -lGL
 /usr/bin/ld: cannot find -lgtest_main
 /usr/bin/ld: cannot find -lgtest
 /usr/bin/ld: cannot find -lgmock
@@ -314,20 +264,16 @@ make: *** [check-style-cse] Error 126
 
 
 
-+ Skip: Restoring mainpage.h
++ Pass: Restoring mainpage.h
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Change into directory "..".
 
-  This test was not run because of an earlier failing test.
++ Pass: Change into directory "..".
 
 
 #### Doxygen Tests
 
-+ Fail: Change into directory "docs/".
-
-     Directory "docs/" not found.
++ Pass: Change into directory "docs/".
 
 
 ##### .gitignore configured properly
@@ -336,19 +282,13 @@ make: *** [check-style-cse] Error 126
 
 + Pass: Check that file/directory "latex" does not exist.
 
-+ Fail: Check that file "Doxyfile" exists.
++ Pass: Check that file "Doxyfile" exists.
 
-     "Doxyfile" not found.
++ Pass: Generating documentation by running doxygen
 
-+ Fail: Generating documentation by running doxygen
++ Pass: Check that directory "html" exists.
 
-+ Fail: Check that directory "html" exists.
-
-     "html" not found.
-
-+ Fail: Check that file "html/classPassenger.html" exists.
-
-     "html/classPassenger.html" not found.
++ Pass: Check that file "html/classPassenger.html" exists.
 
 + Pass: Removing generated html and/or latex directories...
 
@@ -367,7 +307,7 @@ make: *** [check-style-cse] Error 126
 
 + Pass: Run git ls-remote gather all branches in repo
 
-		493913d4284d8228a12e4755feb05d98f2821d9a	refs/heads/devel
+		2b19daa5483c23aeea663bb3bfdba59932551822	refs/heads/devel
 
 		75c8c52e8840f9a0197c448f50d451fe9e0c3097	refs/heads/enhance/02-enhance_passengers_class
 
@@ -375,7 +315,7 @@ make: *** [check-style-cse] Error 126
 
 		493913d4284d8228a12e4755feb05d98f2821d9a	refs/heads/iteration_priority_2
 
-		1b367ebfa825451b9f48060c59303ce772e77622	refs/heads/master
+		1967ccf97298135d7c19909cf847e7e57f21973d	refs/heads/master
 
 		53abec124c2c63fbf091b457d0fcf60469f3b012	refs/heads/preliminary_testing_submission
 

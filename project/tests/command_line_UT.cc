@@ -35,7 +35,7 @@ class CommandLine : public ::testing::Test {
     std::string filename = "../config/config.txt";
     std::string wrongname = "../config/output.txt";
     std::string usage = std::string("Usage: ") +
-      "./build/bin/configuration_sim <config_filename>\n";
+      "./build/bin/configuration_sim <config_filename> [length of simulation] [outputfile]\n";
 
     std::string wrongfile = std::string("Error opening file: ") + wrongname +
       "\nDefault configuration file will be used.\n";
@@ -81,4 +81,7 @@ TEST_F(CommandLine, CommandLineTests) {
     output = testing::internal::GetCapturedStdout();
     EXPECT_EQ(result, false);
     EXPECT_EQ(output, nofile);
+
+    EXPECT_EQ(config_sim.CheckOptionCommandLine("50"), 1);
+    EXPECT_EQ(config_sim.CheckOptionCommandLine("../build/bin/output.txt"), 2); 
 }

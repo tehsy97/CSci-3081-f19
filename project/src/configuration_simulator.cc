@@ -21,7 +21,7 @@ ConfigurationSimulator::~ConfigurationSimulator() {
 }
 
 void ConfigurationSimulator::UsageMessage() {
-  std::cout << "Usage: ./build/bin/configuration_sim <config_filename>\n" <<
+  std::cout << "Usage: ./build/bin/configuration_sim <config_filename> " <<
   "[length of simulation] [outputfile]\n";
 }
 

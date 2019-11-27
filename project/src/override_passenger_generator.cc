@@ -10,7 +10,7 @@
 
 // Nothing to do here, just pass args along
 OverridePassengerGenerator::OverridePassengerGenerator(std::list<double> probs,
-    std::list<Stop *> stops): PassengerGenerator(probs,stops) {}
+    std::list<Stop *> stops): PassengerGenerator(probs, stops) {}
 
 /*
  *  GeneratePassengers uses the route's passenger generation probabilities per stop to determine how many passengers to create.

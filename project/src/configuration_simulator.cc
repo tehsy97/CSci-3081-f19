@@ -7,11 +7,10 @@
 #include <string>
 #include <fstream>
 #include "src/configuration_simulator.h"
-#include "bus.h"
-#include "route.h"
+#include "src/bus.h"
+#include "src/route.h"
 
 ConfigurationSimulator::ConfigurationSimulator() {
-
 }
 
 ConfigurationSimulator::ConfigurationSimulator(ConfigManager* configManager) {
@@ -19,12 +18,11 @@ ConfigurationSimulator::ConfigurationSimulator(ConfigManager* configManager) {
 }
 
 ConfigurationSimulator::~ConfigurationSimulator() {
-
 }
 
 void ConfigurationSimulator::UsageMessage() {
-  std::cout << "Usage: ./build/bin/configuration_sim <config_filename>\n";
-  // "[length of simulation] [bus timings] [outputfile]\n";
+  std::cout << "Usage: ./build/bin/configuration_sim <config_filename> " <<
+  "[length of simulation] [outputfile]\n";
 }
 
 bool ConfigurationSimulator::CheckCommandLine(int argc, std::string filename) {
@@ -54,13 +52,13 @@ bool ConfigurationSimulator::CheckCommandLine(int argc, std::string filename) {
     UsageMessage();
     std::cout << "Default configuration file will be used." << std::endl;
     return false;
-  } 
+  }
   return true;
 }
 
 int ConfigurationSimulator::CheckOptionCommandLine(std::string argv) {
-  //return 1 if only length of simulation is entered
-  //return 2 if only output file is given
+  // return 1 if only length of simulation is entered
+  // return 2 if only output file is given
   try {
     // std::cout << "hello" << std::endl;
     // std::cout << "hellooo" << std::endl;
@@ -71,25 +69,11 @@ int ConfigurationSimulator::CheckOptionCommandLine(std::string argv) {
       if (outfile.is_open()) {
         outfile.close();
         return 2;
-      } else { 
+      } else {
         throw "Couldn't open file";
       }
-
       throw "Invalid length of simulation";
     }
-
-    // if (outfile.is_open()) {
-    //   outfile.close();
-    //   return 2;
-    // } else { 
-    //   if (std::atoi(argv.c_str()) != 0) {
-    //     return 1;
-    //   } else {
-    //     throw "Invalid length of simulation";
-    //   }
-
-    //   throw "Couldn't open file";
-    // }
   } catch (const char *s) {
     if ((std::string) s != "Invalid length of simulation") {
       std::cout << "Invalid length of simulation! The default 50 will be used.";
@@ -116,7 +100,6 @@ void ConfigurationSimulator::Start() {
     for (int i = 0; i < static_cast<int>(prototypeRoutes_.size()); i++) {
         prototypeRoutes_[i]->Report(std::cout);
         prototypeRoutes_[i]->UpdateRouteData();
-
     }
 }
 
@@ -135,7 +118,8 @@ void ConfigurationSimulator::Update() {
         if (0 >= timeSinceLastBus_[i]) {
             Route * outbound = prototypeRoutes_[2 * i];
             Route * inbound = prototypeRoutes_[2 * i + 1];
-            busses_.push_back(new Bus(std::to_string(busId), outbound->Clone(), inbound->Clone(), 60, 1));
+            busses_.push_back(new Bus(std::to_string(busId),
+              outbound->Clone(), inbound->Clone(), 60, 1));
             busId++;
             busses_[busses_.size() - 1]->UpdateBusData();
             timeSinceLastBus_[i] = busStartTimings_[i];
@@ -150,11 +134,11 @@ void ConfigurationSimulator::Update() {
     // Update busses
     for (int i = static_cast<int>(busses_.size()) - 1; i >= 0; i--) {
         busses_[i]->Update();
-        if (busses_[i]->IsTripComplete()) { 
+        if (busses_[i]->IsTripComplete()) {
             busses_.erase(busses_.begin() + i);
             continue;
         }
-        //busses_[i]->UpdateBusData();
+        // busses_[i]->UpdateBusData();
         busses_[i]->Report(std::cout);
     }
 
@@ -163,8 +147,7 @@ void ConfigurationSimulator::Update() {
     // Update routes
     for (int i = 0; i < static_cast<int>(prototypeRoutes_.size()); i++) {
         prototypeRoutes_[i]->Update();
-        //prototypeRoutes_[i]->UpdateRouteData();
+        // prototypeRoutes_[i]->UpdateRouteData();
         prototypeRoutes_[i]->Report(std::cout);
     }
-
 }

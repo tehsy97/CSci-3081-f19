@@ -1,6 +1,8 @@
 # ConfigSim and VisualizerSim: a Proof-of-Concept Transit System Vizualizer/Simulator
 
-## Iteration 2 - VERSION 5, November 11 (updated bus position requirements in program functionality)
+## Iteration 2 - VERSION 7, November 25 (various clarifications and reduction in scope)
+### VERSION 6, November 20 (clarified that 'make all' in tests should BUILD test executable, not run all tests)
+### VERSION 5, November 11 (updated bus position requirements in program functionality)
 ### VERSION 4, November 11 (clarified that following Lab 10 branching model is required)
 ### VERSION 3, November 11 (clarified necessity for project to build from _master_ branch and Google Style scope)
 ### VERSION 2, November 8 (clarified FileOutputSimulator make and execute commands)
@@ -65,9 +67,10 @@ Incorporate the configuration manager, and its related Simulator and driver file
 
 ##### Code Implementation
 
-At this point, both the configuration and visualizer simulations should be working. Running 'make' should build BOTH the ConfigSim and VisualizerSim executables (and both should be able to be built individually use other commands).
+At this point, both the configuration and visualizer simulations should be working. Running 'make' should build BOTH the ConfigSim and VisualizerSim executables (and both should be able to be built individually using other commands).
 
-We also want to refactor one element of the project which could cause errors, especially now that we're pulling from user-defined configuration files. The current version of the probability list for stops includes the value for the final stop on a route. With nowhere to go, that probability needs to be 0. But, with configuration files, this can't be guaranteed without some changes to our code. Refactor the code so that there is no probability (even if provided by configuration) for the final stop in a route, and that the simulator does not use or try to access such a probability for the final stop in a route.
+__Pushed to Iteration 3__
+~~We also want to refactor one element of the project which could cause errors, especially now that we're pulling from user-defined configuration files. The current version of the probability list for stops includes the value for the final stop on a route. With nowhere to go, that probability needs to be 0. But, with configuration files, this can't be guaranteed without some changes to our code. Refactor the code so that there is no probability (even if provided by configuration) for the final stop in a route, and that the simulator does not use or try to access such a probability for the final stop in a route.~~
 
 ##### Testing
 
@@ -79,7 +82,7 @@ In iteration 1, you wrote a couple of very simple tests.  This wasn’t enough t
 
 Overall structure:
 * Implement your tests using Google Test and by adding files to the tests directory, as we have been practicing so far.
-* Running “make all” inside the tests directory should run all the tests.
+* Running “make all” inside the tests directory should build all the tests.
 
 Unit tests:
 * Write a series of unit tests to thoroughly test your command line parsing.
@@ -87,10 +90,13 @@ Unit tests:
 * At a minimum, you should write enough tests to cover:
 	* Testing to make sure you detect an invalid command line for common errors or typos that users might make, such as forgetting to include file name or using the incorrect number of arguments.
 
-Regression tests:
-* For regression tests, the goal is to verify that features that worked once stay working, even as you continue to add to the code.
-* For our simulations, that probably means some relatively simple and structured scenario that can be reused and in which we know the exact output.
-* To use this testing strategy with Google Test, you should add a PROJ/resources directory to your repo where you can store your config file and anything else that might be helpful when trying to ensure that changes didn't break anything that was already working.
+__Pushed to Iteration 3__
+
+~~Regression tests:~~
+
+~~* For regression tests, the goal is to verify that features that worked once stay working, even as you continue to add to the code.~~
+~~* For our simulations, that probably means some relatively simple and structured scenario that can be reused and in which we know the exact output.~~
+~~* To use this testing strategy with Google Test, you should add a PROJ/resources directory to your repo where you can store your config file and anything else that might be helpful when trying to ensure that changes didn't break anything that was already working.~~
 
 
 <hr>
@@ -109,7 +115,7 @@ You can use this high-level grading rubric to better understand how we will grad
 * Code follows good design and style practices as discussed in class.
 	* Class interfaces follow McConnell’s guidelines of implementing just a single abstract data type within each class and using consistent levels of abstraction.
 	* Class and important variable names are informative.
-	* Comments are included to describe the intent of each public member function in every class.
+	* Comments are included to describe the intent of each public member function in every class __you wrote__.
 	* Additional comments are included in areas where the intent of the code is not obvious from reading the code itself and where future programmers would encounter a special case or unusual aspect of the code that they would find surprising.
 	* The tests show evidence of thinking about aspects of the design that are "worth testing" (e.g., boundary conditions, areas of change).
 
@@ -123,7 +129,7 @@ You can use this high-level grading rubric to better understand how we will grad
 * Tests cover valid/invalid command line options.
 * Tests cover different numbers of options specified on the command line.
 * Tests cover all domain objects (Bus, Route, Stop, Passenger) including their interactions with other objects.
-* The project follows Google Style as demonstrated by passing the cpplint.py checks. ALL code in within project/src will be processed.
+* The project follows Google Style as demonstrated by passing the cpplint.py checks. ~~ALL code in within project/src will be processed.~~ All code you developed will be processed, including the primary domain classes and files related to the ConfigurationSimulator you've written.
 * The project follows the branching model recommended in Lab 10, including use of branches and issues
 
 ##Important notes to remember

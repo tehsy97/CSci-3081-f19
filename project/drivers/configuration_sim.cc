@@ -48,39 +48,47 @@ int main(int argc, char**argv) {
   config_sim = ConfigurationSimulator(config_manager);
 
   int rounds = 50; //Number of rounds of generation to simulate in test
+  bool opened = false;
+  std::fstream outfile;
+  std::streambuf* stream_buffer_cout;
+  std::streambuf* stream_buffer_file;
 
-  // std::fstream outfile;
-  // for (int i = 2; i < argc; i++){
-  //   // std::cout << "rqewr" << std::endl;
-  //   int ret = config_sim.CheckOptionCommandLine(argv[i]);
-  //   // std::cout << "fadasaf" << std::endl;
-  //   switch (ret) {
-  //     case 1: 
-  //     {
-  //       // std::cout << "fadask;kl;kaf" << std::endl;
-  //       rounds = std::atoi(argv[i]);
-  //       // std::cout << "fadasfgfsdgsaf" << std::endl;
-  //       break;
-  //     }
-      
-      // case 2: 
-      // {
-      //   // std::cout << "fa44235dasaf" << std::endl;
-      //   outfile.open(argv[i], std::ios::out);
-      //   // std::cout << "fadaqerqewrqwreqwrqewrqwerqwsaf" << std::endl;
-      //   if (!outfile.is_open()){
-      //     std::cout << "Fail to open file: " << argv[i] << std::endl;
-      //     exit(0);
-      //   }
-      //   std::cout << "fada1234567867754saf" << std::endl;
-      //   auto cout_buf = std::cout.rdbuf(outfile.rdbuf());
-      //   // std::cout << "fada098765432saf" << std::endl;
-      //   break;
-      // }
-  //     default: 
-  //       break;
-  //   }
-  // }
+  for (int i = 2; i < argc; i++) {
+    std::cout << "i:" << argv[i] << std::endl;
+    int ret = config_sim.CheckOptionCommandLine(argv[i]);
+    // std::cout << "fadasaf" << std::endl;
+    switch (ret) {
+      case 1: 
+      {
+        // std::cout << "fadask;kl;kaf" << std::endl;
+        rounds = atoi(argv[i]);
+        // std::cout << "fadasfgfsdgsaf" << std::endl;
+      }
+      break;
+      case 2: 
+      {
+        // std::cout << "fa44235dasaf" << std::endl;
+        outfile.open(argv[i], std::ios::out);
+        if (!outfile.is_open()) {
+          std::cout << "Fail to open file: " << argv[i] << std::endl;
+          exit(0);
+        }
+        stream_buffer_cout = std::cout.rdbuf();
+        stream_buffer_file = outfile.rdbuf(); 
+        std::cout.rdbuf(stream_buffer_file); 
+        // std::cout << "fada09876543/2saf" << std::endl;
+        opened = true;
+      }
+      break;
+      default: 
+        break;
+    }
+      // std::cout << "fada0existf" << std::endl;
+  }
+  
+  if (opened) {
+    std::cout.rdbuf(stream_buffer_file);
+  }
   
   std::cout << "/*************************" << std::endl << std::endl;
   std::cout << "         STARTING" << std::endl;
@@ -105,6 +113,10 @@ int main(int argc, char**argv) {
   std::cout << "         COMPLETE" << std::endl;
   std::cout << "*************************/" << std::endl;
  
-  outfile.close();
+  if (opened) {
+    std::cout.rdbuf(stream_buffer_cout);
+    outfile.close();
+  }
+  // std::cout << "end" << std::endl;
   return 0;
 }

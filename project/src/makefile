@@ -8,7 +8,8 @@
 ### Section 0: Change this when compiling on non-CSELabs machines ###
 
 # PROJECT_NAME = transit_sim
-PROJECT_NAME = capture_transit_sim
+# PROJECT_NAME = capture_transit_sim
+PROJECT_NAME = configuration_sim
 # Path to root of repo
 REPOROOTDIR = $(shell git rev-parse --show-toplevel)
 

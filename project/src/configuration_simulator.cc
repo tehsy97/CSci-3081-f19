@@ -62,21 +62,34 @@ int ConfigurationSimulator::CheckOptionCommandLine(std::string argv) {
   //return 1 if only length of simulation is entered
   //return 2 if only output file is given
   try {
-    std::cout << "hello" << std::endl;
-    std::ofstream outfile(argv);
-    std::cout << "hellooo" << std::endl;
-    if (outfile.is_open()) {
-      outfile.close();
-      return 2;
-    } else { 
-      if (std::atoi(argv.c_str()) != 0) {
-        return 1;
-      } else {
-        throw "Invalid length of simulation";
+    // std::cout << "hello" << std::endl;
+    // std::cout << "hellooo" << std::endl;
+    if (atoi(argv.c_str()) != 0) {
+      return 1;
+    } else {
+      std::ofstream outfile(argv);
+      if (outfile.is_open()) {
+        outfile.close();
+        return 2;
+      } else { 
+        throw "Couldn't open file";
       }
 
-      throw "Couldn't open file";
+      throw "Invalid length of simulation";
     }
+
+    // if (outfile.is_open()) {
+    //   outfile.close();
+    //   return 2;
+    // } else { 
+    //   if (std::atoi(argv.c_str()) != 0) {
+    //     return 1;
+    //   } else {
+    //     throw "Invalid length of simulation";
+    //   }
+
+    //   throw "Couldn't open file";
+    // }
   } catch (const char *s) {
     if ((std::string) s != "Invalid length of simulation") {
       std::cout << "Invalid length of simulation! The default 50 will be used.";

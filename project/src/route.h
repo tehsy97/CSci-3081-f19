@@ -10,6 +10,7 @@
 #include <list>
 #include <iostream>
 #include <string>
+#include <vector>
 
 #include "./passenger_generator.h"
 #include "./stop.h"

@@ -52,7 +52,7 @@ void Route::Update() {
 }
 
 bool Route::IsAtEnd() const {
-  return (destination_stop_index_ == (num_stops_-1)); // ||
+  return (destination_stop_index_ == (num_stops_-1));  // ||
     // (destination_stop_index_ == -1);
 }
 
@@ -68,7 +68,7 @@ void Route::NextStop() {
 Stop * Route::GetDestinationStop() const {
   std::list<Stop *>::const_iterator it;
   it = std::next(stops_.begin(), destination_stop_index_);
-    
+
   // std::cout << "last stop: " << (*it)->GetId() << std::endl;
   return *it;
 }
@@ -143,7 +143,7 @@ RouteData Route::GetRouteData() {
 
 Stop * Route::GetPreviousStop() {
   std::list<Stop *>::iterator it;
-  if(destination_stop_index_ > 0){
+  if (destination_stop_index_ > 0) {
     it = std::next(stops_.begin(), destination_stop_index_-1);
     return *it;
   }

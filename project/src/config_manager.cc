@@ -187,5 +187,4 @@ void ConfigManager::ReadConfig(const std::string filename) {
     currProbabilities.clear();
     stops.clear();
     distances.clear();
-
 }

@@ -24,11 +24,11 @@ ConfigurationSimulator::~ConfigurationSimulator() {
 
 void ConfigurationSimulator::UsageMessage() {
   std::cout << "Usage: ./build/bin/configuration_sim <config_filename>\n";
+  // "[length of simulation] [bus timings] [outputfile]\n";
 }
 
 bool ConfigurationSimulator::CheckCommandLine(int argc, std::string filename) {
-
-  if (argc == 2) {
+  if (argc >= 2) {
       // std::cout<< "hh" << std::endl;
     try {
       int filename_len = filename.length();
@@ -37,7 +37,7 @@ bool ConfigurationSimulator::CheckCommandLine(int argc, std::string filename) {
           // std::cout<< "hhhhhhhh" << std::endl;
         // filename = "../config/" + filename;
         std::ifstream infile(filename);
-        if(infile.is_open()){
+        if (infile.is_open()) {
           infile.close();
         } else {
           throw "Couldn't open file";
@@ -56,6 +56,36 @@ bool ConfigurationSimulator::CheckCommandLine(int argc, std::string filename) {
     return false;
   } 
   return true;
+}
+
+int ConfigurationSimulator::CheckOptionCommandLine(std::string argv) {
+  //return 1 if only length of simulation is entered
+  //return 2 if only output file is given
+  try {
+    std::cout << "hello" << std::endl;
+    std::ofstream outfile(argv);
+    std::cout << "hellooo" << std::endl;
+    if (outfile.is_open()) {
+      outfile.close();
+      return 2;
+    } else { 
+      if (std::atoi(argv.c_str()) != 0) {
+        return 1;
+      } else {
+        throw "Invalid length of simulation";
+      }
+
+      throw "Couldn't open file";
+    }
+  } catch (const char *s) {
+    if ((std::string) s != "Invalid length of simulation") {
+      std::cout << "Invalid length of simulation! The default 50 will be used.";
+      std::cout << std::endl;
+    } else {
+      std::cout << "Couldn't open output file." << std::endl;
+    }
+    return 0;
+  }
 }
 
 void ConfigurationSimulator::Start() {

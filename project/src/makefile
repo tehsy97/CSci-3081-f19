@@ -8,7 +8,7 @@
 ### Section 0: Change this when compiling on non-CSELabs machines ###
 
 # PROJECT_NAME = transit_sim
-PROJECT_NAME = configuration_sim
+PROJECT_NAME = capture_transit_sim
 # Path to root of repo
 REPOROOTDIR = $(shell git rev-parse --show-toplevel)
 
@@ -75,6 +75,7 @@ INCLUDEDIRS = -I.. -I$(SRCDIR) -I$(SRCDIR)/.. -I$(DRIVERDIR) -I$(CS3081DIR)/web 
 
 # The command to run for the C++ compiler and linker
 CXX = /soft/gcc/7.1.0/Linux_x86_64/bin/g++
+# CXX = g++
 
 OMP = -fopenmp
 

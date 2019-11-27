@@ -42,6 +42,7 @@ class StopTests : public ::testing::Test {
  protected:
     Stop * stop;
     Bus * bus;
+    StopData stop_data;
     std::list<Passenger *> passengers_;
 
     std::ofstream test_in;
@@ -57,6 +58,14 @@ class StopTests : public ::testing::Test {
         delete stop;
     }
 };
+
+TEST_F(StopTests, Constructor) {
+    stop_data = stop->GetStopData();
+    EXPECT_EQ(stop_data.id, "1");
+	EXPECT_FLOAT_EQ(stop_data.position.x, 44.973723);
+	EXPECT_FLOAT_EQ(stop_data.position.y, -93.235365);
+	EXPECT_EQ(stop_data.num_people, 0);
+}
 
 
 TEST_F(StopTests, GetId) {
@@ -115,4 +124,30 @@ TEST_F(StopTests, Report_and_Update) {
     }
     test_out.close();
     correct_out.close();
+}
+
+TEST_F(StopTests, GetStopData) {
+    stop_data = stop->GetStopData();
+    EXPECT_EQ(stop_data.id, "1");
+	EXPECT_FLOAT_EQ(stop_data.position.x, 44.973723);
+	EXPECT_FLOAT_EQ(stop_data.position.y, -93.235365);
+	EXPECT_EQ(stop_data.num_people, 0);
+}
+
+TEST_F(StopTests, Update) {
+    Passenger* passenger = new Passenger(10, "Zoe");
+    stop->AddPassengers(passenger);
+    stop->Update();
+    EXPECT_EQ(passenger->GetTotalWait(), 1);
+    stop->Update();
+    Passenger* passenger2 = new Passenger(10, "Nick");
+    stop->AddPassengers(passenger2);
+    stop->Update();
+    stop->Update();
+    EXPECT_EQ(passenger->GetTotalWait(), 4);
+    EXPECT_EQ(passenger2->GetTotalWait(), 2);
+    passenger->GetOnBus();
+    stop->Update();
+    stop->Update();
+    EXPECT_EQ(passenger->GetTotalWait(), 7);
 }

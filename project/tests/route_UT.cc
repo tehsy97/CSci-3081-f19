@@ -135,6 +135,28 @@ class RouteTests  : public ::testing::Test {
     }
 };
 
+TEST_F(RouteTests, Constructor) {
+	CC_EB->UpdateRouteData();
+  	CC_WB->UpdateRouteData();
+	RouteData route_data1 = CC_EB->GetRouteData();
+	RouteData route_data2 = CC_WB->GetRouteData();
+	EXPECT_EQ(route_data1.id, "Campus Connector - Eastbound");
+	EXPECT_EQ(route_data2.id, "Campus Connector - Westbound");
+	EXPECT_EQ((CC_EB->GetStops()).size(), 4);
+	EXPECT_EQ((CC_WB->GetStops()).size(), 4);
+}
+
+TEST_F(RouteTests, Clone) {
+	Route* clone_route = CC_WB->Clone();
+	std::list<Stop *> stops = clone_route->GetStops();
+	std::list<Stop *>::iterator it = stops.begin();
+	EXPECT_EQ((*it)->GetId(), 4);
+	advance(it, 1);
+	EXPECT_EQ((*it)->GetId(), 5);
+	advance(it, 1);
+	EXPECT_EQ((*it)->GetId(), 6);
+}
+
 
 TEST_F(RouteTests, IsAtEnd) {
     EXPECT_EQ(CC_WB->IsAtEnd(),false);
@@ -195,3 +217,50 @@ TEST_F(RouteTests, GetPreviousStop) {
     EXPECT_EQ(CC_EB->GetPreviousStop(), current_stop);
 }
 
+TEST_F(RouteTests, Update) {
+	Passenger* passenger = new Passenger(10, "Zoe");
+    Passenger* passenger2 = new Passenger(10, "Nick");
+	std::list<Stop *> stops = CC_EB->GetStops();
+	std::list<Stop *>::iterator it = stops.begin();
+	std::advance(it, 1);
+	(*it)->AddPassengers(passenger);
+	std::advance(it, 1);
+	(*it)->AddPassengers(passenger2);
+	CC_EB->Update();
+	EXPECT_EQ(passenger->GetTotalWait(), 1);
+	EXPECT_EQ(passenger2->GetTotalWait(), 1);
+	CC_EB->Update();
+	CC_EB->Update();
+	CC_EB->Update();
+	EXPECT_EQ(passenger->GetTotalWait(), 4);
+	EXPECT_EQ(passenger2->GetTotalWait(), 4);
+}
+
+TEST_F(RouteTests, GetName) {
+	EXPECT_EQ(CC_EB->GetName(), "Campus Connector - Eastbound");
+	EXPECT_EQ(CC_WB->GetName(), "Campus Connector - Westbound");
+}
+
+TEST_F(RouteTests, GetStops) {
+	std::list<Stop *> stops = CC_EB->GetStops();
+	std::list<Stop *>::iterator it = stops.begin();
+	EXPECT_EQ((*it)->GetId(), 0);
+	std::advance(it, 1);
+	EXPECT_EQ((*it)->GetId(), 1);
+	std::advance(it, 2);
+	EXPECT_EQ((*it)->GetId(), 3);
+}
+
+TEST_F(RouteTests, UpdateRouteData) {
+	CC_WB->UpdateRouteData();
+	RouteData route_data = CC_WB->GetRouteData();
+	EXPECT_EQ(route_data.id, "Campus Connector - Westbound");
+	EXPECT_EQ((CC_WB->GetStops()).size(), 4);
+}
+
+TEST_F(RouteTests, GetRouteData) {
+	CC_EB->UpdateRouteData();
+	RouteData route_data = CC_EB->GetRouteData();
+	EXPECT_EQ(route_data.id, "Campus Connector - Eastbound");
+	EXPECT_EQ((CC_EB->GetStops()).size(), 4);
+}

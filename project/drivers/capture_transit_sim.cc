@@ -26,11 +26,13 @@ int main(int argc, char**argv) {
     exit(0);
   }
 
-//   std::streambuf* stream_buffer_cout = std::cout.rdbuf();
-//   std::streambuf* stream_buffer_file = outfile.rdbuf(); 
-//   std::cout.rdbuf(stream_buffer_file); 
 
-  auto cout_buf = std::cout.rdbuf(outfile.rdbuf());  
+  std::streambuf* stream_buffer_cout = std::cout.rdbuf();
+
+  std::streambuf* stream_buffer_file = outfile.rdbuf(); 
+  std::cout.rdbuf(stream_buffer_file); 
+
+  // auto cout_buf = std::cout.rdbuf(outfile.rdbuf());  
 
   int rounds = 50; //Number of rounds of generation to simulate in test
   
@@ -59,6 +61,7 @@ int main(int argc, char**argv) {
   std::cout << "         COMPLETE" << std::endl;
   std::cout << "*************************/" << std::endl;
   
+  std::cout.rdbuf(stream_buffer_cout);
 //   std::cout << "this is capture" << std::endl;
   outfile.close();
   return 0;

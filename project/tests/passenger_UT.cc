@@ -58,6 +58,8 @@ class PassengerTests : public ::testing::Test {
  ******************************************************************************/
 
 TEST_F(PassengerTests, Constructor) {
+    EXPECT_EQ(passenger->GetDestination(), -1);
+	EXPECT_EQ(passenger1->GetDestination(), 33);
     EXPECT_EQ(passenger->IsOnBus(), false);
     passenger->GetOnBus();
     EXPECT_EQ(passenger->IsOnBus(), true);

@@ -22,6 +22,7 @@ class ConfigurationSimulator {
   ~ConfigurationSimulator();
   void UsageMessage();
   bool CheckCommandLine(int argc, std::string filename);
+  int CheckOptionCommandLine(std::string argv);
   void Start();
   void Update();
 

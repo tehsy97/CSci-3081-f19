@@ -6,6 +6,8 @@
 #include <iostream>
 #include <fstream>
 #include <exception>
+#include <vector>
+#include <string>
 #include "src/config_manager.h"
 #include "src/configuration_simulator.h"
 
@@ -31,7 +33,7 @@ int main(int argc, char**argv) {
   } else {
     filename = argv[1];
   }
-  
+
   ConfigManager * config_manager = new ConfigManager();
   ConfigurationSimulator config_sim;
   
@@ -43,16 +45,50 @@ int main(int argc, char**argv) {
     config_manager->ReadConfig(filename);
   }
 
-  config_sim = ConfigurationSimulator (config_manager);
+  config_sim = ConfigurationSimulator(config_manager);
+
   int rounds = 50; //Number of rounds of generation to simulate in test
 
+  // std::fstream outfile;
+  // for (int i = 2; i < argc; i++){
+  //   // std::cout << "rqewr" << std::endl;
+  //   int ret = config_sim.CheckOptionCommandLine(argv[i]);
+  //   // std::cout << "fadasaf" << std::endl;
+  //   switch (ret) {
+  //     case 1: 
+  //     {
+  //       // std::cout << "fadask;kl;kaf" << std::endl;
+  //       rounds = std::atoi(argv[i]);
+  //       // std::cout << "fadasfgfsdgsaf" << std::endl;
+  //       break;
+  //     }
+      
+      // case 2: 
+      // {
+      //   // std::cout << "fa44235dasaf" << std::endl;
+      //   outfile.open(argv[i], std::ios::out);
+      //   // std::cout << "fadaqerqewrqwreqwrqewrqwerqwsaf" << std::endl;
+      //   if (!outfile.is_open()){
+      //     std::cout << "Fail to open file: " << argv[i] << std::endl;
+      //     exit(0);
+      //   }
+      //   std::cout << "fada1234567867754saf" << std::endl;
+      //   auto cout_buf = std::cout.rdbuf(outfile.rdbuf());
+      //   // std::cout << "fada098765432saf" << std::endl;
+      //   break;
+      // }
+  //     default: 
+  //       break;
+  //   }
+  // }
+  
   std::cout << "/*************************" << std::endl << std::endl;
   std::cout << "         STARTING" << std::endl;
   std::cout << "        SIMULATION" << std::endl;
   std::cout << "*************************/" << std::endl;
-
+  // std::cout << "faf" << std::endl;
   config_sim.Start();  //   Call Start on ConfigurationSimulator
-
+  // std::cout << "fada0" << std::endl;
   std::cout << "/*************************" << std::endl << std::endl;
   std::cout << "           BEGIN" << std::endl;
   std::cout << "          UPDATING" << std::endl;
@@ -69,5 +105,6 @@ int main(int argc, char**argv) {
   std::cout << "         COMPLETE" << std::endl;
   std::cout << "*************************/" << std::endl;
  
+  outfile.close();
   return 0;
 }

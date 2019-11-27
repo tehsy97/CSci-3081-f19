@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-**NOTE**: Please make sure that **all Tests** pass before pushing any changes. 
-
-### Run Tests:
-
-- cd `tests`
-- `make`
-- `../build/bin/unittest`
-
-### Style Check:
-
-- `[path_to_cpplint]/cpplint/cpplint-cse.sh --root=[path_target_dir] [file_name]`
-
-
-=======
 **NOTE**: Please make sure that **all Tests** pass before pushing any changes. 
 
 ### Run Tests:
@@ -51,4 +36,3 @@ Navigate to the following address on your LOCAL (Your personal machine) browser 
 ```
 http://127.0.0.1:<port_number>/web_graphics/project.html
 ```
->>>>>>> a0b8b28e41a3e814cb0bbbed600f38d33cb89a2b

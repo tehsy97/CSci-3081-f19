@@ -14,11 +14,27 @@ class Route;
 
 class ConfigManager {
  public:
+  /**
+   * @brief Constructs a Configuration Manager
+   */
   ConfigManager();
+
+  /**
+   * @brief deconstructs configuration manager.
+   */
   ~ConfigManager();
 
+  /**
+   * @brief Read configuration file and set up
+   * bus, routes, stops, and passengers
+   *
+   * @param[in] string holding a config filename.
+   */
   void ReadConfig(const std::string filename);
 
+  /**
+   * @brief Get route or a list of stops
+   */
   std::vector<Route *> GetRoutes() const { return routes;}
 
  private:

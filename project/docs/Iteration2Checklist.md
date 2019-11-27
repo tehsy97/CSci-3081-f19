@@ -10,7 +10,7 @@ _Note: This checklist is not authoratative. If something is missing on the check
 
 ### Compilation and Execution
 
-- [ ] I cloned **fresh** from github onto a cselabs machine to test compilation.
+- [x] I cloned **fresh** from github onto a cselabs machine to test compilation.
 - [ ] Submission is on the master branch of the my personal repo "repo-<username>".
 - [ ] _/project folder exists.
 - [ ] _/build_ is not in the repo.

@@ -53,7 +53,6 @@ bool Bus::IsTripComplete() {
   return outgoing_route_->IsAtEnd() && incoming_route_->IsAtEnd();
 }
 
-//Passengers will always be updated since 
 void Bus::Update() {  // using common Update format
   Stop *stop_arrived_at;
   if (outgoing_route_->IsAtEnd()) {

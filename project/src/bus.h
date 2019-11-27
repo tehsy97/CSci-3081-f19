@@ -95,25 +95,25 @@ class Bus {
   /**
   * @brief called by the visualizer to get the name of the bus
   */
- std::string GetName() const;
+  std::string GetName() const;
 
   /**
   * @brief called by the visualizer to get the pointer
   * to the bus's next stop
   */
- Stop * GetNextStop();
+  Stop * GetNextStop();
 
   /**
   * @brief called by the visualizer to get the current
   * number of passengers on the bus
   */
- size_t GetNumPassengers();
+  size_t GetNumPassengers();
 
   /**
   * @brief called by the visualizer to get the maximum
   * number of passengers that the bus can hold
   */
- int GetCapacity();
+  int GetCapacity();
 
  private:
   BusData bus_visualizer;

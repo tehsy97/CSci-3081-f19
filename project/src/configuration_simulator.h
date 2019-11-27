@@ -8,6 +8,7 @@
 
 #include <vector>
 #include <list>
+#include <string>
 #include "src/simulator.h"
 #include "src/config_manager.h"
 
@@ -18,7 +19,7 @@ class Stop;
 class ConfigurationSimulator {
  public:
   ConfigurationSimulator();
-  ConfigurationSimulator(ConfigManager*);
+  explicit ConfigurationSimulator(ConfigManager*);
   ~ConfigurationSimulator();
   void UsageMessage();
   bool CheckCommandLine(int argc, std::string filename);

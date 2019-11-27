@@ -21,8 +21,7 @@ class OverridePassengerGenerator : public PassengerGenerator{
   OverridePassengerGenerator(std::list<double>, std::list<Stop *>);
   int GeneratePassengers() override;
 
-  protected:
-
+ protected:
 };
 
 #endif  // SRC_OVERRIDE_PASSENGER_GENERATOR_H_

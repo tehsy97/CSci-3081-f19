@@ -18,13 +18,48 @@ class Stop;
 
 class ConfigurationSimulator {
  public:
+  /**
+  * @brief Construct configuration simulator
+  */
   ConfigurationSimulator();
+
+  /**
+  * @brief Construct configuration simulator with configuration manager
+  * @param[in] configuration manager object pointer
+  */
   explicit ConfigurationSimulator(ConfigManager*);
+
+  /**
+  * @brief deconstruct configuration simulator
+  */
   ~ConfigurationSimulator();
+
+  /**
+  * @brief print the command line usage
+  */
   void UsageMessage();
+
+  /**
+  * @brief Check required command line
+  *
+  * @return boolean
+  */
   bool CheckCommandLine(int argc, std::string filename);
+  /**
+  * @brief Check optional command line 
+  *
+  * @return integer
+  */
   int CheckOptionCommandLine(std::string argv);
+
+  /**
+  * @brief Create routes with stops and generates passengers.
+  */
   void Start();
+
+  /**
+  * @brief Update passengers, stops, and bus status for each simulation time
+  */
   void Update();
 
  private:

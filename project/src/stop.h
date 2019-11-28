@@ -12,7 +12,7 @@
 
 #include "src/bus.h"
 #include "src/passenger.h"
-#include "./data_structs.h"
+#include "src/data_structs.h"
 
 class Bus;
 
@@ -65,6 +65,9 @@ class Stop {
   */
   void Report(std::ostream &out) const;
 
+  /**
+  * @brief Get stop data for visualization
+  */
   StopData GetStopData();
 
  private:

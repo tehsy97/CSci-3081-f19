@@ -41,8 +41,8 @@ class BusTests : public ::testing::Test {
  protected:
     Bus* bus;
     Stop * stop;
-    Passenger* pass = new Passenger(2, "yuyu");
-    Passenger* pass2 = new Passenger(3, "chochow");
+    Passenger* pass = new Passenger(2, "triple you");
+    Passenger* pass2 = new Passenger(3, "middle autumn festival");
     Passenger* pass3 = new Passenger(3, "shin");
 
     std::ofstream test_in;

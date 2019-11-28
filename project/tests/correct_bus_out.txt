@@ -6,12 +6,12 @@ Name: bus
 Speed: 1
 Distance to next stop: 1
 	Passengers (3): 
-Name: yuyu
+Name: triple you
 Destination: 2
 Total Wait: 1
 	Wait at Stop: 0
 	Time on bus: 1
-Name: chochow
+Name: middle autumn festival
 Destination: 3
 Total Wait: 1
 	Wait at Stop: 0
@@ -25,12 +25,12 @@ Name: bus
 Speed: 1
 Distance to next stop: 0
 	Passengers (3): 
-Name: yuyu
+Name: triple you
 Destination: 2
 Total Wait: 2
 	Wait at Stop: 0
 	Time on bus: 2
-Name: chochow
+Name: middle autumn festival
 Destination: 3
 Total Wait: 2
 	Wait at Stop: 0
@@ -44,7 +44,7 @@ Name: bus
 Speed: 1
 Distance to next stop: 1
 	Passengers (2): 
-Name: chochow
+Name: middle autumn festival
 Destination: 3
 Total Wait: 14
 	Wait at Stop: 0

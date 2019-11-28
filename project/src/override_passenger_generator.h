@@ -18,7 +18,21 @@ class Stop;  // forward declaration
 
 class OverridePassengerGenerator : public PassengerGenerator{
  public:
+  /**
+  * @brief Constructs a passenger generator with a list of probabilities
+  * and a list of stops
+  *
+  * @param[in] list type double holding probabilities
+  * @param[in] stop pointer list holding stops
+  *
+  */
   OverridePassengerGenerator(std::list<double>, std::list<Stop *>);
+
+  /**
+  * @brief override GeneratePassengers() in Passenger Generator
+  *
+  * @return interger
+  */  
   int GeneratePassengers() override;
 
  protected:

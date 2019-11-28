@@ -99,10 +99,21 @@ class Route {
   */
   std::list<Stop *> GetStops();
 
+  /**
+  * @brief called by the visualizer to update
+  * route data
+  */
   void UpdateRouteData();
 
+  /**
+  * @brief called by the visualizer to get
+  * the route's data
+  */
   RouteData GetRouteData();
 
+  /**
+  * @brief will return the previous stop
+  */
   Stop * GetPreviousStop();
 
  private:

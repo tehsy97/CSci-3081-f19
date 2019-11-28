@@ -3,6 +3,7 @@
  *
  * @copyright 2019 3081 Staff, All rights reserved.
  */
+
 #include <iostream>
 #include <fstream>
 #include <exception>
@@ -26,7 +27,7 @@ int main(int argc, char**argv) {
   //     Call Update on ConfigurationSimulator
   // else
   //   echo info to the user about needing a config file name
-  //char ** argc_list = argv;
+  // char ** argc_list = argv;
   std::string filename;
   if (argc < 2) {
     filename = "config.txt";
@@ -36,18 +37,19 @@ int main(int argc, char**argv) {
 
   ConfigManager * config_manager = new ConfigManager();
   ConfigurationSimulator config_sim;
-  
-  // std::cout << config_sim.CheckCommandLine(argc, ("config/" + filename)) << std::endl;
+
+  // std::cout << config_sim.CheckCommandLine(argc, ("config/" + filename))
+  //   << std::endl;
   // std::cout << "fdfadsf" << std::endl;
-  if (!config_sim.CheckCommandLine(argc, ("config/" + filename))){
-    config_manager->ReadConfig("config.txt");  
+  if (!config_sim.CheckCommandLine(argc, ("config/" + filename))) {
+    config_manager->ReadConfig("config.txt");
   } else {
     config_manager->ReadConfig(filename);
   }
 
   config_sim = ConfigurationSimulator(config_manager);
 
-  int rounds = 50; //Number of rounds of generation to simulate in test
+  int rounds = 50;  // Number of rounds of generation to simulate in test
   bool opened = false;
   std::fstream outfile;
   std::streambuf* stream_buffer_cout;
@@ -58,14 +60,14 @@ int main(int argc, char**argv) {
     int ret = config_sim.CheckOptionCommandLine(argv[i]);
     // std::cout << "fadasaf" << std::endl;
     switch (ret) {
-      case 1: 
+      case 1:
       {
         // std::cout << "fadask;kl;kaf" << std::endl;
         rounds = atoi(argv[i]);
         // std::cout << "fadasfgfsdgsaf" << std::endl;
       }
       break;
-      case 2: 
+      case 2:
       {
         // std::cout << "fa44235dasaf" << std::endl;
         outfile.open(argv[i], std::ios::out);
@@ -74,22 +76,22 @@ int main(int argc, char**argv) {
           exit(0);
         }
         stream_buffer_cout = std::cout.rdbuf();
-        stream_buffer_file = outfile.rdbuf(); 
-        std::cout.rdbuf(stream_buffer_file); 
+        stream_buffer_file = outfile.rdbuf();
+        std::cout.rdbuf(stream_buffer_file);
         // std::cout << "fada09876543/2saf" << std::endl;
         opened = true;
       }
       break;
-      default: 
+      default:
         break;
     }
       // std::cout << "fada0existf" << std::endl;
   }
-  
+
   if (opened) {
     std::cout.rdbuf(stream_buffer_file);
   }
-  
+
   std::cout << "/*************************" << std::endl << std::endl;
   std::cout << "         STARTING" << std::endl;
   std::cout << "        SIMULATION" << std::endl;
@@ -105,14 +107,14 @@ int main(int argc, char**argv) {
   //   Start for loop, length of simulation (set by ourself)
 
   for (int i = 0; i < rounds; i++) {
-    config_sim.Update(); //     Call Update on ConfigurationSimulator
+    config_sim.Update();  //     Call Update on ConfigurationSimulator
   }
 
   std::cout << "/*************************" << std::endl << std::endl;
   std::cout << "        SIMULATION" << std::endl;
   std::cout << "         COMPLETE" << std::endl;
   std::cout << "*************************/" << std::endl;
- 
+
   if (opened) {
     std::cout.rdbuf(stream_buffer_cout);
     outfile.close();

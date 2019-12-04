@@ -1,0 +1,22 @@
+bus.cc
+Extract method
+- method added CheckInOrOutRoute
+- changed Update, UpdateBusData, GetNextStop functions
+
+In UpdateBusData, I use the existing function (line 52-54) in bus.cc called 
+IsTripComplete() to check if a bus has completed both routes 
+instead of explicitly type it out again ((old version)line 131).
+
+I created a method called CheckInOrOutRoute (line 56-61) which will return a
+pointer of incoming route or outgoing route. This function is to check whether
+the bus is in incoming route or outgoing route. I am doing this is because
+I realized that I have been using same if-else statement to do this task
+in several parts of Update, UpdateBusData, and GetNextStop functions. I
+replace those if-else statement in update (line 64-69, 82-88, 95-101, 106-112),
+UpdateBusData (line 159-163,173-179), and GetNextStop (line 209-215) with
+a * route pointing to incoming or outgoing route after CheckInOrOutRoute 
+(Update 70; UpdateBusData 148; GetNextStop 208). Then, using * route to do 
+tasks in different if-else statements in each functions (Update 71,90-91,
+102-103,113-114; UpdateBusData 165, 182-183; GetNextStop 216-217).
+
+

@@ -2,6 +2,8 @@
 
 > The iteration 2 code and documentation is due on WEDNESDAY, November 27 at 11:55pm.
 
+> VERSION 3: Added "root" flag to CPPLINT check for .cc files
+
 > VERSION 2: Updated Doxygen requirements to run from within docs/
 
 **__Please copy this file into your project/docs folder__**. Place an 'x' in each of the `[ ]` boxes for items that are complete. Push this completed checklist to github. When it displays on Github, it will show an actual checkbox with a check mark.
@@ -18,7 +20,7 @@ _Note: This checklist is not authoratative. If something is missing on the check
 - [ ] _/latex_ is not in _docs_.
 - [ ] **__`make` from project/src completes without error.__**
 - [ ] Both executables run without assert or a seg fault when given a config filename.
-- [ ] `cpplint-cse.sh *.cc` reports no errors for your code.
+- [ ] `cpplint-cse.sh --root=.. *.cc` reports no errors for your code.
 - [ ] `cpplint-cse.sh --root=.. *.h` reports no errors for your code.
 - [ ] `doxygen Doxyfile` generates the documentation.
 - [ ] Config files held in project/config.

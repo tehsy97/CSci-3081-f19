@@ -64,6 +64,13 @@ class Bus {
   bool IsTripComplete();
 
   /**
+  * @brief check if bus is current at incoming or outgoing route
+  *
+  * @return route
+  */
+  Route * CheckInOrOutRoute();
+
+  /**
   * @brief Update bus, stop, passengers, and routes status
   */
   void Update();  // remove passengers

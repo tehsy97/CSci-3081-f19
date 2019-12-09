@@ -1,6 +1,6 @@
 ### Iteration 2 - Functionality Partial Assessment (Graded By: Shrivardhan Bharadwaj)
 
-Run on December 06, 08:39:02 AM.
+Run on December 09, 02:38:24 AM.
 
 <hr>
 
@@ -39,44 +39,12 @@ This Partial Assessment indicates a TA has begun grading your Iteration 2 Progra
 
 + Pass: Change into directory "..".
 
-+ Pass: Check that file "./build/bin/vis_sim" exists.
-
-+ Pass: Running vis_sim on port 8081
++ Fail: The remaining tests have been skipped by the grader.
 
 
 #### Configuration Simulation Items
 
-+ Fail: Check that file "./build/bin/config_sim" exists.
-
-     "./build/bin/config_sim" not found.
-
-+ Skip: Check that file "config/config.txt" exists.
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Outputting config sim with no arguments to file for inspection...
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Outputting config sim with default config file to file for inspection...
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Outputting config sim with garbage config file for inspection...
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Manually reviewing output...
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Manually reviewing default config file output...
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Manually reviewing configuration_sim.cc...
-
-  This test was not run because of an earlier failing test.
++ Fail: The remaining tests have been skipped by the grader.
 
 
 #### Testing Items
@@ -94,6 +62,10 @@ This Partial Assessment indicates a TA has begun grading your Iteration 2 Progra
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/local_simulator.d -MP -MT ../build/obj/tests/local_simulator.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 ../src/local_simulator.cc
 ==== Compiling ../src/local_simulator.cc into ../build/obj/tests/local_simulator.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/local_simulator.o ../src/local_simulator.cc
+==== Auto-Generating Dependencies for ../src/passenger_factory.cc. ====
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passenger_factory.d -MP -MT ../build/obj/tests/passenger_factory.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 ../src/passenger_factory.cc
+==== Compiling ../src/passenger_factory.cc into ../build/obj/tests/passenger_factory.o. ====
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/passenger_factory.o ../src/passenger_factory.cc
 ==== Auto-Generating Dependencies for ../src/bus.cc. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/bus.d -MP -MT ../build/obj/tests/bus.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 ../src/bus.cc
 ==== Compiling ../src/bus.cc into ../build/obj/tests/bus.o. ====
@@ -106,10 +78,6 @@ This Partial Assessment indicates a TA has begun grading your Iteration 2 Progra
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/random_passenger_generator.d -MP -MT ../build/obj/tests/random_passenger_generator.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 ../src/random_passenger_generator.cc
 ==== Compiling ../src/random_passenger_generator.cc into ../build/obj/tests/random_passenger_generator.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/random_passenger_generator.o ../src/random_passenger_generator.cc
-==== Auto-Generating Dependencies for ../src/passenger_factory.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passenger_factory.d -MP -MT ../build/obj/tests/passenger_factory.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 ../src/passenger_factory.cc
-==== Compiling ../src/passenger_factory.cc into ../build/obj/tests/passenger_factory.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/passenger_factory.o ../src/passenger_factory.cc
 ==== Auto-Generating Dependencies for ../src/passenger.cc. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passenger.d -MP -MT ../build/obj/tests/passenger.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 ../src/passenger.cc
 ==== Compiling ../src/passenger.cc into ../build/obj/tests/passenger.o. ====
@@ -134,14 +102,14 @@ This Partial Assessment indicates a TA has begun grading your Iteration 2 Progra
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/passenger_UT.d -MP -MT ../build/obj/tests/passenger_UT.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 passenger_UT.cc
 ==== Compiling passenger_UT.cc into ../build/obj/tests/passenger_UT.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/passenger_UT.o passenger_UT.cc
-==== Auto-Generating Dependencies for route_UT.cc. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/route_UT.d -MP -MT ../build/obj/tests/route_UT.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 route_UT.cc
-==== Compiling route_UT.cc into ../build/obj/tests/route_UT.o. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/route_UT.o route_UT.cc
 ==== Auto-Generating Dependencies for stop_UT.cc. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/stop_UT.d -MP -MT ../build/obj/tests/stop_UT.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 stop_UT.cc
 ==== Compiling stop_UT.cc into ../build/obj/tests/stop_UT.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/stop_UT.o stop_UT.cc
+==== Auto-Generating Dependencies for route_UT.cc. ====
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/route_UT.d -MP -MT ../build/obj/tests/route_UT.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 route_UT.cc
+==== Compiling route_UT.cc into ../build/obj/tests/route_UT.o. ====
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/route_UT.o route_UT.cc
 ==== Auto-Generating Dependencies for command_line_UT.cc. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -MM -MF ../build/obj/tests/command_line_UT.d -MP -MT ../build/obj/tests/command_line_UT.o -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11 command_line_UT.cc
 ==== Compiling command_line_UT.cc into ../build/obj/tests/command_line_UT.o. ====
@@ -151,7 +119,7 @@ This Partial Assessment indicates a TA has begun grading your Iteration 2 Progra
 ==== Compiling bus_UT.cc into ../build/obj/tests/bus_UT.o. ====
 /soft/gcc/7.1.0/Linux_x86_64/bin/g++ -g -Wall -Wextra -pthread -fprofile-arcs -ftest-coverage -c -I/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include -I.. -I. -isystem/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/include   -std=c++11  -c -o  ../build/obj/tests/bus_UT.o bus_UT.cc
 ==== Linking ../build/bin/unittest. ====
-/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/override_passenger_generator.o ../build/obj/tests/local_simulator.o ../build/obj/tests/bus.o ../build/obj/tests/configuration_simulator.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/config_manager.o ../build/obj/tests/stop.o ../build/obj/tests/passenger_UT.o ../build/obj/tests/route_UT.o ../build/obj/tests/stop_UT.o ../build/obj/tests/command_line_UT.o ../build/obj/tests/bus_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/lib -lGL
+/soft/gcc/7.1.0/Linux_x86_64/bin/g++ -L/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/lib -pthread -fprofile-arcs -ftest-coverage ../build/obj/tests/override_passenger_generator.o ../build/obj/tests/local_simulator.o ../build/obj/tests/passenger_factory.o ../build/obj/tests/bus.o ../build/obj/tests/configuration_simulator.o ../build/obj/tests/random_passenger_generator.o ../build/obj/tests/passenger.o ../build/obj/tests/passenger_generator.o ../build/obj/tests/route.o ../build/obj/tests/config_manager.o ../build/obj/tests/stop.o ../build/obj/tests/passenger_UT.o ../build/obj/tests/stop_UT.o ../build/obj/tests/route_UT.o ../build/obj/tests/command_line_UT.o ../build/obj/tests/bus_UT.o -o ../build/bin/unittest -lgtest_main -lgtest -lgmock -Wl,-rpath,/project/grades/Fall-2019/csci3081/bhara054/grading-environment/grading-scripts/grading/Iter_02_Functionality_Assessment/repo-teh00001/external/install/lib -lGL
 /usr/bin/ld: cannot find -lgtest_main
 /usr/bin/ld: cannot find -lgtest
 /usr/bin/ld: cannot find -lgmock
@@ -162,13 +130,9 @@ make: *** [../build/bin/unittest] Error 1
 
 
 
-+ Fail: Check that file "../build/bin/unittest" exists.
-
-     "../build/bin/unittest" not found.
-
-+ Pass: Manually reviewing unit tests...
-
-    
++ Fail: The remaining tests have been skipped by the grader.
 
 + Pass: Opening Iter_02_Functionality_Assessment.md using firefox
+
++ Fail: The remaining tests have been skipped by the grader.
 

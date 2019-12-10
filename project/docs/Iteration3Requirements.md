@@ -7,7 +7,13 @@ You can convert this requirements document to pdf using this tool: <http://www.m
 
 >Your software is a reflection of your understanding of the requirements as specified in this document. If you do not understand any portion of the requirements or you think that the requirements are underspecified, it is your responsibility to get clarification from the instructor or a TA. Please read this document carefully and review it often _WELL IN ADVANCE_ and often before turning in your iteration for assessment.
 
-# Releasing to the public: Iteration 3
+## Version 4: December 8th, 2019 - updating instructions regarding where to run doxygen from
+
+## Version 3: December 6th, 2019 - updated instructions on length of mainpage. User guide must be  3 - 4 pages _IN ADDITION TO_ the developers guide you created for iteration 1 (and are updating for this iteration). Also, the number of regression tests required for iteration 3 has been updated. Review the sections in the specification below that discuss the aforementioned items for more details. 
+
+## Version 2: December 4th, 2019 - added instructions on mainpage.h font and line spacing; instructions for including the code for refactoring 1 and refactoring 2 in branches, and requirements for adding a release_notes.document specifying the branch or branches that contain the refactoring 1  and the refactoring 2 code. Clarified Bug Fixing requirement in assessment.
+
+# Releasing to the public: Iteration 3  
 
 Congratulations! With the first two iterations complete, we head to our project release: Iteration 3. Our simulator is taking the last turn towards its long tail: the journey towards deployment and inevitable, unending maintenance. Well, we'll at least get to the deployment part. Specifically, we will now stop adding major functionality and instead focus on improving quality before launch to our users.
 
@@ -75,13 +81,13 @@ Code documentation comes in many forms for many audiences. For this iteration, *
 
 - ##### <a name="doxy">Doxygen</a>
 
-  The index page of your Doxygen html documentation should be complete and well written. This will be a second draft of the writing in mainpage.h, and probably the final draft. It should provide a brief overview/introduction to the software, then discuss specifics in the design and implementation that will assist any programmer who will be a new contributor to the code, and finally provide a user guide for non-technical users to be able to download, configure, and operate the simulator. If the text were on an 8.5x11 piece of paper, it should be 3-4 pages.
+  The index page of your Doxygen html documentation should be complete and well written. This will be a second draft of the writing in mainpage.h, and probably the final draft. It should provide a brief overview/introduction to the software, then discuss specifics in the design and implementation that will assist any programmer who will be a new contributor to the code, and finally provide a user guide for non-technical users to be able to download, configure, and operate the simulator. If the text were on an 8.5x11 piece of paper, your ~~entire mainpage.h~~ user guide should be 3-4 pages. Moreover, the font size you should use should be 10 or 11 point, and the line spacing should be the word default, which is 1.15 points. 
 
   As part of your fresh clone prior to submission, please also compile the Doxygen and look at the generated webpages.
 
-  > Make sure to place the Doxyfile in _project/docs_.  Set the output directory to: `OUTPUT_DIRECTORY = ./docs` so that when it is compiled from the _project_ directory it will put the html and latex folders in the docs directory/folder.
+  > Make sure to place the Doxyfile in _project/docs_.  (The following is only for running doxygen from the project directory. We will run from the docs/ directory) ~~Set the output directory to: `OUTPUT_DIRECTORY = ./docs` so that when it is compiled from the _project_ directory it will put the html and latex folders in the docs directory/folder.~~
   
-  Additionally, continue to refine your in-code Doxygen documentation. This should include a brief description for **all** classes n the src directory and full documentation of Bus, Stop, Route and Passenger, as well as any other classes you made to assist in their primary responsibilities (PassengerLoaders, RouteFactory, etc.), if you made them. 
+  Additionally, continue to refine your in-code Doxygen documentation. This should include a brief description for **all** classes in the src directory and full documentation of Bus, Stop, Route and Passenger, as well as any other classes you made to assist in their primary responsibilities (PassengerLoaders, RouteFactory, etc.), if you made them. 
 
 - ##### <a name="style">Google Style Guide Compliance</a>
 
@@ -121,7 +127,13 @@ In this iteration, you will be fixing bugs.
 	
 	###### Refactoring 1 (Pushed from Iteration 2)
 
-	We also want to refactor one element of the project which could cause errors, especially now that we're pulling from user-defined configuration files. The current version of the probability list for stops includes the value for the final stop on a route. With nowhere to go, that probability needs to be 0. But, with configuration files, this can't be guaranteed without some changes to our code. Refactor the code so that there is no probability (even if provided by configuration) for the final stop in a route, and that the simulator does not use or try to access such a probability for the final stop in a route.
+	We also want to refactor one element of the project which could cause errors, especially now that we're pulling from user-defined configuration files. The current version of the probability list for stops includes the value for the final stop on a route. With nowhere to go, that probability needs to be 0. But, with configuration files, this can't be guaranteed without some changes to our code. Refactor the code so that there is no probability (even if provided by configuration) for the final stop in a route, and that the simulator does not use or try to access such a probability for the final stop in a route.	
+	
+	* If you have completed this refactoring in iteration 2, merge it into its own branch named **refactor/iter2** and remove the refactoring from the final version of the code you submit via your master branch.  
+	
+	* If you have not yet done this refactoring, you should do it in its own branch, named: **refactor/iter2** - and make sure it is not included in final version of the code you submit via your master branch. 
+	
+	* Otherwise, if you have already completed this refactoring and the refactoring for iteration 3 in the branch named: **refactor/iter3** - that is perfectly acceptable. However, note that the code for the refactoring should not be in the final version of the code that you merge into and sumbit via your master branch. 
 	
 	###### Refactoring 2
 	
@@ -137,7 +149,7 @@ In this iteration, you will be fixing bugs.
 
 		IN THE BRANCH refactor/iter3, refactor the code in your iteration3 source code (/project/src).
 
-		Create a text or web-viewable document called refactor.xxx in the /docs directory, that contains these:
+		Create a text or web-viewable document called refactor.xxx (where xxx is a placeholder for the suffixes: pdf, doc, txt, or rtf - but note, we would prefer a pdf file) in the /docs directory, that contains these:
 
 		* A list of the files and methods added and/or changed.
 		* The code, filename, and line number where the temporary variable was defined.
@@ -150,7 +162,7 @@ In this iteration, you will be fixing bugs.
 
 		1. IN THE BRANCH refactor/iter3, refactor the code in the original file(s) in your iteration 3 source code (/project/src).
 
-		Create a text or web-viewable document called refactor.xxx in your /docs folder, that contains:
+		Create a text or web-viewable document called refactor.xxx (where xxx is a placeholder for the suffixes: pdf, doc, txt, or rtf - but note, we would prefer a pdf file) in your /docs folder, that contains:
 
 		* A list of the files and methods where you are making your changes.
 		* The original variable and/or method names that you are changing and what their new names are called after the refactor.
@@ -162,7 +174,7 @@ In this iteration, you will be fixing bugs.
 
 		1. IN THE BRANCH refactor/iter3, refactor the code in the original file(s) in your iteration 3 source code (/project/src).
 
-		2. Create a text or web-viewable document called refactor.xxx in your /docs folder that contains:
+		2. Create a text or web-viewable document called refactor.xxx (where xxx is a placeholder for the suffixes: pdf, doc, txt, or rtf - but note, we would prefer a pdf file) in your /docs folder that contains:
 
 		* A list of the files and the method(s) you are changing.
 		* The location of the changes. Be sure you explain briefly what you are doing at each location.
@@ -170,22 +182,27 @@ In this iteration, you will be fixing bugs.
 
 - ##### <a name="testing">Regression Testing</a>
 
-	Regression tests (pushed from Iteration 3):
+	Regression tests (pushed from Iteration 2 to Iteration 3):
+
 	* For regression tests, the goal is to verify that features that worked once stay working, even as you continue to add to the code.
 	* For our simulations, that probably means some relatively simple and structured scenario that can be reused and in which we know the exact output.
-	* To use this testing strategy with Google Test, you should add store any config files you need in project/config/ and anything else that might be helpful in project/resources/, while attempting to ensure that changes didn't break anything that was already working.
+	* To use this testing strategy with Google Test, you should add store any config files you need in project/config/ and anything else that might be helpful in project/resources/, while attempting to ensure that changes you make to create the regression test do not  break anything that was already working.
+	
+**One important change to this iteration 2 regression test requirment is that for iteration 3 you are required to create only ONE (1) regression test. As specified in lab 15, the regression test you create _must be different_ than the regression test we give you in lab 15.**
 
 <hr>
 
 #### <a name="peer">Peer Response</a>
 
-We will be working in class to complete peer responses regarding your choices for refactoring, so you must have a draft of your refactoring that is well formatted, grammar, and spell checked ready to bring to class on Thrusday December 5th. You are REQUIRED to bring 2 printed copies to class on Thursday December 5th to participate in the peer review / response or you will recieve a zero for the refactoring portion of your grade on iteration 3. 
+We will be working in class to complete peer responses regarding your choices for refactoring, so you must have a draft of your refactoring that is well formatted, grammar, and spell checked ready to bring to class on Thrusday December 5th. You are REQUIRED to bring 3 printed copies to class on Thursday December 5th to participate in the peer review / response or you will recieve a zero for the refactoring portion of your grade on iteration 3. 
 
 <hr>
 
 ## <a name="deliver">Deliverables and Submission Process</a>
 
 For the final deliverable deadline, everything will be submitted via Github in your **__master__** branch. We will pull your repository at the specified due dates and grade according to the contents at that time. You should be developing in your devel branch, but at the time of submission, merge devel with master, commit changes to master, and push to github.umn.edu.
+
+You should include a document named: **release_notes.md** in your project/src directory. The contents of the document should specify the branch or branches where your refactoring for iteration 2 and iteration 3 reside, and any other assumptions that you have made in your development efforts in order to assist us in grading your simulation. It is in your own best interest to do this to ensure the grading team can properly review your efforts and assign you a grade.  
 
 **Late assignments will not be accepted**, but anything you do submit on time will receive partial credit for partial completion of the requirements.
 
@@ -201,12 +218,13 @@ This is the breakdown for point distribution:
 - 30% : Doxygen
   - 15% : User Guide
   - 15% : Updated Developer Guide
+  - release_nodes.md document in project/src specifiying location of refactoring for iteration 2 and 3 and other assumptions
 - 10% : Style Compliance
 - 10% : Refactoring 1 Completed
 - 10% : Refactoring 2 Completed
 - 10% : Regression Testing
 - 15% : Git Usage (Issues, commit messages and branching)
-- 15% : Compiles and runs without seg fault
+- 15% : Compiles and runs without seg fault **and no major bugs**
 
 <hr>
 

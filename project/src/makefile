@@ -30,7 +30,7 @@ PROJ_DIR = $(REPOROOTDIR)/project
 BUILDDIR = $(PROJ_DIR)/build
 BINDIR = $(BUILDDIR)/bin
 OBJDIR = $(BUILDDIR)/obj/$(PROJECT_NAME)
-# CAPOBJDIR = $(BUILDDIR)/obj/$(CAPTURE)
+
 # Below you need to assign WEBOBJDIR to store the object files for
 # building the visulizer and configuation panel.
 # the value of WEBOBJDIR will be similar to OBJDIR above (but not the same).
@@ -107,14 +107,13 @@ LDLIBS = $(LIBS)
 # The default target which will be run if the user just types "make"
 # Below, you'll need change the line to the make the "target" for the
 # visual simulation
-all: $(BINDIR)/vis_sim
+all: $(BINDIR)/vis_sim configuration_sim
 $(PROJECT_NAME): $(EXEFILE)
 # capture_transit_sim: $(EXEFILE_CAPTURE)
 
 # This rule says that each .o file in $(OBJDIR)/ depends on the
 # presence of the $(OBJDIR)/ directory.
 $(addprefix $(OBJDIR)/, $(OBJFILES)): | $(OBJDIR)
-# $(addprefix $(CAPOBJDIR)/, $(OBJFILES)): | $(CAPOBJDIR))
 
 
 # Below, you'll need to add a version of the rule above that uses the WEBOBJDIR,and
@@ -173,24 +172,30 @@ $(WEBOBJDIR)/%.o: $(CS3081DIR)/web/%.cpp
 	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
 
 # The same thing will also work for files with a .cc extension
-$(DRIVEROBJDIR)/%_driver.o: $(DRIVERDIR)/%_driver.cc | $(DRIVEROBJDIR)
-	@echo "==== Auto-Generating Dependencies for $<. ===="
-	$(call make-depend-cxx,$<,$@,$(subst .o,.d,$@))
-	@echo "==== Compiling $< into $@. ===="
-	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
-
-#NEED TO ADD EXECUTABLE RULE FOR BUILDING TransitSim.obj
-$(DRIVEROBJDIR)/$(PROJECT_NAME).o: $(DRIVERDIR)/$(PROJECT_NAME).cc | $(DRIVEROBJDIR)
-	@echo "==== Auto-Generating Dependencies for $<. ===="
-	$(call make-depend-cxx,$<,$@,$(subst .o,.d,$@))
-	@echo "==== Compiling $< into $@. ===="
-	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
-
-# $(DRIVEROBJDIR)/$(CAPTURE).o: $(DRIVERDIR)/$(CAPTURE).cc | $(DRIVEROBJDIR)
+# $(DRIVEROBJDIR)/%_driver.o: $(DRIVERDIR)/%_driver.cc | $(DRIVEROBJDIR)
 # 	@echo "==== Auto-Generating Dependencies for $<. ===="
 # 	$(call make-depend-cxx,$<,$@,$(subst .o,.d,$@))
 # 	@echo "==== Compiling $< into $@. ===="
 # 	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
+
+# #NEED TO ADD EXECUTABLE RULE FOR BUILDING TransitSim.obj
+# $(DRIVEROBJDIR)/$(PROJECT_NAME).o: $(DRIVERDIR)/$(PROJECT_NAME).cc | $(DRIVEROBJDIR)
+# 	@echo "==== Auto-Generating Dependencies for $<. ===="
+# 	$(call make-depend-cxx,$<,$@,$(subst .o,.d,$@))
+# 	@echo "==== Compiling $< into $@. ===="
+# 	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
+
+$(DRIVEROBJDIR)/configuration_sim.o: $(DRIVERDIR)/configuration_sim.cc | $(DRIVEROBJDIR)
+	@echo "==== Auto-Generating Dependencies for $<. ===="
+	$(call make-depend-cxx,$<,$@,$(subst .o,.d,$@))
+	@echo "==== Compiling $< into $@. ===="
+	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
+
+$(DRIVEROBJDIR)/my_regression_driver.o: $(DRIVERDIR)/my_regression_driver.cc | $(DRIVEROBJDIR)
+	@echo "==== Auto-Generating Dependencies for $<. ===="
+	$(call make-depend-cxx,$<,$@,$(subst .o,.d,$@))
+	@echo "==== Compiling $< into $@. ===="
+	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
 
 # WITH AUTO-GENERATED DEPENDENCIES:
 # Note that there are actually two steps to the compiling recipe above.  The second
@@ -221,7 +226,6 @@ make-depend-cxx=$(CXX) -MM -MF $3 -MP -MT $2 $(CXXFLAGS) $1
 # enables us to include one Makefile within another.
 -include $(addprefix $(OBJDIR)/,$(OBJFILES:.o=.d))
 -include $(addprefix $(WEBOBJDIR)/,$(WEBOBJFILES:.o=.d))
-# -include $(addprefix $(CAPOBJDIR)/,$(OBJFILES:.o=.d))
 
 # Below, add an include directive for the visualization simulation, similar
 # to the -include line above, that refers to the variables you defined
@@ -238,10 +242,6 @@ $(EXEFILE): $(addprefix $(OBJDIR)/, $(OBJFILES)) $(DRIVEROBJDIR)/$(PROJECT_NAME)
 	@echo "==== Linking $@. ===="
 	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $(DRIVEROBJDIR)/$(PROJECT_NAME).o -o $@ $(LDLIBS)
 
-# $(EXEFILE_CAPTURE): $(addprefix $(OBJDIR)/, $(OBJFILES)) $(DRIVEROBJDIR)/$(CAPTURE).o | $(BINDIR)
-# 	@echo "==== Linking $@. ===="
-# 	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $(DRIVEROBJDIR)/$(CAPTURE).o -o $@ $(LDLIBS)
-
 # Below you'll need to add a target/dependency and rule to make the visual simulation
 # create the executable similar to the one BELOW, but using the variables that
 # you defined pointing to the  components of the visual simulation (WEBOBJDIR,
@@ -251,9 +251,17 @@ $(BINDIR)/vis_sim: $(addprefix $(OBJDIR)/, $(OBJFILES)) $(addprefix $(WEBOBJDIR)
 	@echo "==== Linking $@. ===="
 	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $(addprefix $(WEBOBJDIR)/, $(WEBOBJFILES)) -o $@ $(LDLIBS)
 
-%_test: $(DRIVEROBJDIR)/%_driver.o $(addprefix $(OBJDIR)/, $(OBJFILES)) | $(BINDIR)
+configuration_sim: $(DRIVEROBJDIR)/configuration_sim.o $(addprefix $(OBJDIR)/, $(OBJFILES)) | $(BINDIR) 
 	@echo "==== Linking $@. ===="
 	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $< -o $(BINDIR)/$@ $(LDLIBS)
+
+my_regression_test: $(DRIVEROBJDIR)/my_regression_driver.o $(addprefix $(OBJDIR)/, $(OBJFILES)) | $(BINDIR) 
+	@echo "==== Linking $@. ===="
+	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $< -o $(BINDIR)/$@ $(LDLIBS)
+
+# %_test: $(DRIVEROBJDIR)/%_driver.o $(addprefix $(OBJDIR)/, $(OBJFILES)) | $(BINDIR)
+# 	@echo "==== Linking $@. ===="
+# 	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $< -o $(BINDIR)/$@ $(LDLIBS)
 
 
 
@@ -270,7 +278,7 @@ check-style-cse:
 # created for the visual simulation (located in path assigned to WEBOBJDIR)
 clean:
 	@rm -rf $(OBJDIR)
-	@rm -rf $(EXEFILE) $(BINDIR)/vis_sim
+	@rm -rf $(EXEFILE) $(BINDIR)/vis_sim $(BINDIR)/configuration_sim
 	@rm -rf $(BINDIR)/*_test
 	@rm -rf $(WEBOBJDIR)
 	@rm -rf $(DRIVEROBJDIR)/*

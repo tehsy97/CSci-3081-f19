@@ -14,9 +14,106 @@
  * Cities “GopherTrip” application which is available for download on Google
  * Play Store and on Apple App Store. Unlike GopherTrip application,
  * Transit Simulator will be running on a web server with some different
- * functionalities.
+ * functionalities. Users will be able to adjust the number of time steps to
+ * run and time steps between busses for route. The minimum number of time steps
+ * to run is 1 and maximum is 50. The minimum time steps between busses for route
+ * is 1 and maximum is 10.
  *
+ * \section  User Guide
+ * \subsection  Running the Simulator
+ * \subsection Method 1 Run on VOLE or CSE labs machines
+ * 1. Navigate to base project directory
+ * 2. Make and start server:
+ * 
+ * ```
+ * $ cd src
+ * $ make <sim targer>
+ * $ cd ..
+ * $ ./build/bin/<sim executable> <port number>
+ * ```
+ * 
+ * Notes:
+ * i. The port number can be anything but it is recommended to be in
+ * the range of 8000 to not multiples of 10.
+ * 
+ * ii. You must run `./build/bin/<sim executable> <port_number>` 
+ * at base project directory or it won't work. 
+ * 
+ * 3. Open a broswer you like and navigate to the following address:
+ * ```
+ * http://127.0.0.1:<port_number>/web_graphics/project.html
+ * ```
+ * 
+ * 4. Once you get to the simulation page, adjust the time steps and
+ * time steps between busses to your desire number and then click
+ * the `Start` button. If you wish to run a time steps greater 
+ * than 50, you can refersh the browser, make adjustment, click
+ * the `start` button and repeat. 
+ * 
+ * \subsection Method 2 Using SSH
+ * 1. SSH to cse labs machines using the following command:
+ * ```
+ * ssh -L <port number>:127.0.0.1:<port_number> <x500>@<cse_labs_computer>.cselabs.umn.edu
+ * ```
+ * 
+ * Notes:
+ * i. The port number can be anything but it is recommended to be in
+ * the range of 8000 to not multiples of 10.
+ * 
+ * ii. <x500> is your Internet ID
+ * 
+ * iii. Refer to the following link to get the CSE Labs UNIX
+ * Machine Listings 
+ * ```
+ * https://cseit.umn.edu/computer-classrooms/cse-labs-unix-machine-listings
+ * ```
+ *
+ * After successfully connected to the CSE labs machine:
+ * 1. Navigate to base project directory 
+ * 2. make and start server:
+ * ```
+ * $ cd src
+ * $ make <sim target>
+ * $ cd ..
+ * $ ./build/bin/<sim executable> <port_number>
+ * ```
+ * 
+ * Notes:
+ * i. The port number can be anything but it is recommended to be in
+ * the range of 8000 to not multiples of 10.
+ * 
+ * ii. You must run `./build/bin/<sim executable> <port_number>` 
+ * at base project directory or it won't work. 
+ * 
+ * 3. Open a broswer you like on your local machine and navigate to the following address:
+ * ```
+ * http://127.0.0.1:<port_number>/web_graphics/project.html
+ * ```
+ * 4. Once you get to the simulation page, adjust the time steps and
+ * time steps between busses to your desire number and then click
+ * the `Start` button. If you wish to run a time steps greater 
+ * than 50, you can refersh the browser, make adjustment, click
+ * the `start` button and repeat. 
+ * 
+ * If you run `./build/bin/configuration_sim  <config_filename>`, you need to specify 
+ * the configuration file that is store in config directory. Otherwise, the default `config.txt`
+ * will be used. 
+ * 
+ * Running configuration_sim give you options to redirect you output in a text file, specify 
+ * the length of simulation, or both. In order to do that run the following command:
+ * ```
+ * ./build/bin/configuration_sim <config_filename> [length of simulation] [outputfile]
+ * ```
+ * 
+ * 
  * \section Classes
+ * Class Bus, Route, Stop, and Passenger has a special relationship. Every time Bus class calls its Update(),
+ * it will trigger Update() in Passneger to update the passengers time on bus. It will also call functions in
+ * Route such as GetDestinationStop(), GetNextStop(), and etc depends on the bus and passnger status (the bus
+ * should not stop if there is no passenger to load or unload and the speed is fast that it should skip a stop
+ * or it should if there are passenger to load and unload regradless of the speed and if the distance remaning
+ * to stop is zero or a negative number.) 
+ *   
  * \subsection Simulator
  * The purpose of Simulator class is to start the Transit Simulator by creating buses,
  * stops, routes, distance between routes and passengers. Start() and Update() functions

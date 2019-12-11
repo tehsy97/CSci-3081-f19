@@ -186,12 +186,6 @@ $(DRIVEROBJDIR)/$(PROJECT_NAME).o: $(DRIVERDIR)/$(PROJECT_NAME).cc | $(DRIVEROBJ
 	@echo "==== Compiling $< into $@. ===="
 	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
 
-# $(DRIVEROBJDIR)/$(CAPTURE).o: $(DRIVERDIR)/$(CAPTURE).cc | $(DRIVEROBJDIR)
-# 	@echo "==== Auto-Generating Dependencies for $<. ===="
-# 	$(call make-depend-cxx,$<,$@,$(subst .o,.d,$@))
-# 	@echo "==== Compiling $< into $@. ===="
-# 	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
-
 # WITH AUTO-GENERATED DEPENDENCIES:
 # Note that there are actually two steps to the compiling recipe above.  The second
 # step should be familiar, it just calls g++ to compile the .cpp into a .o.  But,

@@ -11,6 +11,7 @@ to run is 1 and maximum is 50. The minimum time steps between busses for route
 is 1 and maximum is 10.
 
 # Graphical Mode
+![](../../docs/simulation.png)
 ### Method 1: Run on VOLE or CSE labs machines
 1. Navigate to base project directory
 2. Make and start server:
@@ -99,5 +100,5 @@ at base project directory or it won't work properly.
 
 * By default the output will only show in the terminal unless user provides a text filename to store the output.
 
-Go to:
+Go to: <br/>
 [Developer Support](@ref developerpage)

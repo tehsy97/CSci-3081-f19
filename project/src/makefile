@@ -8,8 +8,9 @@
 ### Section 0: Change this when compiling on non-CSELabs machines ###
 
 # PROJECT_NAME = transit_sim
-PROJECT_NAME = capture_transit_sim
-# PROJECT_NAME = configuration_sim
+# PROJECT_NAME = capture_transit_sim
+PROJECT_NAME = my_regression_driver
+# PROJECT_NAME = config_sim
 # Path to root of repo
 REPOROOTDIR = $(shell git rev-parse --show-toplevel)
 
@@ -20,7 +21,6 @@ REPOROOTDIR = $(shell git rev-parse --show-toplevel)
 CS3081DIR = /classes/grades/Fall-2019/csci3081/project
 
 ### Section I: Definitions ###
-
 # Root of the source tree for the project (e.g., could be just . or ./src)
 SRCDIR = .
 DRIVERDIR = ../drivers
@@ -30,7 +30,6 @@ PROJ_DIR = $(REPOROOTDIR)/project
 BUILDDIR = $(PROJ_DIR)/build
 BINDIR = $(BUILDDIR)/bin
 OBJDIR = $(BUILDDIR)/obj/$(PROJECT_NAME)
-
 # Below you need to assign WEBOBJDIR to store the object files for
 # building the visulizer and configuation panel.
 # the value of WEBOBJDIR will be similar to OBJDIR above (but not the same).
@@ -50,7 +49,6 @@ EXTERNAL_DIR = $(PROJ_DIR)/src/external
 
 # The name of the executable to create
 EXEFILE = $(BINDIR)/$(PROJECT_NAME)
-# EXEFILE_CAPTURE = $(BINDIR)/$(CAPTURE)
 # The list of files to compile for this project.  Defaults to all
 # of the .cpp and .cc files in the source directory.  (We use both .cpp
 # and .cc in order to support two different popular naming conventions.)
@@ -107,9 +105,8 @@ LDLIBS = $(LIBS)
 # The default target which will be run if the user just types "make"
 # Below, you'll need change the line to the make the "target" for the
 # visual simulation
-all: $(BINDIR)/vis_sim configuration_sim
+all: $(BINDIR)/vis_sim config_sim my_regression_test
 $(PROJECT_NAME): $(EXEFILE)
-# capture_transit_sim: $(EXEFILE_CAPTURE)
 
 # This rule says that each .o file in $(OBJDIR)/ depends on the
 # presence of the $(OBJDIR)/ directory.
@@ -136,11 +133,6 @@ $(OBJDIR) $(BINDIR) $(DRIVEROBJDIR) $(WEBOBJDIR):
 # add "@" in front of each simelar following line if like less of a wall of text when making
 
 # The same thing will also work for files with a .cc extension
-# $(CAPOBJDIR)/%.o: $(SRCDIR)/%.cc
-# 	@echo "==== Auto-Generating Dependencies for $<. ===="
-# 	$(call make-depend-cxx,$<,$@,$(subst .o,.d,$@))
-# 	@echo "==== Compiling $< into $@. ===="
-# 	$(CXX) $(OMP) $(CXXFLAGS) $(CXXLIBDIRS) -c -fPIC -o  $@ $<
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cc
 	@echo "==== Auto-Generating Dependencies for $<. ===="
@@ -226,6 +218,7 @@ make-depend-cxx=$(CXX) -MM -MF $3 -MP -MT $2 $(CXXFLAGS) $1
 # enables us to include one Makefile within another.
 -include $(addprefix $(OBJDIR)/,$(OBJFILES:.o=.d))
 -include $(addprefix $(WEBOBJDIR)/,$(WEBOBJFILES:.o=.d))
+# -include $(addprefix $(CAPOBJDIR)/,$(OBJFILES:.o=.d))
 
 # Below, add an include directive for the visualization simulation, similar
 # to the -include line above, that refers to the variables you defined
@@ -251,7 +244,7 @@ $(BINDIR)/vis_sim: $(addprefix $(OBJDIR)/, $(OBJFILES)) $(addprefix $(WEBOBJDIR)
 	@echo "==== Linking $@. ===="
 	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $(addprefix $(WEBOBJDIR)/, $(WEBOBJFILES)) -o $@ $(LDLIBS)
 
-configuration_sim: $(DRIVEROBJDIR)/configuration_sim.o $(addprefix $(OBJDIR)/, $(OBJFILES)) | $(BINDIR) 
+config_sim: $(DRIVEROBJDIR)/configuration_sim.o $(addprefix $(OBJDIR)/, $(OBJFILES)) | $(BINDIR) 
 	@echo "==== Linking $@. ===="
 	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $< -o $(BINDIR)/$@ $(LDLIBS)
 
@@ -259,11 +252,9 @@ my_regression_test: $(DRIVEROBJDIR)/my_regression_driver.o $(addprefix $(OBJDIR)
 	@echo "==== Linking $@. ===="
 	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $< -o $(BINDIR)/$@ $(LDLIBS)
 
-# %_test: $(DRIVEROBJDIR)/%_driver.o $(addprefix $(OBJDIR)/, $(OBJFILES)) | $(BINDIR)
-# 	@echo "==== Linking $@. ===="
-# 	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $< -o $(BINDIR)/$@ $(LDLIBS)
-
-
+%_test: $(DRIVEROBJDIR)/%_driver.o $(addprefix $(OBJDIR)/, $(OBJFILES)) | $(BINDIR)
+	@echo "==== Linking $@. ===="
+	$(CXX) $(OMP) $(LDFLAGS) $(addprefix $(OBJDIR)/, $(OBJFILES)) $< -o $(BINDIR)/$@ $(LDLIBS)
 
 check-style:
 	@echo "==== Checking style is correct ===="
@@ -278,7 +269,7 @@ check-style-cse:
 # created for the visual simulation (located in path assigned to WEBOBJDIR)
 clean:
 	@rm -rf $(OBJDIR)
-	@rm -rf $(EXEFILE) $(BINDIR)/vis_sim $(BINDIR)/configuration_sim
+	@rm -rf $(EXEFILE) $(BINDIR)/vis_sim $(BINDIR)/config_sim
 	@rm -rf $(BINDIR)/*_test
 	@rm -rf $(WEBOBJDIR)
 	@rm -rf $(DRIVEROBJDIR)/*

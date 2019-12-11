@@ -246,10 +246,10 @@ TEST_F(BusTests, Update) {
     test_in.close();
 
 
-    correct_out.open("correct_bus_out.txt");
-    if (!correct_out.is_open()) {
-        std::cout << "Unable to open file: correct_bus_out.txt" << std::endl;
-    }
+    // correct_out.open("correct_bus_out.txt");
+    // if (!correct_out.is_open()) {
+    //     std::cout << "Unable to open file: correct_bus_out.txt" << std::endl;
+    // }
 
     test_out.open("../build/bin/bus_out.txt");
     if (!test_out.is_open()) {
@@ -262,21 +262,141 @@ TEST_F(BusTests, Update) {
     //     EXPECT_EQ(output, expected_output);
     // }
 
-    while (getline(test_out, output) &&
-      getline(correct_out, expected_output)) {
-        // std::cout << output << std::endl;
-        // std::cout << expected_output << std::endl;
-        EXPECT_EQ(output, expected_output);
-    }
+    // while (getline(test_out, output) &&
+    //   getline(correct_out, expected_output)) {
+    //     // std::cout << output << std::endl;
+    //     // std::cout << expected_output << std::endl;
+    //     EXPECT_EQ(output, expected_output);
+    // }
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: bus");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Speed: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Distance to next stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Passengers (0): ");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: bus");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Speed: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Distance to next stop: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Passengers (3): ");
+    
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: triple you");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 2");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 1");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: middle autumn festival");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 3");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 1");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: shin");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 3");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 1");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: bus");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Speed: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Distance to next stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Passengers (3): ");
+    
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: triple you");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 2");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 2");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 2");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: middle autumn festival");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 3");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 2");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 2");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: shin");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 3");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 2");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 2");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: bus");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Speed: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Distance to next stop: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Passengers (2): ");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: middle autumn festival");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 3");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 14");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 14");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: shin");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 3");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 14");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 14");
+
+
+
+
+
     test_out.close();
-    correct_out.close();    
-
+    // correct_out.close();    
 }
-
-
-// // TEST_F(BusTests, UpdateTest) {
-// //     EXPECT_EQ(campus_connector1->Move(), true);
-// //     campus_connector1->Update();
-// //     EXPECT_EQ(campus_connector1->Move(), true);
-// // }
-

@@ -106,24 +106,61 @@ TEST_F(StopTests, Report_and_Update) {
     stop->Report(test_in);  // write output into file
     test_in.close();
 
-    correct_out.open("correct_stop_out.txt");
-    if (!correct_out.is_open()) {
-        std::cout << "Unable to open file: correct_stop_out.txt" << std::endl;
-    }
+    // correct_out.open("correct_stop_out.txt");
+    // if (!correct_out.is_open()) {
+    //     std::cout << "Unable to open file: correct_stop_out.txt" << std::endl;
+    // }
 
     test_out.open("../build/bin/stop_out.txt");
     if (!test_out.is_open()) {
         std::cout << "Unable to open file: stop_out.txt" << std::endl;
     }
 
-    while (getline(test_out, output) &&
-      getline(correct_out, expected_output)) {
-        // std::cout << output << std::endl;
-        // std::cout << expected_output << std::endl;
-        EXPECT_EQ(expected_output, output);
-    }
+    // while (getline(test_out, output) &&
+    //   getline(correct_out, expected_output)) {
+    //     // std::cout << output << std::endl;
+    //     // std::cout << expected_output << std::endl;
+    //     EXPECT_EQ(expected_output, output);
+    // }
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "ID: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Passengers waiting: 3");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: p1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 10");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 2");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 2");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 0");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: p3");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 13");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 1");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 0");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: p2");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 12");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 0");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 0");
     test_out.close();
-    correct_out.close();
+    // correct_out.close();
 }
 
 TEST_F(StopTests, GetStopData) {

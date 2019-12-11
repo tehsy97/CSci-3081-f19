@@ -141,10 +141,10 @@ TEST_F(PassengerTests, passenger) {
         }
     }
 
-    correct_out.open("correct_passenger_out.txt");
-    if (!correct_out.is_open()) {
-        std::cout << "Unable to open file: correct_passenger_out.txt" << std::endl;
-    }
+    // correct_out.open("correct_passenger_out.txt");
+    // if (!correct_out.is_open()) {
+    //     std::cout << "Unable to open file: correct_passenger_out.txt" << std::endl;
+    // }
 
     test_out.open("../build/bin/passenger_out.txt");
     if (!test_out.is_open()) {
@@ -157,14 +157,28 @@ TEST_F(PassengerTests, passenger) {
     //     EXPECT_EQ(output, expected_output);
     // }
 
-    while (getline(test_out, output) &&
-      getline(correct_out, expected_output)) {
-        // std::cout << output << std::endl;
-        // std::cout << expected_output << std::endl;
-        EXPECT_EQ(output, expected_output);
-    }
+    // while (getline(test_out, output) &&
+    //   getline(correct_out, expected_output)) {
+    //     // std::cout << output << std::endl;
+    //     // std::cout << expected_output << std::endl;
+    //     EXPECT_EQ(output, expected_output);
+    // }
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: Zoe");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 33");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 34");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 33");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 1");
+
+
+
     test_out.close();
-    correct_out.close();
+    // correct_out.close();
 }
 
 TEST_F(PassengerTests, passenger_list) {
@@ -222,10 +236,10 @@ TEST_F(PassengerTests, passenger_list) {
     }
     test_in.close();
 
-    correct_out.open("correct_passenger_out_list.txt");
-    if (!correct_out.is_open()) {
-        std::cout << "Unable to open file: correct_passenger_out_list.txt" << std::endl;
-    }
+    // correct_out.open("correct_passenger_out_list.txt");
+    // if (!correct_out.is_open()) {
+    //     std::cout << "Unable to open file: correct_passenger_out_list.txt" << std::endl;
+    // }
 
     test_out.open("../build/bin/passenger_out_list.txt");
     if (!test_out.is_open()) {
@@ -239,12 +253,67 @@ TEST_F(PassengerTests, passenger_list) {
     //     EXPECT_EQ(output, expected_output);
     // }
 
-    while (getline(test_out, output) &&
-      getline(correct_out, expected_output)) {
-        // std::cout << output << std::endl;
-        // std::cout << expected_output << std::endl;
-        EXPECT_EQ(expected_output, output);
-    }
+    // while (getline(test_out, output) &&
+    //   getline(correct_out, expected_output)) {
+    //     // std::cout << output << std::endl;
+    //     // std::cout << expected_output << std::endl;
+    //     EXPECT_EQ(expected_output, output);
+    // }
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: Mal");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 10");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 11");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 10");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 1");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: Jayne");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 23");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 24");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 23");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 1");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: Zoe");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 33");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 34");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 33");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 1");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: Kaylee");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 42");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 43");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 42");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 1");
+
+    getline(test_out, output);
+    EXPECT_EQ(output, "Name: Wash");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Destination: 50");
+    getline(test_out, output);
+    EXPECT_EQ(output, "Total Wait: 51");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Wait at Stop: 50");
+    getline(test_out, output);
+    EXPECT_EQ(output, "	Time on bus: 1");
     test_out.close();
-    correct_out.close();
+    // correct_out.close();
 }

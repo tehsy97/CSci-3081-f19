@@ -42,8 +42,10 @@ Route * Route::Clone() {
     num_stops_, generator_);
 }
 
-// Update stops in the route
+// Update stops in the route and call GeneratePassengers()
+// so that new passengers will be generated in each time step
 void Route::Update() {
+  generator_->GeneratePassengers();
   for (std::list<Stop *>::iterator it = stops_.begin();
     it != stops_.end(); it++) {
     (*it)->Update();

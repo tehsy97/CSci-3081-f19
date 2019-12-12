@@ -8,15 +8,15 @@
 ### Compilation and Execution
 
 - [x] I cloned **fresh** from github onto a cselabs machine to test compilation
-- [ ] Submission is on the master branch of the my personal repo "repo-<username>"
+- [x] Submission is on the master branch of the my personal repo "repo-<username>"
 - [x] _/project folder exists
 - [x] _/build_ is not in the repo
 - [x] _/html_ is not in _docs_
 - [x] _/latex_ is not in _docs_
 - [x] **__`make` from src completes without error.__**
 - [x] Both executables run without assert or a seg fault
-- [ ] `cpplint-cse.sh *.cc` reports no errors
-- [ ] `cpplint-cse.sh --root=.. *.h` reports no errors
+- [x] `cpplint-cse.sh *.cc` reports no errors
+- [x] `cpplint-cse.sh --root=.. *.h` reports no errors
 - [x] `doxygen Doxyfile` generates the necessary doxygen documentation
 
 ### Primary Functionality
@@ -78,15 +78,15 @@ For the table below, please specify which aspects were fixed. You should put an 
 
 ### Reporting of Bugs
 - [x] Viewing issues on my repo and selecting _bug_ label shows all the known bugs in my code.
-- [] All resolved issues have been _closed_ (including bugs).
+- [x] All resolved issues have been _closed_ (including bugs).
 
 
 ## Ready For Submission
 
 When everything above is as you want it (or it is 11:50pm on Wednesday), it is time to submit!
 
-- [ ] I pushed this file and any changes resulting from this checklist.
-- [ ] Everything is in the **__master__** branch.
+- [x] I pushed this file and any changes resulting from this checklist.
+- [x] Everything is in the **__master__** branch.
 
 _One more thing -- check that what you think you pushed was really pushed to github on the master branch. Go to your repo on github.umn.edu and look at your files. If you can see it there, we can see it. If you can't, we can't._
 

@@ -4,7 +4,8 @@ Getting Started with Transit Simulator {#releasenotes}
 * release_notes
     * add release_notes.md in project/src
     * generate passenger at route update()
-    * add comment for Update() in route.cc 
+    * add comment for Update() in route.cc
+    * fix style
 
 * refactor/comment
     * added description for Update() in bus.cc
@@ -31,3 +32,4 @@ Getting Started with Transit Simulator {#releasenotes}
     * completed refactoring 1 requirement - change the probability of the final stop on a route to 0
     * created refactor.txt to record the changes made in code
     * refactored code - extract method (completed refactoring 2)
+    * fix iteration 1 bugs (bus skip stop) in branch iteration 2  

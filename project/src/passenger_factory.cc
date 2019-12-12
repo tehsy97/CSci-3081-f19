@@ -13,7 +13,7 @@
  *
 */
 
-#define CONSTPASS 
+#define CONSTPASS
 
 std::random_device dev;
 std::mt19937 e(dev());

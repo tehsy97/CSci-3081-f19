@@ -3,8 +3,8 @@
  *
  * @copyright 2019 3081 Staff, All rights reserved.
  */
-#ifndef SRC_SIMULATOR_H_
-#define SRC_SIMULATOR_H_
+#ifndef PROJECT_SRC_SIMULATOR_H_
+#define PROJECT_SRC_SIMULATOR_H_
 
 #include <list>
 #include <vector>
@@ -34,4 +34,4 @@ class Simulator {
   // std::vector<std:list<double>> passenger_generation_probability_lists;
 };
 
-#endif  // SRC_SIMULATOR_H_
+#endif  // PROJECT_SRC_SIMULATOR_H_

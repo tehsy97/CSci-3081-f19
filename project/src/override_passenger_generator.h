@@ -4,8 +4,8 @@
  * @copyright 2019 3081 Staff, All rights reserved.
  */
 
-#ifndef SRC_OVERRIDE_PASSENGER_GENERATOR_H_
-#define SRC_OVERRIDE_PASSENGER_GENERATOR_H_
+#ifndef PROJECT_SRC_OVERRIDE_PASSENGER_GENERATOR_H_
+#define PROJECT_SRC_OVERRIDE_PASSENGER_GENERATOR_H_
 
 #include <list>
 
@@ -38,4 +38,4 @@ class OverridePassengerGenerator : public PassengerGenerator{
  protected:
 };
 
-#endif  // SRC_OVERRIDE_PASSENGER_GENERATOR_H_
+#endif  // PROJECT_SRC_OVERRIDE_PASSENGER_GENERATOR_H_

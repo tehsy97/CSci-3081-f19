@@ -3,8 +3,8 @@
  *
  * @copyright 2019 3081 Staff, All rights reserved.
  */
-#ifndef SRC_BUS_H_
-#define SRC_BUS_H_
+#ifndef PROJECT_SRC_BUS_H_
+#define PROJECT_SRC_BUS_H_
 
 #include <iostream>
 #include <list>
@@ -137,4 +137,4 @@ class Bus {
   // double fuel_;   // may not be necessary for our simulation
   // double max_fuel_;
 };
-#endif  // SRC_BUS_H_
+#endif  // PROJECT_SRC_BUS_H_

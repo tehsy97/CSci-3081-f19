@@ -4,8 +4,8 @@
  * @copyright 2019 3081 Staff, All rights reserved.
  */
 
-#ifndef SRC_PASSENGER_FACTORY_H_
-#define SRC_PASSENGER_FACTORY_H_
+#ifndef PROJECT_SRC_PASSENGER_FACTORY_H_
+#define PROJECT_SRC_PASSENGER_FACTORY_H_
 
 
 /*******************************************************************************
@@ -45,4 +45,4 @@ class PassengerFactory {
   */
   static std::string NameGeneration();
 };
-#endif  // SRC_PASSENGER_FACTORY_H_
+#endif  // PROJECT_SRC_PASSENGER_FACTORY_H_

@@ -4,8 +4,8 @@
  * @copyright 2019 3081 Staff, All rights reserved.
  */
 
-#ifndef SRC_ROUTE_H_
-#define SRC_ROUTE_H_
+#ifndef PROJECT_SRC_ROUTE_H_
+#define PROJECT_SRC_ROUTE_H_
 
 #include <list>
 #include <iostream>
@@ -130,4 +130,4 @@ class Route {
 
   RouteData route_visualizer;
 };
-#endif  // SRC_ROUTE_H_
+#endif  // PROJECT_SRC_ROUTE_H_

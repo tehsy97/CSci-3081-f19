@@ -42,7 +42,7 @@ bool rLocalSimulator::Start() {
   Stop * stop_CC_EB_6 = new Stop(5, 44.983375, -93.178810);  // Fairgrounds
   Stop * stop_CC_EB_7 = new Stop(6, 44.984540, -93.181692);  // Buford &Gartner
   Stop * stop_CC_EB_8 = new Stop(7, 44.984630, -93.186352);  // SPSC
-  
+
   // CC Westbound stops
   Stop * stop_CC_WB_1 = new Stop(8, 44.984630, -93.186352);  // SPSC
   Stop * stop_CC_WB_2 = new Stop(9, 44.984482, -93.181657);  // Buford &Gartner

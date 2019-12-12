@@ -155,7 +155,7 @@ void Bus::UpdateBusData() {
 
   } else if (distance_remaining_ <= 0) {
     // Stop *current_stop_;
-    
+
     // if (outgoing_route_->IsAtEnd()) {
     //   current_stop_ = incoming_route_->GetDestinationStop();
     // } else {

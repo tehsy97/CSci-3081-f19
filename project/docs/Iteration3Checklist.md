@@ -37,7 +37,7 @@
 | Refactoring 2 is completed | x |  |  |  |
 | Refactoring 2 exists within branch refactor/iter3 | x |  |  |  |
 | Refactorings do not change observable functionality | x |  |  |  |
-| File release_notes.md exists and identifies locations of Refactorings | | | | |
+| File release_notes.md exists and identifies locations of Refactorings | x | | | |
 | **__Refactoring 1__** |
 | Refactoring 1 does not require changes to config file structure | x |  |  |  |
 | Refactoring 1 removes possibility of users changing probability of a route's final stop to be non-zero | x |  |  
@@ -69,7 +69,7 @@ For the table below, please specify which aspects were fixed. You should put an 
 - [x] The mainpage includes a user guide for technical users (updated developers guide from iteration 1).
 - [x] The mainpage includes a user guide for non-technical users.
 - [x] I commented my code where necessary.
-- [] A document named **release_notes.md** specifying names of branch(es) that hold refactoring 1 and 2, and any other assumptions is in project/src directory.
+- [x] A document named **release_notes.md** specifying names of branch(es) that hold refactoring 1 and 2, and any other assumptions is in project/src directory.
 
 ### Linter and Git
 - [x] The code complies with naming conventions for classes, methods, and members.
@@ -77,8 +77,8 @@ For the table below, please specify which aspects were fixed. You should put an 
 - [x] There exists a history of issues and branches to show effort.
 
 ### Reporting of Bugs
-- [ ] Viewing issues on my repo and selecting _bug_ label shows all the known bugs in my code.
-- [ ] All resolved issues have been _closed_ (including bugs).
+- [x] Viewing issues on my repo and selecting _bug_ label shows all the known bugs in my code.
+- [] All resolved issues have been _closed_ (including bugs).
 
 
 ## Ready For Submission

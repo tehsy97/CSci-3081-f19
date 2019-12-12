@@ -3,8 +3,8 @@
  *
  * @copyright 2019 3081 Staff, All rights reserved.
  */
-#ifndef PROJECT_SRC_LOCAL_SIMULATOR_H_
-#define PROJECT_SRC_LOCAL_SIMULATOR_H_
+#ifndef PROJECT_SRC_R_LOCAL_SIMULATOR_H_
+#define PROJECT_SRC_R_LOCAL_SIMULATOR_H_
 
 #include <vector>
 #include <string>
@@ -21,4 +21,4 @@ class rLocalSimulator : public Simulator {
   int simulation_time_elapsed_;
 };
 
-#endif  // PROJECT_SRC_LOCAL_SIMULATOR_H_
+#endif  // PROJECT_SRC_R_LOCAL_SIMULATOR_H_

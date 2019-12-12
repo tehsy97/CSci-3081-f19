@@ -7,17 +7,17 @@
 
 ### Compilation and Execution
 
-- [ ] I cloned **fresh** from github onto a cselabs machine to test compilation
+- [x] I cloned **fresh** from github onto a cselabs machine to test compilation
 - [ ] Submission is on the master branch of the my personal repo "repo-<username>"
-- [ ] _/project folder exists
-- [ ] _/build_ is not in the repo
-- [ ] _/html_ is not in _docs_
-- [ ] _/latex_ is not in _docs_
-- [ ] **__`make` from src completes without error.__**
-- [ ] Both executables run without assert or a seg fault
+- [x] _/project folder exists
+- [x] _/build_ is not in the repo
+- [x] _/html_ is not in _docs_
+- [x] _/latex_ is not in _docs_
+- [x] **__`make` from src completes without error.__**
+- [x] Both executables run without assert or a seg fault
 - [ ] `cpplint-cse.sh *.cc` reports no errors
 - [ ] `cpplint-cse.sh --root=.. *.h` reports no errors
-- [ ] `doxygen Doxyfile` generates the necessary doxygen documentation
+- [x] `doxygen Doxyfile` generates the necessary doxygen documentation
 
 ### Primary Functionality
 
@@ -32,23 +32,23 @@
 | Functionality | Good | Okay | Help | Time |
 | -------- | -------- | -------- | -------- | --------- |
 | **__Refactoring__** |
-| Refactoring 1 is completed |  |  |  |  |
-| Refactoring 1 exists within either branch refactor/iter3 or branch refactor/iter2 |  |  |  |  |
-| Refactoring 2 is completed |  |  |  |  |
-| Refactoring 2 exists within branch refactor/iter3 |  |  |  |  |
-| Refactorings do not change observable functionality |  |  |  |  |
-| File release_notes.md exists and identifies locations of Refactorings | | | | |
+| Refactoring 1 is completed | x |  |  |  |
+| Refactoring 1 exists within either branch refactor/iter3 or branch refactor/iter2 | x |  |  |  |
+| Refactoring 2 is completed | x |  |  |  |
+| Refactoring 2 exists within branch refactor/iter3 | x |  |  |  |
+| Refactorings do not change observable functionality | x |  |  |  |
+| File release_notes.md exists and identifies locations of Refactorings | x | | | |
 | **__Refactoring 1__** |
-| Refactoring 1 does not require changes to config file structure |  |  |  |  |
-| Refactoring 1 removes possibility of users changing probability of a route's final stop to be non-zero |  |  |  
+| Refactoring 1 does not require changes to config file structure | x |  |  |  |
+| Refactoring 1 removes possibility of users changing probability of a route's final stop to be non-zero | x |  |  
 | **__Refactoring 2__** |
-| File refactor.xxx exists within project/docs/ (where x = pdf or doc or txt or rtf) |  |  |  |  |
-| Refactoring is clearly identified and explained |  |  |  |  |
+| File refactor.xxx exists within project/docs/ (where x = pdf or doc or txt or rtf) | x |  |  |  |
+| Refactoring is clearly identified and explained | x |  |  |  |
 | **__Regression Testing__** |
-| Regression testing exercises full breadth of functionality |  |  |  |  |
-| Regression testing is deterministic |  |  |  |  |
-| Regression testing automatically determines if the program behavior is the same or has changed |  |  |  |  |
-| Regression testing requires tester to determine if the output/result is as expected |  |  |  |  |
+| Regression testing exercises full breadth of functionality | x |  |  |  |
+| Regression testing is deterministic | x |  |  |  |
+| Regression testing automatically determines if the program behavior is the same or has changed | x |  |  |  |
+| Regression testing requires tester to determine if the output/result is as expected | x |  |  |  |
 
 <hr>
 
@@ -60,25 +60,25 @@ For the table below, please specify which aspects were fixed. You should put an 
 
 | Functionality | Complete in it2 | | Fixed in it3 | Still Buggy |
 | -------- | -------- |-| -------- | -------- |
-| **__YOU NEED TO UPDATE THIS LIST__** |  ||  |   |
+| **__YOU NEED TO UPDATE THIS LIST__** |  || x |  |
 
 
 ### Documentation
-- [ ] _mainpage.h_ or _mainpage.md_ is in the /src folder.
-- [ ] I have compiled doxygen and looked at the generated mainpage.
-- [ ] The mainpage includes a user guide for technical users (updated developers guide from iteration 1).
-- [ ] The mainpage includes a user guide for non-technical users.
-- [ ] I commented my code where necessary.
-- [ ] A document named **release_notes.md** specifying names of branch(es) that hold refactoring 1 and 2, and any other assumptions is in project/src directory.
+- [x] _mainpage.h_ or _mainpage.md_ is in the /src folder.
+- [x] I have compiled doxygen and looked at the generated mainpage.
+- [x] The mainpage includes a user guide for technical users (updated developers guide from iteration 1).
+- [x] The mainpage includes a user guide for non-technical users.
+- [x] I commented my code where necessary.
+- [x] A document named **release_notes.md** specifying names of branch(es) that hold refactoring 1 and 2, and any other assumptions is in project/src directory.
 
 ### Linter and Git
-- [ ] The code complies with naming conventions for classes, methods, and members.
-- [ ] There exists a history of git commit messages to show effort.
-- [ ] There exists a history of issues and branches to show effort.
+- [x] The code complies with naming conventions for classes, methods, and members.
+- [x] There exists a history of git commit messages to show effort.
+- [x] There exists a history of issues and branches to show effort.
 
 ### Reporting of Bugs
-- [ ] Viewing issues on my repo and selecting _bug_ label shows all the known bugs in my code.
-- [ ] All resolved issues have been _closed_ (including bugs).
+- [x] Viewing issues on my repo and selecting _bug_ label shows all the known bugs in my code.
+- [] All resolved issues have been _closed_ (including bugs).
 
 
 ## Ready For Submission

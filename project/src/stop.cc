@@ -15,6 +15,7 @@ Stop::Stop(int id, double longitude, double latitude) : id_(id),
   // no initialization of list of passengers necessary
 }
 
+// After adding passengers onto the bus remove passengers at the stop
 int Stop::LoadPassengers(Bus * bus) {
     // loading some passengers onto a bus
     int count = 0;
@@ -30,6 +31,7 @@ int Stop::LoadPassengers(Bus * bus) {
     return count;
 }
 
+// Add passengers to the stop
 int Stop::AddPassengers(Passenger * pass) {
   passengers_.push_back(pass);
   return 1;

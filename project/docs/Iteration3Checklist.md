@@ -8,15 +8,15 @@
 ### Compilation and Execution
 
 - [x] I cloned **fresh** from github onto a cselabs machine to test compilation
-- [ ] Submission is on the master branch of the my personal repo "repo-<username>"
+- [x] Submission is on the master branch of the my personal repo "repo-<username>"
 - [x] _/project folder exists
 - [x] _/build_ is not in the repo
 - [x] _/html_ is not in _docs_
 - [x] _/latex_ is not in _docs_
 - [x] **__`make` from src completes without error.__**
 - [x] Both executables run without assert or a seg fault
-- [ ] `cpplint-cse.sh *.cc` reports no errors
-- [ ] `cpplint-cse.sh --root=.. *.h` reports no errors
+- [x] `cpplint-cse.sh *.cc` reports no errors
+- [x] `cpplint-cse.sh --root=.. *.h` reports no errors
 - [x] `doxygen Doxyfile` generates the necessary doxygen documentation
 
 ### Primary Functionality
@@ -37,7 +37,7 @@
 | Refactoring 2 is completed | x |  |  |  |
 | Refactoring 2 exists within branch refactor/iter3 | x |  |  |  |
 | Refactorings do not change observable functionality | x |  |  |  |
-| File release_notes.md exists and identifies locations of Refactorings | | | | |
+| File release_notes.md exists and identifies locations of Refactorings | x | | | |
 | **__Refactoring 1__** |
 | Refactoring 1 does not require changes to config file structure | x |  |  |  |
 | Refactoring 1 removes possibility of users changing probability of a route's final stop to be non-zero | x |  |  
@@ -69,7 +69,7 @@ For the table below, please specify which aspects were fixed. You should put an 
 - [x] The mainpage includes a user guide for technical users (updated developers guide from iteration 1).
 - [x] The mainpage includes a user guide for non-technical users.
 - [x] I commented my code where necessary.
-- [] A document named **release_notes.md** specifying names of branch(es) that hold refactoring 1 and 2, and any other assumptions is in project/src directory.
+- [x] A document named **release_notes.md** specifying names of branch(es) that hold refactoring 1 and 2, and any other assumptions is in project/src directory.
 
 ### Linter and Git
 - [x] The code complies with naming conventions for classes, methods, and members.
@@ -77,16 +77,16 @@ For the table below, please specify which aspects were fixed. You should put an 
 - [x] There exists a history of issues and branches to show effort.
 
 ### Reporting of Bugs
-- [ ] Viewing issues on my repo and selecting _bug_ label shows all the known bugs in my code.
-- [ ] All resolved issues have been _closed_ (including bugs).
+- [x] Viewing issues on my repo and selecting _bug_ label shows all the known bugs in my code.
+- [x] All resolved issues have been _closed_ (including bugs).
 
 
 ## Ready For Submission
 
 When everything above is as you want it (or it is 11:50pm on Wednesday), it is time to submit!
 
-- [ ] I pushed this file and any changes resulting from this checklist.
-- [ ] Everything is in the **__master__** branch.
+- [x] I pushed this file and any changes resulting from this checklist.
+- [x] Everything is in the **__master__** branch.
 
 _One more thing -- check that what you think you pushed was really pushed to github on the master branch. Go to your repo on github.umn.edu and look at your files. If you can see it there, we can see it. If you can't, we can't._
 

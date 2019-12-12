@@ -4,8 +4,8 @@
  * @copyright 2019 3081 Staff, All rights reserved.
  */
 
-#ifndef SRC_RANDOM_PASSENGER_GENERATOR_H_
-#define SRC_RANDOM_PASSENGER_GENERATOR_H_
+#ifndef PROJECT_SRC_RANDOM_PASSENGER_GENERATOR_H_
+#define PROJECT_SRC_RANDOM_PASSENGER_GENERATOR_H_
 
 #include <list>
 #include <random>
@@ -39,4 +39,4 @@ class RandomPassengerGenerator : public PassengerGenerator{
   static std:: minstd_rand0 my_rand;
 };
 
-#endif  // SRC_RANDOM_PASSENGER_GENERATOR_H_
+#endif  // PROJECT_SRC_RANDOM_PASSENGER_GENERATOR_H_

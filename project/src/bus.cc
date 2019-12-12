@@ -60,13 +60,13 @@ Route * Bus::CheckInOrOutRoute() {
   return outgoing_route_;
 }
 
-void Bus::Update() {  // using common Update format
-  // Stop *stop_arrived_at;
-  // if (outgoing_route_->IsAtEnd()) {
-  //   stop_arrived_at = incoming_route_->GetDestinationStop();
-  // } else {
-  //   stop_arrived_at = outgoing_route_->GetDestinationStop();
-  // }
+void Bus::Update() {
+// If distance_remaining <= 0 then the bus should decide whether it needs
+// to stop.
+// It should stop regradless of the speed because there are passengers
+// load or unloaded.
+// It should continue to move if because there are no passengers load
+// or unloaded unless distance_remaining = 0
   Route *route = CheckInOrOutRoute();
   Stop *stop_arrived_at = route->GetDestinationStop();
 

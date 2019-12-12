@@ -42,6 +42,7 @@ Route * Route::Clone() {
     num_stops_, generator_);
 }
 
+// Update stops in the route
 void Route::Update() {
   for (std::list<Stop *>::iterator it = stops_.begin();
     it != stops_.end(); it++) {

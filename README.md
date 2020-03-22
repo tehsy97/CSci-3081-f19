@@ -2,7 +2,7 @@
 
 Welcome to my CSci 3081W Project!
 
-Transit System Simulation project writen in C++ programming language. This software project is to develop a transit simultor which simulations can be controlled via external configuration (without code change) and be visualized within a graphics window.
+Transit System Simulation project is writen in C++ programming language. This software project is to develop a transit simultor which simulations can be controlled via external configuration (without code change) and be visualized within a graphics window.
 
 It will be running on a web server with some different functionalities. Users will be able to adjust the number of time steps to run and time steps between busses for route. The minimum number of time steps to run is 1 and maximum is 50. The minimum time steps between busses for route is 1 and maximum is 10.
 

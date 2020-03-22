@@ -1,7 +1,7 @@
-# CSci 3081 Transit Simulator
+# CSci 3081 Transit System Simulator
 
 Welcome to my CSci 3081W Project!
-It is a Transit Simulation project writen in C++ programming. It is a web application that stimulates the University of Minnesota-Twin Cities "GopherTrip" mobile application.
+It is a Transit System Simulation project writen in C++ programming. This software project is to develop a transit simultor which simulations can be controlled via external configuration (without code change) and be visualized within a graphics window.
 
 It will be running on a web server with some different functionalities. Users will be able to adjust the number of time steps to run and time steps between busses for route. The minimum number of time steps to run is 1 and maximum is 50. The minimum time steps between busses for route is 1 and maximum is 10.
 
